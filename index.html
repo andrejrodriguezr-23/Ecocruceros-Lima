@@ -249,7 +249,7 @@
     .hero-bg {
       position: absolute;
       inset: 0;
-      background-image: url('https://images.unsplash.com/photo-QKNsTJoD6_k?w=1800&q=85&fit=crop');
+      background-image: url('https://source.unsplash.com/5gOBhIuRrtE/1800x1200');
       background-size: cover;
       background-position: center 40%;
       animation: slowZoom 20s ease-in-out infinite alternate;
@@ -984,7 +984,54 @@
   ════════════════════════════ -->
   <nav id="navbar">
     <a href="#" class="nav-logo">
-      <div class="nav-logo-emblem">🌊</div>
+      <!-- Ecocruceros logo — SVG recreation of original brand mark -->
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="44" height="44" aria-label="Ecocruceros logo">
+        <defs>
+          <clipPath id="lc"><circle cx="100" cy="100" r="94"/></clipPath>
+        </defs>
+        <!-- Sun/background -->
+        <circle cx="100" cy="100" r="96" fill="#F5A800"/>
+        <!-- Sun rays (lighter diagonals) -->
+        <g clip-path="url(#lc)">
+          <polygon points="100,0 145,0 200,55 200,100" fill="#FFD44A" opacity="0.55"/>
+          <polygon points="155,0 200,0 200,45" fill="#FFE07A" opacity="0.5"/>
+          <polygon points="50,0 100,0 200,100 200,150" fill="#FFD44A" opacity="0.35"/>
+          <polygon points="0,0 50,0 200,150 200,200 150,200" fill="#FFCA30" opacity="0.3"/>
+          <!-- Sky/water lower half -->
+          <path d="M 0 118 L 200 118 L 200 200 L 0 200 Z" fill="#1565C0"/>
+          <!-- Wave highlight -->
+          <path d="M 0 118 Q 25 108 50 118 Q 75 128 100 118 Q 125 108 150 118 Q 175 128 200 118" fill="#42A5F5" opacity="0.6"/>
+          <!-- Boat hull -->
+          <path d="M 42 115 L 158 115 L 148 130 L 52 130 Z" fill="#0D2B5E"/>
+          <!-- Boat cabin -->
+          <rect x="62" y="94" width="76" height="23" rx="2" fill="#0D2B5E"/>
+          <!-- Cabin windows -->
+          <rect x="69" y="99" width="14" height="10" rx="2" fill="#64B5F6"/>
+          <rect x="91" y="99" width="14" height="10" rx="2" fill="#64B5F6"/>
+          <rect x="113" y="99" width="14" height="10" rx="2" fill="#64B5F6"/>
+          <!-- Mast/antenna -->
+          <rect x="95" y="78" width="6" height="18" fill="#0D2B5E"/>
+          <!-- Sea lion body -->
+          <ellipse cx="98" cy="124" rx="30" ry="13" fill="#07183A" transform="rotate(-8,98,124)"/>
+          <!-- Sea lion head -->
+          <ellipse cx="120" cy="112" rx="13" ry="11" fill="#07183A"/>
+          <!-- Sea lion snout -->
+          <ellipse cx="131" cy="109" rx="7" ry="4.5" fill="#07183A" transform="rotate(-18,131,109)"/>
+          <!-- Flipper -->
+          <path d="M 88 127 Q 73 113 67 117 Q 70 131 84 132 Z" fill="#07183A"/>
+          <!-- Tail/rear flipper -->
+          <path d="M 70 129 Q 60 140 65 148 L 82 138 Z" fill="#07183A"/>
+          <!-- Water waves -->
+          <path d="M 8 142 Q 33 132 58 142 Q 83 152 100 142 Q 117 132 142 142 Q 165 152 192 142" stroke="#90CAF9" stroke-width="2.5" fill="none"/>
+          <path d="M 8 152 Q 33 142 58 152 Q 83 162 100 152 Q 117 142 142 152 Q 165 162 192 152" stroke="#90CAF9" stroke-width="2" fill="none" opacity="0.65"/>
+          <!-- Banner background -->
+          <rect x="18" y="168" width="164" height="26" rx="5" fill="#0D2B5E"/>
+          <!-- Banner text -->
+          <text x="100" y="186" text-anchor="middle" fill="white" font-family="Arial,Helvetica,sans-serif" font-size="12.5" font-weight="bold" letter-spacing="1.5">ECOCRUCEROS</text>
+        </g>
+        <!-- Circle border -->
+        <circle cx="100" cy="100" r="94" fill="none" stroke="#0D2B5E" stroke-width="6"/>
+      </svg>
       <div class="nav-logo-text">
         <span class="brand">Ecocruceros</span>
         <span class="sub">Islas Palomino · Lima · Perú</span>
@@ -1536,29 +1583,24 @@
       </h2>
     </div>
     <div class="gallery-mosaic">
-      <!-- Main hero image — group of sea lions on rocks (confirmed Unsplash: SK3MQJKtuV0) -->
       <div class="g-item">
-        <img class="g-img" src="https://images.unsplash.com/photo-SK3MQJKtuV0?w=900&q=85&fit=crop" alt="Group of sea lions resting on rocks at Palomino Islands" loading="lazy" />
+        <img class="g-img" src="https://source.unsplash.com/Ic7QpreflaU/900x600" alt="Group of sea lions resting on rocks at Palomino Islands" loading="lazy" />
         <div class="g-veil"></div>
       </div>
-      <!-- Sea lions swimming in the ocean (confirmed Unsplash: qtGehnUM29E) -->
       <div class="g-item">
-        <img class="g-img" src="https://images.unsplash.com/photo-qtGehnUM29E?w=600&q=82&fit=crop" alt="Group of sea lions swimming in the Pacific Ocean" loading="lazy" />
+        <img class="g-img" src="https://source.unsplash.com/5gOBhIuRrtE/600x400" alt="Sea lions on rocky coastal cliffs in the Pacific" loading="lazy" />
         <div class="g-veil"></div>
       </div>
-      <!-- Sea lion swimming in water (confirmed Unsplash: mVnsNs28n6Y) -->
       <div class="g-item">
-        <img class="g-img" src="https://images.unsplash.com/photo-mVnsNs28n6Y?w=600&q=82&fit=crop" alt="Sea lion swimming in the Pacific waters near Palomino" loading="lazy" />
+        <img class="g-img" src="https://source.unsplash.com/_X3qm6HMQRo/600x400" alt="Sea lion swimming in the Pacific Ocean" loading="lazy" />
         <div class="g-veil"></div>
       </div>
-      <!-- Sea lion swimming with head above water (confirmed Unsplash: R_1ObzqM5aI) -->
       <div class="g-item">
-        <img class="g-img" src="https://images.unsplash.com/photo-R_1ObzqM5aI?w=600&q=82&fit=crop" alt="Sea lion swimming with head above the Pacific Ocean surface" loading="lazy" />
+        <img class="g-img" src="https://source.unsplash.com/uObolpEZuNk/600x400" alt="Sea lion resting on a rock by the ocean" loading="lazy" />
         <div class="g-veil"></div>
       </div>
-      <!-- Sea lion resting on coastal rocks (confirmed Unsplash: QKNsTJoD6_k) -->
       <div class="g-item">
-        <img class="g-img" src="https://images.unsplash.com/photo-QKNsTJoD6_k?w=600&q=82&fit=crop" alt="Sea lion sitting on coastal rocks by the ocean" loading="lazy" />
+        <img class="g-img" src="https://source.unsplash.com/en7-kDBZKyo/600x400" alt="Swimmers enjoying the ocean near Palomino Islands, Peru" loading="lazy" />
         <div class="g-veil"></div>
       </div>
     </div>
@@ -1751,7 +1793,36 @@
     <div class="footer-grid">
       <div class="footer-brand">
         <div class="logo-row">
-          <div class="emblem">🌊</div>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="48" height="48" aria-label="Ecocruceros logo">
+            <defs>
+              <clipPath id="lf"><circle cx="100" cy="100" r="94"/></clipPath>
+            </defs>
+            <circle cx="100" cy="100" r="96" fill="#F5A800"/>
+            <g clip-path="url(#lf)">
+              <polygon points="100,0 145,0 200,55 200,100" fill="#FFD44A" opacity="0.55"/>
+              <polygon points="155,0 200,0 200,45" fill="#FFE07A" opacity="0.5"/>
+              <polygon points="50,0 100,0 200,100 200,150" fill="#FFD44A" opacity="0.35"/>
+              <polygon points="0,0 50,0 200,150 200,200 150,200" fill="#FFCA30" opacity="0.3"/>
+              <path d="M 0 118 L 200 118 L 200 200 L 0 200 Z" fill="#1565C0"/>
+              <path d="M 0 118 Q 25 108 50 118 Q 75 128 100 118 Q 125 108 150 118 Q 175 128 200 118" fill="#42A5F5" opacity="0.6"/>
+              <path d="M 42 115 L 158 115 L 148 130 L 52 130 Z" fill="#0D2B5E"/>
+              <rect x="62" y="94" width="76" height="23" rx="2" fill="#0D2B5E"/>
+              <rect x="69" y="99" width="14" height="10" rx="2" fill="#64B5F6"/>
+              <rect x="91" y="99" width="14" height="10" rx="2" fill="#64B5F6"/>
+              <rect x="113" y="99" width="14" height="10" rx="2" fill="#64B5F6"/>
+              <rect x="95" y="78" width="6" height="18" fill="#0D2B5E"/>
+              <ellipse cx="98" cy="124" rx="30" ry="13" fill="#07183A" transform="rotate(-8,98,124)"/>
+              <ellipse cx="120" cy="112" rx="13" ry="11" fill="#07183A"/>
+              <ellipse cx="131" cy="109" rx="7" ry="4.5" fill="#07183A" transform="rotate(-18,131,109)"/>
+              <path d="M 88 127 Q 73 113 67 117 Q 70 131 84 132 Z" fill="#07183A"/>
+              <path d="M 70 129 Q 60 140 65 148 L 82 138 Z" fill="#07183A"/>
+              <path d="M 8 142 Q 33 132 58 142 Q 83 152 100 142 Q 117 132 142 142 Q 165 152 192 142" stroke="#90CAF9" stroke-width="2.5" fill="none"/>
+              <path d="M 8 152 Q 33 142 58 152 Q 83 162 100 152 Q 117 142 142 152 Q 165 162 192 152" stroke="#90CAF9" stroke-width="2" fill="none" opacity="0.65"/>
+              <rect x="18" y="168" width="164" height="26" rx="5" fill="#0D2B5E"/>
+              <text x="100" y="186" text-anchor="middle" fill="white" font-family="Arial,Helvetica,sans-serif" font-size="12.5" font-weight="bold" letter-spacing="1.5">ECOCRUCEROS</text>
+            </g>
+            <circle cx="100" cy="100" r="94" fill="none" stroke="#0D2B5E" stroke-width="6"/>
+          </svg>
           <strong>Ecocruceros</strong>
         </div>
         <p>
