@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-lang="en">
+<html lang="es" data-lang="es">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -1039,8 +1039,8 @@
     </a>
     <div class="nav-right">
       <div class="lang-toggle">
-        <button class="lang-btn active" id="btn-en" onclick="setLang('en')">EN</button>
-        <button class="lang-btn"        id="btn-es" onclick="setLang('es')">ES</button>
+        <button class="lang-btn"        id="btn-en" onclick="setLang('en')">EN</button>
+        <button class="lang-btn active" id="btn-es" onclick="setLang('es')">ES</button>
       </div>
       <a href="#book" class="nav-book">
         <span class="t-en">Book Now</span>
@@ -1811,6 +1811,7 @@
         </p>
         <div class="footer-socials">
           <a href="https://www.facebook.com/ECOCRUCEROS/" target="_blank" class="social-a"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://www.instagram.com/ecocruceros_oficial/" target="_blank" class="social-a"><i class="fab fa-instagram"></i></a>
           <a href="https://wa.me/51986671093" target="_blank" class="social-a"><i class="fab fa-whatsapp"></i></a>
         </div>
       </div>
@@ -1882,6 +1883,9 @@
         <span class="t-es">Orgullo del ecoturismo peruano</span>
       </span>
     </div>
+    <div style="text-align:center; padding: 12px 0 4px; font-size: 11px; color: rgba(255,255,255,.2);">
+      Developed by Locale Americas
+    </div>
   </footer>
 
   <!-- ════════════════════════════
@@ -1910,7 +1914,7 @@
       document.getElementById('btn-en').classList.toggle('active', lang === 'en');
       document.getElementById('btn-es').classList.toggle('active', lang === 'es');
     }
-    setLang('en'); // initialize explicitly so inline styles override CSS
+    setLang('es'); // initialize explicitly so inline styles override CSS
 
     /* ── SMOOTH SCROLL ── */
     document.querySelectorAll('a[href^="#"]').forEach(a => {
