@@ -249,7 +249,7 @@
     .hero-bg {
       position: absolute;
       inset: 0;
-      background-image: url('https://images.pexels.com/photos/3802664/pexels-photo-3802664.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&dpr=1');
+      background-image: url('images/hero.jpg');
       background-size: cover;
       background-position: center 40%;
       animation: slowZoom 20s ease-in-out infinite alternate;
@@ -711,13 +711,13 @@
     .gallery-intro { padding: 0 48px; }
     .gallery-mosaic {
       display: grid;
-      grid-template-columns: repeat(4,1fr);
-      grid-template-rows: 260px 260px;
+      grid-template-columns: 2fr 1fr 1fr;
+      grid-template-rows: 300px 220px;
       gap: 3px;
       margin-top: 48px;
     }
     .g-item { overflow: hidden; position: relative; }
-    .g-item:first-child { grid-column: span 2; grid-row: span 2; }
+    .g-item:first-child { grid-column: 1; grid-row: span 2; }
     .g-img {
       width: 100%; height: 100%;
       object-fit: cover;
@@ -949,7 +949,7 @@
       .pricing-grid { grid-template-columns: 1fr; max-width: 400px; margin: 0 auto; }
       .price-card.featured { transform: none; }
       .reviews-grid { grid-template-columns: 1fr; max-width: 520px; margin: 0 auto; }
-      .gallery-mosaic { grid-template-columns: repeat(2,1fr); grid-template-rows: 220px 220px 220px; }
+      .gallery-mosaic { grid-template-columns: repeat(2,1fr); grid-template-rows: 240px 200px; }
       .g-item:first-child { grid-column: span 2; grid-row: span 1; }
       .practical-grid { grid-template-columns: 1fr; }
       .footer-grid { grid-template-columns: 1fr 1fr; }
@@ -970,8 +970,8 @@
       .book-actions { flex-direction: column; align-items: center; }
       .footer-grid { grid-template-columns: 1fr; }
       .gallery-intro { padding: 0 20px; }
-      .gallery-mosaic { grid-template-columns: 1fr 1fr; grid-template-rows: repeat(4,180px); }
-      .g-item:first-child { grid-column: span 2; }
+      .gallery-mosaic { grid-template-columns: 1fr 1fr; grid-template-rows: repeat(3,180px); }
+      .g-item:first-child { grid-column: span 2; grid-row: span 1; }
       footer { padding: 48px 20px 20px; }
       #book { padding: 72px 20px; }
     }
@@ -1157,12 +1157,12 @@
           <div class="step-circle">1</div>
           <div class="journey-body">
             <h3>
-              <span class="t-en">Hotel Pickup & Departure from La Punta, Callao</span>
-              <span class="t-es">Recojo en Hotel y Salida desde La Punta, Callao</span>
+              <span class="t-en">Departure from La Punta, Callao</span>
+              <span class="t-es">Salida desde La Punta, Callao</span>
             </h3>
             <p>
-              <span class="t-en">Board at our exclusive private pier — just 10 minutes from Plaza Grau. Hotel pickup is available from Miraflores, San Isidro, or Downtown Lima. Your bilingual guide walks you through the day as we leave the bay.</span>
-              <span class="t-es">Embarca en nuestro muelle privado exclusivo — a solo 10 minutos de Plaza Grau. Recojo en hotel disponible desde Miraflores, San Isidro o el Centro de Lima. Tu guía bilingüe te presenta el recorrido mientras salimos de la bahía.</span>
+              <span class="t-en">Board at our exclusive private pier — just 10 minutes from Plaza Grau. Your bilingual guide walks you through the day as we leave the bay.</span>
+              <span class="t-es">Embarca en nuestro muelle privado exclusivo — a solo 10 minutos de Plaza Grau. Tu guía bilingüe te presenta el recorrido mientras salimos de la bahía.</span>
             </p>
             <div class="pill-row">
               <span class="pill pill-teal"><i class="fas fa-ship"></i>
@@ -1170,9 +1170,6 @@
               </span>
               <span class="pill pill-ocean"><i class="fas fa-language"></i>
                 <span class="t-en">Bilingual guide</span><span class="t-es">Guía bilingüe</span>
-              </span>
-              <span class="pill pill-teal"><i class="fas fa-shuttle-van"></i>
-                <span class="t-en">Hotel pickup available</span><span class="t-es">Recojo en hotel disponible</span>
               </span>
             </div>
           </div>
@@ -1584,23 +1581,19 @@
     </div>
     <div class="gallery-mosaic">
       <div class="g-item">
-        <img class="g-img" src="https://images.pexels.com/photos/3802664/pexels-photo-3802664.jpeg?auto=compress&cs=tinysrgb&w=900&h=600&dpr=1" alt="Group of sea lions resting on rocks at Palomino Islands" loading="lazy" />
+        <img class="g-img" src="images/gallery/swimming-sea-lions.jpg" alt="Tourists swimming with sea lions at Palomino Islands, Lima Peru" loading="lazy" />
         <div class="g-veil"></div>
       </div>
       <div class="g-item">
-        <img class="g-img" src="https://images.pexels.com/photos/3802643/pexels-photo-3802643.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&dpr=1" alt="Group of sea lions swimming in the Pacific Ocean" loading="lazy" />
+        <img class="g-img" src="images/gallery/sea-lions-colony.jpg" alt="Sea lion colony and Humboldt penguins on rocky shore at Palomino Islands" loading="lazy" />
         <div class="g-veil"></div>
       </div>
       <div class="g-item">
-        <img class="g-img" src="https://images.pexels.com/photos/2539796/pexels-photo-2539796.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&dpr=1" alt="Humboldt penguins on the rocky shores of the Palomino Islands" loading="lazy" />
+        <img class="g-img" src="images/gallery/tour-in-water.jpg" alt="Ecocruceros tour group swimming with sea lions in the Pacific Ocean" loading="lazy" />
         <div class="g-veil"></div>
       </div>
       <div class="g-item">
-        <img class="g-img" src="https://images.pexels.com/photos/163236/luxury-yacht-boat-speed-water-163236.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&dpr=1" alt="Private yacht cruising the Pacific Ocean near Lima, Peru" loading="lazy" />
-        <div class="g-veil"></div>
-      </div>
-      <div class="g-item">
-        <img class="g-img" src="https://images.pexels.com/photos/1001682/pexels-photo-1001682.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&dpr=1" alt="Sea lion swimming with head above the Pacific Ocean surface" loading="lazy" />
+        <img class="g-img" src="images/gallery/penguins-cliff.jpg" alt="Humboldt penguins and cormorants on coastal cliffs near Palomino Islands" loading="lazy" />
         <div class="g-veil"></div>
       </div>
     </div>
@@ -1650,18 +1643,6 @@
                 <div class="info-val">
                   <span class="t-en">3.5 – 6.5 hours · Prior reservation required</span>
                   <span class="t-es">3.5 – 6.5 horas · Reserva previa requerida</span>
-                </div>
-              </div>
-            </li>
-            <li class="info-row">
-              <div class="info-ico"><i class="fas fa-shuttle-van"></i></div>
-              <div>
-                <div class="info-lbl">
-                  <span class="t-en">Hotel pickup</span><span class="t-es">Recojo en hotel</span>
-                </div>
-                <div class="info-val">
-                  <span class="t-en">Available from Miraflores, San Isidro & Downtown Lima</span>
-                  <span class="t-es">Disponible desde Miraflores, San Isidro y Centro de Lima</span>
                 </div>
               </div>
             </li>
