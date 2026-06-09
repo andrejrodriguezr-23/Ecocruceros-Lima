@@ -1,0 +1,50 @@
+/* ============================================================
+   Ecocruceros — Design Tokens (Phase 5)
+   Concept: "El Pacífico de La Punta" — deep Humboldt palette
+   ============================================================ */
+:root {
+  /* --- Primitive colors --- */
+  --c-navy-900:#06222F; --c-navy-800:#0B2A3A; --c-navy-700:#103B50;
+  --c-cyan-600:#0C7FB0; --c-cyan-500:#19A7DE; --c-cyan-100:#E2F4FB;
+  --c-sun-600:#D8641A;  --c-sun-500:#F08A24;  --c-sun-100:#FDEBD6;
+  --c-foam-50:#F7FAFB;  --c-sand-50:#FBF7F0;
+  --c-ink-600:#41525B;  --c-line-200:#D7E2E8; --c-white:#FFFFFF;
+  --c-wa-green:#25D366; --c-wa-green-d:#0A7C42;
+
+  /* --- Semantic --- */
+  --bg:var(--c-foam-50); --bg-warm:var(--c-sand-50); --bg-dark:var(--c-navy-900);
+  --surface:var(--c-white); --surface-info:var(--c-cyan-100);
+  --text:var(--c-navy-800); --text-secondary:var(--c-ink-600);
+  --text-on-dark:#EAF4F8; --text-on-dark-soft:#B8CDD6;
+  --primary:var(--c-cyan-600); --primary-strong:var(--c-navy-800);
+  --accent:var(--c-sun-600); --border:var(--c-line-200);
+  --wa-bg:var(--c-wa-green-d); --wa-bg-hover:#0C8E4C; --wa-text:var(--c-white); --wa-glow:var(--c-wa-green);
+  --focus-ring:var(--c-sun-600);
+
+  /* --- Typography --- */
+  --font-display:"Fraunces","Georgia","Times New Roman",serif;
+  --font-body:"Hanken Grotesk","Segoe UI",system-ui,-apple-system,sans-serif;
+  --fs-display:clamp(2.5rem,7vw,4.5rem);
+  --fs-h1:clamp(2rem,5vw,3rem);
+  --fs-h2:clamp(1.5rem,3.5vw,2.25rem);
+  --fs-h3:clamp(1.25rem,2.5vw,1.5rem);
+  --fs-body-lg:1.125rem; --fs-body:1rem; --fs-small:.875rem; --fs-eyebrow:.8125rem;
+
+  /* --- Spacing (8pt) --- */
+  --space-1:4px; --space-2:8px; --space-3:12px; --space-4:16px; --space-6:24px;
+  --space-8:32px; --space-12:48px; --space-16:64px; --space-24:96px; --space-32:128px;
+
+  /* --- Radius / shadow / layout --- */
+  --radius:14px; --radius-sm:10px; --radius-pill:999px;
+  --shadow-1:0 1px 2px rgba(6,34,47,.06);
+  --shadow-2:0 8px 24px -8px rgba(6,34,47,.18);
+  --shadow-3:0 16px 40px -12px rgba(6,34,47,.28);
+  --container:1200px; --measure:65ch;
+
+  /* --- Motion --- */
+  --ease-out:cubic-bezier(.16,1,.3,1); --ease-in:cubic-bezier(.4,0,1,1);
+  --dur-micro:180ms; --dur-base:260ms; --dur-enter:360ms;
+
+  /* --- z-index scale --- */
+  --z-base:0; --z-sticky:40; --z-header:100; --z-drawer:200; --z-modal:1000;
+}
