@@ -1,0 +1,61 @@
+---
+permalink: /tour/precios/
+title: "Precios y reservas del tour"
+description: "Precios del tour a las Islas Palomino para residentes (desde S/179) y extranjeros (desde US$69). Reserva sin pago en línea, todo por WhatsApp."
+---
+{% set t = i18n[lang] %}
+
+<section class="section section--warm">
+  <div class="container">
+    <nav class="breadcrumbs" aria-label="breadcrumb"><a href="/">Inicio</a><span>›</span><a href="/tour/">El Tour</a><span>›</span> Precios</nav>
+    <p class="eyebrow" style="margin-top:var(--space-4)">Precios</p>
+    <h1>Precios transparentes, sin sorpresas</h1>
+    <p class="lead">Tarifas para residentes en Perú y para visitantes extranjeros. La tarifa SERNANP se paga aparte.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container" data-price-tabs>
+    <div class="price-tabs" role="tablist" aria-label="Tipo de tarifa">
+      <button role="tab" id="tab-res" aria-controls="panel-res" aria-selected="true">Residentes (S/)</button>
+      <button role="tab" id="tab-ext" aria-controls="panel-ext" aria-selected="false">Extranjeros (US$)</button>
+    </div>
+
+    <div role="tabpanel" id="panel-res" aria-labelledby="tab-res">
+      <table class="price-table tnum">
+        <tbody>
+        {% for row in site.pricing.residents %}
+          <tr><td>{{ row.who_es }}{% if row.note_es %} <small>({{ row.note_es }})</small>{% endif %}</td><td>{{ row.price or row.price_es }}</td></tr>
+        {% endfor %}
+        </tbody>
+      </table>
+      <p class="price-note">{{ site.pricing.extra_es }}</p>
+    </div>
+
+    <div role="tabpanel" id="panel-ext" aria-labelledby="tab-ext" hidden>
+      <table class="price-table tnum">
+        <tbody>
+        {% for row in site.pricing.foreigners %}
+          <tr><td>{{ row.who_es }}{% if row.note_es %} <small>({{ row.note_es }})</small>{% endif %}</td><td>{{ row.price }}</td></tr>
+        {% endfor %}
+        </tbody>
+      </table>
+      <p class="price-note">{{ site.pricing.extra_es }}</p>
+    </div>
+
+    <p style="margin-top:var(--space-3);color:var(--text-secondary)">Coordinamos disponibilidad y pago por WhatsApp.</p>
+  </div>
+</section>
+
+<section class="section section--warm">
+  <div class="container">
+    <p class="eyebrow">Cómo reservar</p>
+    <h2>Tu reserva en 4 pasos</h2>
+    <div class="steps" style="margin-top:var(--space-8)">
+      <div class="step"><strong>Escríbenos</strong><p>Indícanos la fecha y el tamaño de tu grupo por WhatsApp.</p></div>
+      <div class="step"><strong>Confirmamos</strong><p>Te confirmamos disponibilidad y la información de pago.</p></div>
+      <div class="step"><strong>Datos de pasajeros</strong><p>Envías nombres, edades, documentos y nacionalidades.</p></div>
+      <div class="step"><strong>¡Listo!</strong><p>Tras el pago te enviamos la dirección de embarque.</p></div>
+    </div>
+  </div>
+</section>

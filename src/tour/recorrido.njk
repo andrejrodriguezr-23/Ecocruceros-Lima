@@ -1,0 +1,35 @@
+---
+permalink: /tour/recorrido/
+title: "Recorrido e itinerario del tour"
+description: "El recorrido del tour a las Islas Palomino: La Punta, El Camotal, San Lorenzo, El Frontón, Cavinzas y Palomino. Historia y fauna en cada parada."
+---
+{% set t = i18n[lang] %}
+
+<section class="section section--warm">
+  <div class="container">
+    <nav class="breadcrumbs" aria-label="breadcrumb"><a href="/">Inicio</a><span>›</span><a href="/tour/">El Tour</a><span>›</span> Recorrido</nav>
+    <p class="eyebrow" style="margin-top:var(--space-4)">Recorrido</p>
+    <h1>Seis paradas, una travesía inolvidable</h1>
+    <p class="lead">Cada salida recorre la bahía del Callao, con su historia y su fauna, hasta llegar a las Islas Palomino.</p>
+    <div class="asset-pending" style="margin-top:var(--space-6)">{{ t.assetPending }} · mapa del recorrido (a crear con las paradas verificadas)</div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="grid cols-2">
+      {% for stop in site.route %}
+      <article class="card reveal"><div class="card__body">
+        <p class="eyebrow">Parada {{ loop.index }}</p>
+        <h3>{{ stop.es }}</h3>
+        <p>{{ stop.desc_es }}</p>
+      </div></article>
+      {% endfor %}
+    </div>
+    <div style="margin-top:var(--space-8)">
+      <h3>Duración y logística</h3>
+      <p>Duración aproximada: 3–4 horas. Las salidas son <strong>previa reserva</strong> (sin horario fijo). La dirección exacta de embarque se comparte al confirmar tu reserva.</p>
+      <p style="margin-top:var(--space-2)"><span class="pending">{{ t.pending }} — dirección de embarque y antelación de reserva (B5, B10)</span></p>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,33 @@
+---
+permalink: /contacto/
+title: "Contacto"
+description: "Reserva tu tour a las Islas Palomino por WhatsApp (+51 986 671 093). También por correo. La Punta, Callao, Perú."
+---
+{% set t = i18n[lang] %}
+
+<section class="section">
+  <div class="container">
+    <nav class="breadcrumbs" aria-label="breadcrumb"><a href="/">Inicio</a><span>›</span> Contacto</nav>
+    <p class="eyebrow" style="margin-top:var(--space-4)">Contacto</p>
+    <h1>Hablemos por WhatsApp</h1>
+    <p class="lead">La forma más rápida de reservar y resolver dudas. {{ t.weReply }}.</p>
+
+    <div class="grid cols-2" style="margin-top:var(--space-8)">
+      <div class="card"><div class="card__body stack">
+        <h3>WhatsApp</h3>
+        <p style="font-size:1.25rem;font-weight:600;color:var(--text)">{{ site.whatsappDisplay }}</p>
+        <p style="color:var(--text-secondary)">🕐 {{ t.hours }}.</p>
+      </div></div>
+      <div class="card"><div class="card__body stack">
+        <h3>Otros canales</h3>
+        <p>Correo: <a href="mailto:{{ site.email }}">{{ site.email }}</a></p>
+        <p>Ubicación: {{ site.location }}<br><small>La dirección exacta de embarque se comparte al reservar. <span class="pending">{{ t.pending }} (E4)</span></small></p>
+        <p>Redes:
+          <a href="{{ site.social.facebook }}" rel="noopener" target="_blank">Facebook</a> ·
+          <a href="{{ site.social.instagram }}" rel="noopener" target="_blank">Instagram</a> ·
+          <a href="{{ site.social.youtube }}" rel="noopener" target="_blank">YouTube</a>
+        </p>
+      </div></div>
+    </div>
+  </div>
+</section>

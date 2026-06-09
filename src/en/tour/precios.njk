@@ -1,0 +1,50 @@
+---
+permalink: /en/tour/precios/
+title: "Pricing & booking"
+description: "Palomino Islands tour pricing for residents (from S/179) and visitors (from US$69). No online payment — everything by WhatsApp."
+---
+{% set t = i18n[lang] %}
+
+<section class="section section--warm">
+  <div class="container">
+    <nav class="breadcrumbs" aria-label="breadcrumb"><a href="/en/">Home</a><span>›</span><a href="/en/tour/">The Tour</a><span>›</span> Pricing</nav>
+    <p class="eyebrow" style="margin-top:var(--space-4)">Pricing</p>
+    <h1>Transparent pricing, no surprises</h1>
+    <p class="lead">Rates for residents in Peru and for international visitors. The SERNANP fee is paid separately.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container" data-price-tabs>
+    <div class="price-tabs" role="tablist" aria-label="Rate type">
+      <button role="tab" id="tab-res" aria-controls="panel-res" aria-selected="true">Residents (S/)</button>
+      <button role="tab" id="tab-ext" aria-controls="panel-ext" aria-selected="false">Visitors (US$)</button>
+    </div>
+    <div role="tabpanel" id="panel-res" aria-labelledby="tab-res">
+      <table class="price-table tnum"><tbody>
+        {% for row in site.pricing.residents %}<tr><td>{{ row.who_en }}{% if row.note_en %} <small>({{ row.note_en }})</small>{% endif %}</td><td>{{ row.price or row.price_en }}</td></tr>{% endfor %}
+      </tbody></table>
+      <p class="price-note">{{ site.pricing.extra_en }}</p>
+    </div>
+    <div role="tabpanel" id="panel-ext" aria-labelledby="tab-ext" hidden>
+      <table class="price-table tnum"><tbody>
+        {% for row in site.pricing.foreigners %}<tr><td>{{ row.who_en }}{% if row.note_en %} <small>({{ row.note_en }})</small>{% endif %}</td><td>{{ row.price }}</td></tr>{% endfor %}
+      </tbody></table>
+      <p class="price-note">{{ site.pricing.extra_en }}</p>
+    </div>
+    <p style="margin-top:var(--space-3);color:var(--text-secondary)">We arrange availability and payment via WhatsApp.</p>
+  </div>
+</section>
+
+<section class="section section--warm">
+  <div class="container">
+    <p class="eyebrow">How to book</p>
+    <h2>Your booking in 4 steps</h2>
+    <div class="steps" style="margin-top:var(--space-8)">
+      <div class="step"><strong>Message us</strong><p>Tell us your date and group size on WhatsApp.</p></div>
+      <div class="step"><strong>We confirm</strong><p>We confirm availability and payment details.</p></div>
+      <div class="step"><strong>Passenger details</strong><p>You send names, ages, IDs and nationalities.</p></div>
+      <div class="step"><strong>Done!</strong><p>After payment we send the boarding address.</p></div>
+    </div>
+  </div>
+</section>

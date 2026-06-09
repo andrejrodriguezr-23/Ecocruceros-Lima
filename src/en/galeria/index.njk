@@ -1,0 +1,22 @@
+---
+permalink: /en/galeria/
+title: "Gallery"
+description: "Real photos and videos of the Palomino Islands voyage: sea lions, the yacht, the route and our guests."
+---
+{% set t = i18n[lang] %}
+
+<section class="section">
+  <div class="container">
+    <nav class="breadcrumbs" aria-label="breadcrumb"><a href="/en/">Home</a><span>›</span> Gallery</nav>
+    <p class="eyebrow" style="margin-top:var(--space-4)">Gallery</p>
+    <h1>The experience, in real images</h1>
+    <p class="lead">We only use authentic photos and videos from our voyages.</p>
+    <div class="gallery-grid" style="margin-top:var(--space-8)">
+      {% for n in [1,2,3,4,5,6] %}<div class="asset-pending">{{ t.assetPending }} · photo {{ n }} (D3/D5)</div>{% endfor %}
+    </div>
+    <div style="margin-top:var(--space-8)">
+      <h2>Video</h2>
+      <p>See more on our YouTube channel: <a href="{{ site.social.youtube }}" rel="noopener" target="_blank">@ecocruceros8644</a>.</p>
+    </div>
+  </div>
+</section>

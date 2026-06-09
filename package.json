@@ -1,0 +1,14 @@
+{
+  "name": "ecocruceros-web",
+  "version": "0.1.0",
+  "description": "Ecocruceros — bilingual marine ecotourism website (plain static HTML via Eleventy)",
+  "private": true,
+  "scripts": {
+    "dev": "eleventy --serve",
+    "build": "eleventy",
+    "clean": "node -e \"require('fs').rmSync('_site',{recursive:true,force:true})\""
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^3.0.0"
+  }
+}

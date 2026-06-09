@@ -1,0 +1,78 @@
+{% set t = i18n[lang] %}
+{% set p = "/en" if lang == "en" else "" %}
+{% set home = (p + "/") %}
+<header class="site-header">
+  <div class="container site-header__inner">
+    <a class="brand" href="{{ home }}">
+      <img class="brand__img" src="/assets/img/logo_ecocruceros.jpeg" alt="Ecocruceros — Islas Palomino">
+      <span class="brand__txt">{{ site.brandLine }}<small class="brand__sub">La Punta, Callao</small></span>
+    </a>
+
+    <nav class="primary-nav" aria-label="{{ t.nav.home }}">
+      <a href="{{ p }}/" {% if page.url == home %}aria-current="page"{% endif %}>{{ t.nav.home }}</a>
+
+      <div class="nav-group" data-open="false">
+        <button aria-haspopup="true" aria-expanded="false">{{ t.nav.tour }} ▾</button>
+        <div class="nav-group__menu">
+          <a href="{{ p }}/tour/">{{ t.nav.tour }}</a>
+          <a href="{{ p }}/tour/recorrido/">{{ t.nav.route }}</a>
+          <a href="{{ p }}/tour/precios/">{{ t.nav.pricing }}</a>
+          <a href="{{ p }}/tour/seguridad/">{{ t.nav.safety }}</a>
+        </div>
+      </div>
+
+      <a href="{{ p }}/nosotros/">{{ t.nav.about }}</a>
+
+      <div class="nav-group" data-open="false">
+        <button aria-haspopup="true" aria-expanded="false">{{ t.nav.sustain }} ▾</button>
+        <div class="nav-group__menu">
+          <a href="{{ p }}/sostenibilidad/">{{ t.nav.sustain }}</a>
+          <a href="{{ p }}/sostenibilidad/certificaciones/">{{ t.nav.certs }}</a>
+        </div>
+      </div>
+
+      <a href="{{ p }}/galeria/">{{ t.nav.gallery }}</a>
+      <a href="{{ p }}/faq/">{{ t.nav.faq }}</a>
+      <a href="{{ p }}/contacto/">{{ t.nav.contact }}</a>
+    </nav>
+
+    <div class="header-actions">
+      <div class="lang-switch" role="group" aria-label="{{ t.langLabel }}">
+        <a href="{{ page.url | altLang if lang=='en' else page.url }}" aria-current="{{ 'true' if lang=='es' else 'false' }}" lang="es" aria-label="Español" title="Español">
+          <svg class="flag" viewBox="0 0 36 36" width="24" height="24" aria-hidden="true" focusable="false"><defs><clipPath id="flag-pe"><circle cx="18" cy="18" r="18"/></clipPath></defs><g clip-path="url(#flag-pe)"><rect x="0" width="12" height="36" fill="#D91023"/><rect x="12" width="12" height="36" fill="#fff"/><rect x="24" width="12" height="36" fill="#D91023"/></g></svg>
+        </a>
+        <a href="{{ page.url if lang=='en' else page.url | altLang }}" aria-current="{{ 'true' if lang=='en' else 'false' }}" lang="en" aria-label="English" title="English">
+          <svg class="flag" viewBox="0 0 36 36" width="24" height="24" aria-hidden="true" focusable="false"><defs><clipPath id="flag-us"><circle cx="18" cy="18" r="18"/></clipPath></defs><g clip-path="url(#flag-us)"><rect width="36" height="36" fill="#fff"/><g fill="#B22234"><rect y="0" width="36" height="2.77"/><rect y="5.54" width="36" height="2.77"/><rect y="11.08" width="36" height="2.77"/><rect y="16.62" width="36" height="2.77"/><rect y="22.15" width="36" height="2.77"/><rect y="27.69" width="36" height="2.77"/><rect y="33.23" width="36" height="2.77"/></g><rect width="16" height="15" fill="#3C3B6E"/><g fill="#fff"><circle cx="3" cy="3" r="1"/><circle cx="8" cy="3" r="1"/><circle cx="13" cy="3" r="1"/><circle cx="5.5" cy="6.7" r="1"/><circle cx="10.5" cy="6.7" r="1"/><circle cx="3" cy="10.4" r="1"/><circle cx="8" cy="10.4" r="1"/><circle cx="13" cy="10.4" r="1"/></g></g></svg>
+        </a>
+      </div>
+      <button class="icon-btn nav-toggle" data-nav-toggle aria-expanded="false" aria-controls="drawer" aria-label="{{ t.nav.home }}">
+        <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<aside class="drawer" id="drawer" data-drawer data-open="false" aria-label="{{ t.nav.home }}">
+  <div class="drawer__top">
+    <span style="font-family:var(--font-display);font-size:1.2rem">{{ site.name }}</span>
+    <button class="icon-btn" data-drawer-close aria-label="Cerrar / Close" style="background:transparent;border-color:rgba(255,255,255,.3);color:#fff">
+      <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 6l12 12M18 6L6 18"/></svg>
+    </button>
+  </div>
+  <a href="{{ p }}/">{{ t.nav.home }}</a>
+  <details><summary>{{ t.nav.tour }}</summary>
+    <a href="{{ p }}/tour/">{{ t.nav.tour }}</a>
+    <a href="{{ p }}/tour/recorrido/">{{ t.nav.route }}</a>
+    <a href="{{ p }}/tour/precios/">{{ t.nav.pricing }}</a>
+    <a href="{{ p }}/tour/seguridad/">{{ t.nav.safety }}</a>
+  </details>
+  <a href="{{ p }}/nosotros/">{{ t.nav.about }}</a>
+  <details><summary>{{ t.nav.sustain }}</summary>
+    <a href="{{ p }}/sostenibilidad/">{{ t.nav.sustain }}</a>
+    <a href="{{ p }}/sostenibilidad/certificaciones/">{{ t.nav.certs }}</a>
+  </details>
+  <a href="{{ p }}/galeria/">{{ t.nav.gallery }}</a>
+  <a href="{{ p }}/faq/">{{ t.nav.faq }}</a>
+  <a href="{{ p }}/blog/">{{ t.nav.blog }}</a>
+  <a href="{{ p }}/contacto/">{{ t.nav.contact }}</a>
+</aside>

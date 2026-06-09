@@ -1,0 +1,17 @@
+---
+permalink: /404.html
+title: "Página no encontrada"
+description: "La página que buscas no existe."
+eleventyExcludeFromCollections: true
+---
+{% set t = i18n[lang] %}
+<section class="section center" style="min-height:50vh;display:grid;place-items:center">
+  <div class="container">
+    <p class="eyebrow">Error 404</p>
+    <h1>No encontramos esa página</h1>
+    <p class="lead" style="margin-inline:auto">Pero el mar sigue ahí. Vuelve al inicio o reserva tu tour.</p>
+    <div class="btn-row" style="justify-content:center;margin-top:var(--space-6)">
+      <a class="btn btn--ghost" href="/">Inicio</a>
+    </div>
+  </div>
+</section>

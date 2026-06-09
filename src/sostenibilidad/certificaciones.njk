@@ -1,0 +1,45 @@
+---
+permalink: /sostenibilidad/certificaciones/
+title: "Certificaciones y reconocimientos"
+description: "Green Destinations, Marca Perú, SERNANP, Por la Conservación, ESNNA y más: las certificaciones y premios que respaldan a Ecocruceros."
+---
+{% set t = i18n[lang] %}
+
+<nav class="container breadcrumbs" aria-label="breadcrumb" style="padding-top:var(--space-8)"><a href="/">Inicio</a><span>›</span><a href="/sostenibilidad/">Sostenibilidad</a><span>›</span> Certificaciones</nav>
+
+<section class="section" style="padding-top:var(--space-8)">
+  <div class="container reveal">
+    <p class="eyebrow">Certificaciones</p>
+    <h1>Credenciales que puedes verificar</h1>
+    <p class="lead">No usamos sellos como decoración: cada certificación tiene un significado.</p>
+    <div class="cert-grid" style="margin-top:var(--space-8)">
+      {% for c in site.certs %}
+      <div class="cert">
+        {% if c.verify %}
+        <a class="cert__link" href="{{ c.verify }}" target="_blank" rel="noopener" aria-label="Verificar: {{ c.name }} (se abre en una pestaña nueva)">
+          <div class="cert__logo"><img src="/assets/img/certs/{{ c.img }}" alt="{{ c.name }}" loading="lazy" width="88" height="88"></div>
+          <b>{{ c.name }}</b>
+          <span class="cert__verify">Verificar →</span>
+        </a>
+        {% else %}
+        <div class="cert__logo"><img src="/assets/img/certs/{{ c.img }}" alt="{{ c.name }}" loading="lazy" width="88" height="88"></div>
+        <b>{{ c.name }}</b>
+        <p class="pending" style="margin-top:6px">{{ t.pending }} — detalle/vigencia + enlace (C1)</p>
+        {% endif %}
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="section section--warm">
+  <div class="container reveal">
+    <p class="eyebrow">Reconocimientos</p>
+    <h2>Premios y prensa</h2>
+    <div class="grid cols-2" style="margin-top:var(--space-6)">
+      <div class="card"><div class="card__body"><h3>Premio al turismo sostenible 2025</h3><p>Reconocimiento por promover el turismo sostenible. <span class="pending">{{ t.pending }} — nombre/emisor oficial (C2)</span></p></div></div>
+      <div class="card"><div class="card__body"><h3>PromPerú</h3><p>Destacó nuestros tours a las Islas Palomino (2025). <span class="pending">{{ t.pending }} — enlace (C7)</span></p></div></div>
+    </div>
+    <div class="card" style="margin-top:var(--space-6)"><div class="card__body"><h3>TripAdvisor</h3><p>4.6★ · 193 reseñas · #10 de 97 tours en Lima. <a href="{{ site.tripadvisor.url }}" target="_blank" rel="noopener">Ver perfil →</a></p></div></div>
+  </div>
+</section>
