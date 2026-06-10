@@ -1,11 +1,21 @@
-name: Build and deploy to GitHub Pages
+name: Build and deploy to GitHub Pages (production — MANUAL)
 
-# Rebuilds the Eleventy site and redeploys to GitHub Pages on every push to
-# main (or manually via the Actions tab). No hand-building required.
+# Production deploy. Intentionally MANUAL-ONLY: it does NOT run automatically
+# on pushes to main, so nothing is published until you decide where the new
+# site will live.
+#
+# The production domain is undecided (ecocruceros.com OR another domain the
+# client owns), so this build no longer hardcodes a domain — there is no CNAME
+# file in the repo. When you choose the domain, either:
+#   • add a CNAME file at src/root/CNAME with that domain, or
+#   • set the custom domain under Settings → Pages,
+# then run this workflow manually (Actions → this workflow → "Run workflow").
+#
+# Note: while the staging preview is served from the `gh-pages` branch
+# (Settings → Pages → Source), switch the Pages source back to "GitHub Actions"
+# before running this production deploy.
 
 on:
-  push:
-    branches: [main]
   workflow_dispatch:
 
 # Permissions needed by the official Pages deploy action.
