@@ -118,9 +118,9 @@ eyebrow: "Ecocruceros · La Punta, Callao"
         {% for r in reviews %}
         <div class="review-slide"><article class="review-card">
           <div class="review-stars" title="5 of 5" aria-label="5 out of 5 stars">★★★★★</div>
-          {% if r.title %}<h3 class="review-title">{{ r.title }}</h3>{% endif %}
-          <p class="review-text">“{{ r.text }}”</p>
-          <p class="review-meta">{{ r.name }}{% if r.location %} · {{ r.location }}{% endif %}{% if r.date %} · {{ r.date }}{% endif %}<br><span class="review-source">via TripAdvisor</span></p>
+          {% if r.title_en %}<h3 class="review-title">{{ r.title_en }}</h3>{% endif %}
+          <p class="review-text">“{{ r.text_en }}”</p>
+          <p class="review-meta">{{ r.name }}{% if r.location_en %} · {{ r.location_en }}{% endif %}{% if r.date_en %} · {{ r.date_en }}{% endif %}<br><span class="review-source">via TripAdvisor</span></p>
         </article></div>
         {% endfor %}
       </div>
