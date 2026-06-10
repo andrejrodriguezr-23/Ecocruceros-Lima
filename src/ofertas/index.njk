@@ -1,0 +1,75 @@
+---
+permalink: /ofertas/
+title: "Ofertas y tarifas del tour a las Islas Palomino"
+description: "Tarifas para residentes y extranjeros, descuentos para niños, estudiantes e infantes gratis, y promociones para grupos. Consulta las promociones vigentes por WhatsApp."
+---
+{% set t = i18n[lang] %}
+
+<section class="section section--sea">
+  <div class="container">
+    <nav class="breadcrumbs" aria-label="breadcrumb" style="color:#cfe6f0"><a href="/" style="color:#cfe6f0">Inicio</a><span>›</span> Ofertas</nav>
+    <p class="eyebrow" style="margin-top:var(--space-4)">Ofertas</p>
+    <h1>Tarifas y promociones</h1>
+    <p class="lead">Precios claros para todos, con descuentos para niños, estudiantes y grupos. La tarifa SERNANP se paga aparte.</p>
+    <div class="btn-row" style="margin-top:var(--space-6)">
+      <a class="btn btn--gold btn--lg" data-wa-source="ofertas" href="{{ t.wa.pricing | wa }}">Consultar promociones por WhatsApp</a>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <p class="eyebrow">Residentes en Perú</p>
+    <h2>Tarifas para residentes</h2>
+    <div class="grid cols-3" style="margin-top:var(--space-6)">
+      <div class="offer-card"><div class="offer-body">
+        <h3>Adultos</h3><p class="price-big">S/179 <small>por persona</small></p>
+        <p style="color:var(--text-secondary)">Travesía completa de 4 horas con todo lo incluido.</p>
+      </div></div>
+      <div class="offer-card"><div class="offer-body">
+        <h3>Niños (2–12)</h3><p class="price-big">S/149 <small>por niño</small></p>
+        <p style="color:var(--text-secondary)">Tarifa especial para los más pequeños de la familia.</p>
+      </div></div>
+      <div class="offer-card"><span class="ribbon">Gratis</span><div class="offer-body">
+        <h3>Infantes</h3><p class="price-big">Gratis <small>1 por familia</small></p>
+        <p style="color:var(--text-secondary)">Un infante viaja sin costo por familia.</p>
+      </div></div>
+    </div>
+
+    <p class="eyebrow" style="margin-top:var(--space-12)">Visitantes extranjeros</p>
+    <h2>Tarifas para extranjeros</h2>
+    <div class="grid cols-3" style="margin-top:var(--space-6)">
+      <div class="offer-card"><div class="offer-body">
+        <h3>Adults</h3><p class="price-big">US$69 <small>per person</small></p>
+        <p style="color:var(--text-secondary)">Full 4-hour voyage, everything included.</p>
+      </div></div>
+      <div class="offer-card"><span class="ribbon">−US$10</span><div class="offer-body">
+        <h3>Estudiantes</h3><p class="price-big">US$59 <small>con carné</small></p>
+        <p style="color:var(--text-secondary)">Descuento para estudiantes con carné universitario.</p>
+      </div></div>
+      <div class="offer-card"><div class="offer-body">
+        <h3>Niños (2–12)</h3><p class="price-big">US$49 <small>por niño</small></p>
+        <p style="color:var(--text-secondary)">Tarifa especial para niños.</p>
+      </div></div>
+    </div>
+    <p class="price-note" style="margin-top:var(--space-6);color:var(--text-secondary)">{{ site.pricing.extra_es }}</p>
+  </div>
+</section>
+
+<section class="section section--sky">
+  <div class="container">
+    <div class="grid cols-2" style="align-items:stretch">
+      <div class="card card--top-gold"><div class="card__body stack">
+        <h3>Grupos y empresas</h3>
+        <p>¿Vienen en grupo grande o quieren el yate para ustedes solos? Tenemos servicios privados para cumpleaños, eventos empresariales, bodas y más.</p>
+        <div class="btn-row"><a class="btn btn--ghost" href="/servicios-privados/">Ver servicios privados →</a></div>
+      </div></div>
+      <div class="card card--top"><div class="card__body stack">
+        <h3>Promociones vigentes</h3>
+        <p>Tenemos promociones por temporada y por reserva anticipada. Escríbenos por WhatsApp y te contamos las ofertas disponibles para tu fecha.</p>
+        <p><span class="pending">{{ t.pending }} — promociones de temporada vigentes.</span></p>
+        <div class="btn-row"><a class="btn btn--gold" data-wa-source="ofertas-promos" href="{{ t.wa.pricing | wa }}">Consultar por WhatsApp</a></div>
+      </div></div>
+    </div>
+  </div>
+</section>

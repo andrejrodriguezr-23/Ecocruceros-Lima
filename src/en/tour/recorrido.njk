@@ -19,7 +19,7 @@ description: "The Palomino Islands tour route: La Punta, El Camotal, San Lorenzo
   <div class="container">
     <div class="grid cols-2">
       {% for stop in site.route %}
-      <article class="card reveal"><div class="card__body">
+      <article class="card card--top reveal"><div class="card__body">
         <p class="eyebrow">Stop {{ loop.index }}</p>
         <h3>{{ stop.en }}</h3>
         <p>{{ stop.desc_en }}</p>
@@ -27,9 +27,8 @@ description: "The Palomino Islands tour route: La Punta, El Camotal, San Lorenzo
       {% endfor %}
     </div>
     <div style="margin-top:var(--space-8)">
-      <h3>Duration & logistics</h3>
-      <p>Approximate duration: 3–4 hours. Departures are <strong>by reservation</strong> (no fixed schedule). The exact boarding address is shared once your booking is confirmed.</p>
-      <p style="margin-top:var(--space-2)"><span class="pending">{{ t.pending }} — boarding address and booking lead time (B5, B10)</span></p>
+      <h3>Duration &amp; logistics</h3>
+      <p>Approximate duration: <strong>4 hours</strong>. <strong>Daily departures by reservation</strong> (Mon–Fri 11:30 a. m.; Sat, Sun &amp; holidays 10:00 a. m.). Boarding is from our private pier in La Punta, Callao; the exact address is shared once your booking is confirmed.</p>
     </div>
   </div>
 </section>

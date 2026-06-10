@@ -1,27 +1,52 @@
 ---
 permalink: /galeria/
-title: "Galería"
-description: "Fotos y videos reales de la travesía a las Islas Palomino: lobos marinos, el yate, el recorrido y nuestros pasajeros."
+title: "Galería y videos"
+description: "Fotos y videos reales de la travesía a las Islas Palomino: lobos marinos, el yate y el recorrido. Incluye reportajes de CNN y de El Tour de los Incas."
 ---
 {% set t = i18n[lang] %}
 
-<section class="section">
+<section class="section section--sky">
   <div class="container">
     <nav class="breadcrumbs" aria-label="breadcrumb"><a href="/">Inicio</a><span>›</span> Galería</nav>
     <p class="eyebrow" style="margin-top:var(--space-4)">Galería</p>
     <h1>La experiencia, en imágenes reales</h1>
-    <p class="lead">Solo usamos fotos y videos auténticos de nuestras travesías.</p>
+    <p class="lead">Solo usamos fotos y videos auténticos de nuestras travesías. Haz clic en cualquier foto para ampliarla.</p>
+  </div>
+</section>
 
-    <div class="gallery-grid" style="margin-top:var(--space-8)">
-      {% for n in [1,2,3,4,5,6] %}
+<section class="section">
+  <div class="container">
+    <div class="gallery-grid">
+      {% for n in [1,2,3,4,5,6,7,8] %}
       <div class="asset-pending">{{ t.assetPending }} · foto {{ n }} (D3/D5)</div>
       {% endfor %}
     </div>
+    <p style="margin-top:var(--space-4);color:var(--text-secondary)"><span class="pending">{{ t.pending }} — fotos y videos reales de la galería (D3/D5).</span> Al cargarse, cada imagen tendrá la clase <code>zoomable</code> para ampliarse al hacer clic.</p>
+  </div>
+</section>
 
-    <div style="margin-top:var(--space-8)">
-      <h2>Video</h2>
-      <p>Mira más en nuestro canal de YouTube: <a href="{{ site.social.youtube }}" rel="noopener" target="_blank">@ecocruceros8644</a>.</p>
+<section class="section section--warm">
+  <div class="container">
+    <p class="eyebrow">En los medios</p>
+    <h2>Reportajes sobre Ecocruceros</h2>
+
+    <div class="grid cols-2" style="margin-top:var(--space-6);align-items:start">
+      <div>
+        <div class="embed">
+          <iframe src="https://www.youtube-nocookie.com/embed/{{ site.video.incas }}" title="Reportaje — El Tour de los Incas" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <p class="embed-caption">Reportaje del canal de YouTube <strong>{{ site.video.incasChannel }}</strong>.</p>
+      </div>
+      <div>
+        <div class="embed">
+          <iframe src="https://www.youtube-nocookie.com/embed/{{ site.video.cnn }}" title="Reportaje de CNN (2006)" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <p class="embed-caption">Nuestro trabajo, reconocido en un reportaje de <strong>CNN</strong> (2006).</p>
+      </div>
     </div>
 
+    <div style="margin-top:var(--space-8)">
+      <p>Mira más en nuestro canal de YouTube: <a href="{{ site.social.youtube }}" rel="noopener" target="_blank">@ecocruceros8644</a>.</p>
+    </div>
   </div>
 </section>

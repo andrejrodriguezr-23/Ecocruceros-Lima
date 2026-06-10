@@ -1,0 +1,74 @@
+name: Preview deploy (staging on github.io)
+
+# Publishes an ISOLATED preview of the work-in-progress site for client review.
+#
+# Why this is safe for the live domain:
+#   • It runs ONLY on the development branch (never on main).
+#   • It builds with a path prefix so the site serves from the GitHub project
+#     URL:  https://andrejrodriguezr-23.github.io/Ecocruceros-Lima/
+#   • It DELETES the CNAME file from the build, so this deploy can never claim
+#     or affect the live custom domain ecocruceros.com (which is hosted
+#     elsewhere with the old website).
+#
+# Production (main -> ecocruceros.com) is handled separately by deploy.yml and
+# is untouched by this workflow.
+
+on:
+  push:
+    branches: [claude/zealous-goldberg-0e9phz]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Never run two Pages deploys at once; a newer push supersedes an older one.
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - name: Enable GitHub Pages (GitHub Actions source)
+        uses: actions/configure-pages@v5
+        with:
+          enablement: true
+
+      - name: Install dependencies
+        run: npm ci
+
+      # Build under the project sub-path so assets resolve at /Ecocruceros-Lima/...
+      - name: Build site (preview)
+        run: npx @11ty/eleventy --pathprefix=/Ecocruceros-Lima/
+
+      # Critical: keep the live custom domain out of the preview deploy.
+      - name: Remove custom-domain CNAME from preview
+        run: rm -f _site/CNAME
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

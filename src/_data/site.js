@@ -6,8 +6,27 @@ module.exports = {
   // Confirmed sole booking number (client 2026-06-03). Legacy numbers retired.
   whatsapp: "51986671093",
   whatsappDisplay: "+51 986 671 093",
-  email: "informes@ecocruceros.com",
+  // Client correction (WEEB_CORRECIONES_FINALES): all enquiry/booking email → reservas@
+  email: "reservas@ecocruceros.com",
+  phone: "(01) 226-8530",
   location: "La Punta, Callao, Lima, Perú",
+  // Office (client correction: show a location map, hide bank-account numbers)
+  office: {
+    address: "Av. Arequipa 4964, Of. 202, 2.º piso — Miraflores, Lima, Perú",
+    mapsEmbed: "https://www.google.com/maps?q=Av.%20Arequipa%204964%20Miraflores%20Lima%20Per%C3%BA&output=embed",
+    mapsLink: "https://www.google.com/maps/search/?api=1&query=Av.+Arequipa+4964+Miraflores+Lima"
+  },
+  // Departure schedule (client correction). Tour runs daily, by prior reservation.
+  schedule: [
+    { es: "Lunes a viernes", en: "Monday to Friday", time: "11:30 a. m." },
+    { es: "Sábados, domingos y feriados", en: "Sat, Sun & holidays", time: "10:00 a. m.", note_es: "2:00 p. m. (por confirmar)", note_en: "2:00 p. m. (to confirm)" }
+  ],
+  // Press / featured videos provided by the client
+  video: {
+    cnn: "8su-OCd9VUE",            // CNN report (2006)
+    incas: "jyLkU4to6aY",          // "El Tour de los Incas" YouTube report
+    incasChannel: "El Tour de los Incas"
+  },
   yearsApprox: 30, // "casi 30 años" — exact founding year PENDING (A1)
   social: {
     facebook: "https://www.facebook.com/ECOCRUCEROS",

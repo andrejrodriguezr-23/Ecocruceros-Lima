@@ -1,0 +1,91 @@
+---
+permalink: /servicios-privados/
+title: "Servicios privados — Yate exclusivo para tu grupo"
+description: "Alquila el yate solo para tu grupo: cumpleaños, eventos empresariales, sesiones fotográficas, travesías nocturnas, pesca y buceo en el Callao e Islas Palomino."
+---
+{% set t = i18n[lang] %}
+
+<section class="hero" style="min-height:min(56vh,480px)">
+  <div class="hero__media"><div class="asset-pending" style="height:100%;border:0;border-radius:0">{{ t.assetPending }} · foto de servicio privado (D3)</div></div>
+  <div class="container hero__inner reveal">
+    <p class="eyebrow" style="color:var(--c-mustard-300)">Servicios privados</p>
+    <h1>El yate, sólo para tu grupo</h1>
+    <div class="hero__trust"><span>🎉 Eventos a medida</span><span>· ⏱ Horas adicionales</span><span>· 🍽 Parrilla a bordo</span></div>
+  </div>
+</section>
+
+<nav class="container breadcrumbs" aria-label="breadcrumb"><a href="/">Inicio</a><span>›</span><a href="/tour/">El Tour</a><span>›</span> Servicios privados</nav>
+
+<section class="section">
+  <div class="container reveal">
+    <p class="eyebrow">Una experiencia exclusiva</p>
+    <h2>Vive la travesía a tu manera</h2>
+    <div class="prose justify" style="margin-top:var(--space-4)">
+      <p>El servicio privado es la alternativa ideal para grupos que quieran vivir esta experiencia ellos solos, con la posibilidad de <strong>extender el viaje</strong> tomando horas adicionales.</p>
+      <p>Pueden llevar cosas para comer o, incluso, podemos armar una <strong>parrilla</strong> a bordo del yate.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section section--sky">
+  <div class="container reveal">
+    <p class="eyebrow">Ideal para</p>
+    <h2>Ocasiones que hacemos inolvidables</h2>
+    <div class="tiles" style="margin-top:var(--space-6)">
+      <div class="tile"><b>Cumpleaños</b></div>
+      <div class="tile"><b>Travesías nocturnas</b></div>
+      <div class="tile"><b>Eventos empresariales</b></div>
+      <div class="tile"><b>Sesiones fotográficas</b></div>
+      <div class="tile"><b>Buceo</b></div>
+      <div class="tile"><b>Pesca</b></div>
+    </div>
+    <p style="margin-top:var(--space-4);color:var(--text-secondary)"><span class="pending">{{ t.pending }} — galería de fotos por cada servicio (D3/D5).</span></p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container reveal">
+    <p class="eyebrow">Recorridos</p>
+    <h2>Elige el que mejor se acomode a tu celebración</h2>
+    <div class="grid cols-2" style="margin-top:var(--space-6);align-items:start">
+      <article class="card card--top"><div class="card__body">
+        <h3>Bahía del Callao e Islas San Lorenzo</h3>
+        <p class="justify">Una travesía muy tranquila, recomendada para grupos que buscan compartir en un ambiente relajado, sin preocuparse por marearse. Recorre La Punta y la playa Cantolao, los clubes náuticos, la Escuela Naval, El Camotal, la Isla El Frontón con los restos de la antigua prisión, la Isla San Lorenzo con la Playa Presidencial y la Base Naval, el barco hundido, el puerto del Callao, la Plaza Grau, la Fortaleza del Real Felipe y la playa Chucuito.</p>
+      </div></article>
+      <article class="card card--top-gold"><div class="card__body">
+        <h3>Islas Palomino</h3>
+        <p class="justify">Incluye todo el recorrido anterior y además llega a las Islas Palomino, donde se encuentran los lobos marinos y podrán <strong>nadar con ellos</strong>. Navega por las Islas San Lorenzo, El Frontón, Cavinzas y, finalmente, Palomino. También se observan aves guaneras y pingüinos.</p>
+      </div></article>
+    </div>
+  </div>
+</section>
+
+<section class="section section--warm">
+  <div class="container reveal">
+    <div class="grid cols-2" style="align-items:start">
+      <div class="stack">
+        <p class="eyebrow">Buceo</p>
+        <h2>Inmersión en las Islas Palomino</h2>
+        <p class="justify">En el servicio compartido se realiza una sola inmersión en las Islas Palomino: los buceadores viajan junto con los turistas y, al llegar, mientras el resto observa o nada con los lobos marinos, los buceadores realizan su inmersión con su instructor (unos 40 minutos en promedio) y luego regresan al yate para iniciar el retorno con el grupo.</p>
+        <p><strong>Requisito:</strong> contar con carné original de buceo Scuba de cualquier institución internacional certificada (PADI, CMAS, etc.).</p>
+      </div>
+      <div class="stack">
+        <p class="eyebrow">Pesca</p>
+        <h2>Una jornada en el mar del Callao</h2>
+        <p class="justify">Organizamos salidas de pesca privadas para tu grupo, aprovechando la riqueza del mar frío peruano. Coordinamos horarios y duración según tu preferencia.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section--sea cta-band">
+  <div class="container center reveal">
+    <p class="eyebrow">Cotiza tu evento</p>
+    <h2>Cuéntanos qué quieres celebrar</h2>
+    <p class="lead" style="margin-inline:auto;color:#dff1f8">Escríbenos indicando la <strong>fecha</strong> estimada, el <strong>tipo de celebración</strong>, la <strong>hora de inicio</strong> y la <strong>cantidad de personas</strong>, y te preparamos una cotización a medida.</p>
+    <div class="btn-row" style="justify-content:center;margin-top:var(--space-6)">
+      <a class="btn btn--gold" data-wa-source="privados" href="{{ t.wa.general | wa }}">Cotizar por WhatsApp</a>
+      <a class="btn btn--ghost" href="mailto:{{ site.email }}">Escribir a {{ site.email }}</a>
+    </div>
+  </div>
+</section>

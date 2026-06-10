@@ -12,10 +12,17 @@ eyebrow: "Ecocruceros · La Punta, Callao"
     <div class="asset-pending" style="height:100%;border:0;border-radius:0">{{ t.assetPending }} · foto/video héroe (D3/D4)</div>
   </div>
   <div class="container hero__inner reveal">
-    <p class="eyebrow" style="color:var(--c-cyan-500)">{{ eyebrow }}</p>
+    <p class="eyebrow" style="color:var(--c-mustard-300)">{{ eyebrow }}</p>
     <h1>Nada con los lobos marinos de las Islas Palomino</h1>
+    <div class="hero__rotator" data-rotator data-interval="4200" aria-hidden="true">
+      <span class="rot rot--lg is-on">Visita las Islas Palomino</span>
+      <span class="rot">En cómodos y seguros yates de dos pisos</span>
+      <span class="rot">Nada con lobos marinos</span>
+      <span class="rot">Salidas diarias · previa reserva</span>
+    </div>
     <p class="lead">Navega en altamar con los <strong>pioneros del ecoturismo marino en el Perú</strong>. Una travesía en yate desde La Punta, Callao, hasta una colonia de más de 5,000 lobos marinos.</p>
     <div class="btn-row">
+      <a class="btn btn--gold btn--lg" data-wa-source="hero" href="{{ t.wa.tour | wa }}">Reservar por WhatsApp</a>
       <a class="btn btn--ghost btn--lg" href="/tour/" style="color:#fff;border-color:rgba(255,255,255,.6)">{{ t.seeTour }}</a>
     </div>
     <div class="hero__trust">
@@ -33,23 +40,23 @@ eyebrow: "Ecocruceros · La Punta, Callao"
       <div class="item"><span class="num tnum">30</span> años de trayectoria</div>
       <div class="item"><span class="num tnum">4.6★</span> · 193 reseñas</div>
       <div class="item"><span class="num tnum">5,000+</span> lobos marinos</div>
-      <div class="item">Premio al turismo sostenible 2025 <span class="pending">{{ t.pending }} (nombre oficial)</span></div>
+      <div class="item"><span class="num tnum">30 min</span> del centro de Lima</div>
     </div>
   </div>
 </section>
 
 <!-- H3 EXPERIENCE -->
-<section class="section section--warm">
+<section class="section section--sky">
   <div class="container reveal">
     <p class="eyebrow">La experiencia</p>
     <h2>Un encuentro real con la fauna marina del Pacífico</h2>
     <p class="lead">Desde el muelle privado de La Punta navegamos hacia las Islas Palomino, donde podrás nadar junto a una colonia de lobos marinos en su hábitat natural.</p>
     <div class="grid cols-3" style="margin-top:var(--space-8)">
-      <article class="card"><div class="card__body"><span class="tag tag--ok">Garantizado</span><h3>5,000+ lobos marinos</h3><p>Nado opcional junto a la colonia en las Islas Palomino.</p></div></article>
-      <article class="card"><div class="card__body"><span class="tag tag--ok">Garantizado</span><h3>Pingüinos de Humboldt</h3><p>Y aves guaneras en las Islas Cavinzas.</p></div></article>
-      <article class="card"><div class="card__body"><span class="tag tag--seasonal">Temporada</span><h3>Avistamiento de ballenas</h3><p>Posible en ciertos meses · no garantizado.</p></div></article>
+      <article class="card card--top"><div class="card__body"><span class="tag tag--ok">Garantizado</span><h3>5,000+ lobos marinos</h3><p>Nado opcional junto a la colonia en las Islas Palomino.</p></div></article>
+      <article class="card card--top"><div class="card__body"><span class="tag tag--ok">Garantizado</span><h3>Pingüinos de Humboldt</h3><p>Y aves guaneras en las Islas Cavinzas.</p></div></article>
+      <article class="card card--top-gold"><div class="card__body"><span class="tag tag--seasonal">Temporada</span><h3>Avistamiento de ballenas</h3><p>Posible en ciertos meses · no garantizado.</p></div></article>
     </div>
-    <div class="btn-row" style="margin-top:var(--space-8)"><a class="btn btn--ghost" href="/tour/">{{ t.seeTour }} →</a></div>
+    <div class="btn-row" style="margin-top:var(--space-8)"><a class="btn btn--primary" href="/tour/">{{ t.seeTour }} →</a></div>
   </div>
 </section>
 
@@ -58,22 +65,46 @@ eyebrow: "Ecocruceros · La Punta, Callao"
   <div class="container reveal">
     <p class="eyebrow">Qué incluye</p>
     <h2>Todo listo para tu travesía</h2>
-    <p class="pending">{{ t.pending }} — lista de lo incluido (chaleco, traje de neopreno, guía bilingüe, seguro) por confirmar (B1–B3).</p>
-    <p style="margin-top:var(--space-3)">No es necesario saber nadar — <span class="pending">{{ t.pending }} (B4)</span>.</p>
+    <p class="lead">Tu pasaje incluye todo lo necesario para disfrutar con tranquilidad:</p>
+    <ul class="checklist checklist--2" style="margin-top:var(--space-6)">
+      <li>Guía de turismo <strong>bilingüe</strong> (inglés–español) a bordo.</li>
+      <li>Parada para <strong>nadar con los lobos marinos</strong> en su hábitat natural.</li>
+      <li>Chaleco salvavidas durante toda la travesía.</li>
+      <li>Wetsuits / trajes de neopreno <em>(stock limitado)</em> en temporada de frío.</li>
+      <li>Bebidas frías y calientes (gaseosas, té, manzanilla, anís) y snacks — <strong>ilimitado</strong>.</li>
+      <li>Pastilla para el mareo, gratis (1 por pasajero).</li>
+      <li>Tasa de embarque en <strong>muelle privado</strong>.</li>
+      <li>Seguro de viajes para todos los pasajeros.</li>
+    </ul>
+    <p style="margin-top:var(--space-4)"><strong>No incluye:</strong> tarifa SERNANP (S/11 residentes / US$5 + embarque extranjeros).</p>
+    <p style="margin-top:var(--space-2)">No es necesario saber nadar: puedes entrar al mar con chaleco salvavidas.</p>
     <div class="btn-row" style="margin-top:var(--space-6)"><a class="btn btn--ghost" href="/tour/precios/">{{ t.seePricing }} →</a></div>
   </div>
 </section>
 
+<!-- H4b SCHEDULE / FACT BAND -->
+<section class="section section--warm" style="padding-block:var(--space-12)">
+  <div class="container reveal">
+    <div class="factbar">
+      <div><b>4 horas</b><span>de travesía inolvidable</span></div>
+      <div><b>30 min</b><span>del centro de Lima</span></div>
+      <div><b>Salidas diarias</b><span>previa reserva</span></div>
+      <div><b>Muelle privado</b><span>en La Punta, Callao</span></div>
+    </div>
+  </div>
+</section>
+
 <!-- H5 WHY US -->
-<section class="section section--warm">
+<section class="section">
   <div class="container reveal">
     <p class="eyebrow">Por qué Ecocruceros</p>
     <h2>Los pioneros del ecoturismo marino en el Perú</h2>
     <div class="grid cols-3" style="margin-top:var(--space-6)">
       <div class="stack"><h3>Casi 30 años</h3><p>Una experiencia que nos enorgullece y cuidamos para tu comodidad y tranquilidad.</p></div>
-      <div class="stack"><h3>Muelle privado</h3><p>Zarpamos desde La Punta, a 10 min del muelle público.</p></div>
-      <div class="stack"><h3>Yate de dos cubiertas</h3><p>Comodidad y estabilidad en altamar.</p></div>
+      <div class="stack"><h3>Muelle privado</h3><p>Zarpamos desde La Punta, a 30 minutos del centro de Lima.</p></div>
+      <div class="stack"><h3>Yate de dos cubiertas</h3><p>Comodidad y estabilidad en altamar, con salón, baños y cocina a bordo.</p></div>
     </div>
+    <div class="btn-row" style="margin-top:var(--space-6)"><a class="btn btn--ghost" href="/nosotros/">Conoce nuestra empresa →</a></div>
   </div>
 </section>
 
@@ -88,7 +119,7 @@ eyebrow: "Ecocruceros · La Punta, Callao"
 </section>
 
 <!-- H8 REVIEWS -->
-<section class="section">
+<section class="section section--sky">
   <div class="container reveal">
     <p class="eyebrow">Lo que dicen nuestros pasajeros</p>
     <h2>4.6★ en TripAdvisor · 193 reseñas</h2>
@@ -97,11 +128,14 @@ eyebrow: "Ecocruceros · La Punta, Callao"
 </section>
 
 <!-- H9 PRICING TEASER -->
-<section class="section section--warm">
+<section class="section section--sea cta-band">
   <div class="container center reveal">
     <p class="eyebrow">Precios</p>
     <h2>{{ t.from }} S/179 (residentes) · {{ t.from }} US$69 (extranjeros)</h2>
-    <p class="lead" style="margin-inline:auto">Tarifa SERNANP no incluida. Coordinamos todo por WhatsApp.</p>
-    <div class="btn-row" style="justify-content:center;margin-top:var(--space-6)"><a class="btn btn--ghost" href="/tour/precios/">{{ t.seePricing }} →</a></div>
+    <p class="lead" style="margin-inline:auto;color:#dff1f8">Tarifa SERNANP no incluida. Coordinamos todo por WhatsApp.</p>
+    <div class="btn-row" style="justify-content:center;margin-top:var(--space-6)">
+      <a class="btn btn--gold" data-wa-source="home-pricing" href="{{ t.wa.pricing | wa }}">Reservar por WhatsApp</a>
+      <a class="btn btn--ghost" href="/tour/precios/">{{ t.seePricing }} →</a>
+    </div>
   </div>
 </section>

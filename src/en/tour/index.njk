@@ -1,16 +1,16 @@
 ---
 permalink: /en/tour/
 title: "The Palomino Islands Tour"
-description: "A 3–4 hour yacht voyage from La Punta, Callao, to swim with 5,000+ sea lions at the Palomino Islands. Book on WhatsApp."
+description: "A 4-hour yacht voyage from La Punta, Callao, to swim with thousands of sea lions at the Palomino Islands, just 30 minutes from central Lima. Book on WhatsApp."
 ---
 {% set t = i18n[lang] %}
 
 <section class="hero" style="min-height:min(60vh,520px)">
   <div class="hero__media"><div class="asset-pending" style="height:100%;border:0;border-radius:0">{{ t.assetPending }} · tour photo (D3)</div></div>
   <div class="container hero__inner reveal">
-    <p class="eyebrow" style="color:var(--c-cyan-500)">The Tour</p>
+    <p class="eyebrow" style="color:var(--c-mustard-300)">The Tour</p>
     <h1>Palomino Islands Tour</h1>
-    <div class="hero__trust"><span>⏱ 3–4 hours</span><span>· ⚓ La Punta private pier</span><span>· 🦭 5,000+ sea lions</span></div>
+    <div class="hero__trust"><span>⏱ 4 hours</span><span>· ⚓ La Punta private pier</span><span>· 🦭 5,000+ sea lions</span></div>
   </div>
 </section>
 
@@ -19,20 +19,62 @@ description: "A 3–4 hour yacht voyage from La Punta, Callao, to swim with 5,00
 <section class="section">
   <div class="container reveal">
     <p class="eyebrow">The voyage</p>
-    <h2>Sail and swim with Pacific marine wildlife</h2>
-    <p class="lead">From our private pier in La Punta we sail aboard a two-deck yacht to the Palomino Islands, home to a colony of 5,000+ sea lions. Along the way you'll see historic islands and the rich birdlife of the Callao coast.</p>
-    <p style="margin-top:var(--space-3)">Onboard guide: <span class="pending">{{ t.pending }} (bilingual guide, B2)</span></p>
+    <h2>An unforgettable voyage 30 minutes from Lima</h2>
+    <div class="prose justify" style="margin-top:var(--space-4)">
+      <p><strong>ECOCRUCEROS</strong> invites you to enjoy an unforgettable 4-hour voyage just 30 minutes from central Lima, aboard a comfortable and safe cruiser yacht equipped with sophisticated navigation gear, an experienced crew, restrooms and other amenities.</p>
+      <p>The Palomino Islands tour is one of the most enjoyable in Lima: the voyage offers a spectacular natural show of the seabirds of the cold Peruvian sea and thousands of sea lions — which you can swim with in their natural habitat.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section section--sky">
+  <div class="container reveal">
+    <p class="eyebrow">Highlights</p>
+    <h2>What you'll see</h2>
+    <div class="grid cols-3" style="margin-top:var(--space-6)">
+      <article class="card card--top"><div class="card__body"><span class="tag tag--ok">Guaranteed</span><h3>Sea lions</h3><p>Colony of 5,000+ at the Palomino Islands · optional swim.</p></div></article>
+      <article class="card card--top"><div class="card__body"><span class="tag tag--ok">Guaranteed</span><h3>Penguins & guano birds</h3><p>Pelicans, boobies, Inca terns and Humboldt penguins at the Cavinzas Islands.</p></div></article>
+      <article class="card card--top-gold"><div class="card__body"><span class="tag tag--seasonal">Seasonal</span><h3>Whales</h3><p>Sightings possible in some months · not guaranteed.</p></div></article>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container reveal">
+    <p class="eyebrow">The Palomino Islands</p>
+    <h2>A natural sanctuary in the Callao sea</h2>
+    <p class="lead">A group of islands in the Callao sea, behind San Lorenzo Island, with a population of roughly 5,000 to 8,000 sea lions. The area offers many advantages:</p>
+    <ul class="checklist checklist--2" style="margin-top:var(--space-6)">
+      <li>Guarantees a significant number of sea lions all year round.</li>
+      <li>Its closeness to Lima makes it an ideal nature option: Callao is 30 minutes from the capital.</li>
+      <li>A voyage rich in history and ecology among the islands of the area.</li>
+      <li>The area offers the chance to swim with the sea lions.</li>
+      <li>You'll also see seabirds such as pelicans, boobies, Inca terns and Humboldt penguins.</li>
+    </ul>
   </div>
 </section>
 
 <section class="section section--warm">
   <div class="container reveal">
-    <p class="eyebrow">Highlights</p>
-    <h2>What you'll see</h2>
-    <div class="grid cols-3" style="margin-top:var(--space-6)">
-      <article class="card"><div class="card__body"><span class="tag tag--ok">Guaranteed</span><h3>Sea lions</h3><p>Colony of 5,000+ at the Palomino Islands · optional swim.</p></div></article>
-      <article class="card"><div class="card__body"><span class="tag tag--ok">Guaranteed</span><h3>Penguins & guano birds</h3><p>At the Cavinzas Islands.</p></div></article>
-      <article class="card"><div class="card__body"><span class="tag tag--seasonal">Seasonal</span><h3>Whales</h3><p>Sightings possible in some months · not guaranteed.</p></div></article>
+    <p class="eyebrow">Schedule</p>
+    <h2>Daily departures, by reservation</h2>
+    <div class="grid cols-2" style="margin-top:var(--space-6);align-items:start">
+      <table class="schedule">
+        <caption>Departure times</caption>
+        <tbody>
+          {% for s in site.schedule %}
+          <tr>
+            <td>{{ s.en }}{% if s.note_en %}<br><small style="color:var(--text-secondary)">{{ s.note_en }}</small>{% endif %}</td>
+            <td>{{ s.time }}</td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+      <div class="stack">
+        <p><strong>Daily departures by reservation.</strong> We arrange availability and your group's time on WhatsApp.</p>
+        <p>The route includes a <strong>stop to swim with the sea lions</strong>. Halfway through the return trip we serve cold and hot (non-alcoholic) drinks and snacks, <strong>unlimited</strong>.</p>
+        <div class="btn-row"><a class="btn btn--gold" data-wa-source="tour-schedule" href="{{ t.wa.tour | wa }}">Book on WhatsApp</a></div>
+      </div>
     </div>
   </div>
 </section>
@@ -41,8 +83,17 @@ description: "A 3–4 hour yacht voyage from La Punta, Callao, to swim with 5,00
   <div class="container reveal">
     <p class="eyebrow">What's included</p>
     <h2>What's included</h2>
-    <p class="pending">{{ t.pending }} — official inclusions: life vest, wetsuit, guide, snacks, accident insurance (B1–B3).</p>
-    <p style="margin-top:var(--space-3)"><strong>Not included:</strong> SERNANP fee (S/11 residents / US$5 + boarding for visitors).</p>
+    <ul class="checklist checklist--2" style="margin-top:var(--space-6)">
+      <li><strong>Bilingual</strong> tourism guide (English–Spanish) on board.</li>
+      <li>A stop to <strong>swim with the sea lions</strong>.</li>
+      <li>Life vest throughout the entire voyage.</li>
+      <li>Wetsuits <em>(limited stock)</em> during the colder season.</li>
+      <li>Cold and hot drinks and snacks — <strong>unlimited</strong>.</li>
+      <li>Free seasickness tablet (1 per passenger).</li>
+      <li>Boarding fee at our <strong>private pier</strong>.</li>
+      <li>Travel insurance for every passenger.</li>
+    </ul>
+    <p style="margin-top:var(--space-4)"><strong>Not included:</strong> SERNANP fee (S/11 residents / US$5 + boarding for visitors).</p>
     <div class="btn-row" style="margin-top:var(--space-6)">
       <a class="btn btn--ghost" href="/en/tour/recorrido/">See the route →</a>
       <a class="btn btn--ghost" href="/en/tour/precios/">See pricing →</a>

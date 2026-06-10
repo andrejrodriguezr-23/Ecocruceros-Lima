@@ -9,10 +9,17 @@ eyebrow: "Ecocruceros · La Punta, Callao"
 <section class="hero">
   <div class="hero__media"><div class="asset-pending" style="height:100%;border:0;border-radius:0">{{ t.assetPending }} · hero photo/video (D3/D4)</div></div>
   <div class="container hero__inner reveal">
-    <p class="eyebrow" style="color:var(--c-cyan-500)">{{ eyebrow }}</p>
+    <p class="eyebrow" style="color:var(--c-mustard-300)">{{ eyebrow }}</p>
     <h1>Swim with the sea lions of the Palomino Islands</h1>
+    <div class="hero__rotator" data-rotator data-interval="4200" aria-hidden="true">
+      <span class="rot rot--lg is-on">Visit the Palomino Islands</span>
+      <span class="rot">On comfortable, safe two-deck yachts</span>
+      <span class="rot">Swim with sea lions</span>
+      <span class="rot">Daily departures · by reservation</span>
+    </div>
     <p class="lead">Sail the open Pacific with the <strong>pioneers of marine ecotourism in Peru</strong>. A yacht experience from La Punta, Callao, to a colony of 5,000+ sea lions.</p>
     <div class="btn-row">
+      <a class="btn btn--gold btn--lg" data-wa-source="hero" href="{{ t.wa.tour | wa }}">Book on WhatsApp</a>
       <a class="btn btn--ghost btn--lg" href="/en/tour/" style="color:#fff;border-color:rgba(255,255,255,.6)">{{ t.seeTour }}</a>
     </div>
     <div class="hero__trust">
@@ -27,22 +34,22 @@ eyebrow: "Ecocruceros · La Punta, Callao"
       <div class="item"><span class="num tnum">30</span> years of experience</div>
       <div class="item"><span class="num tnum">4.6★</span> · 193 reviews</div>
       <div class="item"><span class="num tnum">5,000+</span> sea lions</div>
-      <div class="item">2025 sustainable tourism award <span class="pending">{{ t.pending }} (official name)</span></div>
+      <div class="item"><span class="num tnum">30 min</span> from central Lima</div>
     </div>
   </div>
 </section>
 
-<section class="section section--warm">
+<section class="section section--sky">
   <div class="container reveal">
     <p class="eyebrow">The experience</p>
     <h2>A real encounter with Pacific marine wildlife</h2>
     <p class="lead">From La Punta's private pier we sail to the Palomino Islands, where you can swim alongside a colony of sea lions in their natural habitat.</p>
     <div class="grid cols-3" style="margin-top:var(--space-8)">
-      <article class="card"><div class="card__body"><span class="tag tag--ok">Guaranteed</span><h3>5,000+ sea lions</h3><p>Optional swim beside the colony at the Palomino Islands.</p></div></article>
-      <article class="card"><div class="card__body"><span class="tag tag--ok">Guaranteed</span><h3>Humboldt penguins</h3><p>And guano birds at the Cavinzas Islands.</p></div></article>
-      <article class="card"><div class="card__body"><span class="tag tag--seasonal">Seasonal</span><h3>Whale sightings</h3><p>Possible in some months · not guaranteed.</p></div></article>
+      <article class="card card--top"><div class="card__body"><span class="tag tag--ok">Guaranteed</span><h3>5,000+ sea lions</h3><p>Optional swim beside the colony at the Palomino Islands.</p></div></article>
+      <article class="card card--top"><div class="card__body"><span class="tag tag--ok">Guaranteed</span><h3>Humboldt penguins</h3><p>And guano birds at the Cavinzas Islands.</p></div></article>
+      <article class="card card--top-gold"><div class="card__body"><span class="tag tag--seasonal">Seasonal</span><h3>Whale sightings</h3><p>Possible in some months · not guaranteed.</p></div></article>
     </div>
-    <div class="btn-row" style="margin-top:var(--space-8)"><a class="btn btn--ghost" href="/en/tour/">{{ t.seeTour }} →</a></div>
+    <div class="btn-row" style="margin-top:var(--space-8)"><a class="btn btn--primary" href="/en/tour/">{{ t.seeTour }} →</a></div>
   </div>
 </section>
 
@@ -50,21 +57,44 @@ eyebrow: "Ecocruceros · La Punta, Callao"
   <div class="container reveal">
     <p class="eyebrow">What's included</p>
     <h2>Everything ready for your voyage</h2>
-    <p class="pending">{{ t.pending }} — inclusions list (life vest, wetsuit, bilingual guide, insurance) to confirm (B1–B3).</p>
-    <p style="margin-top:var(--space-3)">No swimming ability required — <span class="pending">{{ t.pending }} (B4)</span>.</p>
+    <p class="lead">Your ticket includes everything you need to enjoy the day with peace of mind:</p>
+    <ul class="checklist checklist--2" style="margin-top:var(--space-6)">
+      <li><strong>Bilingual</strong> tourism guide (English–Spanish) on board.</li>
+      <li>A stop to <strong>swim with the sea lions</strong> in their natural habitat.</li>
+      <li>Life vest throughout the entire voyage.</li>
+      <li>Wetsuits <em>(limited stock)</em> during the colder season.</li>
+      <li>Cold and hot drinks (sodas, tea, chamomile, anise) and snacks — <strong>unlimited</strong>.</li>
+      <li>Free seasickness tablet (1 per passenger).</li>
+      <li>Boarding fee at our <strong>private pier</strong>.</li>
+      <li>Travel insurance for every passenger.</li>
+    </ul>
+    <p style="margin-top:var(--space-4)"><strong>Not included:</strong> SERNANP fee (S/11 residents / US$5 + boarding for visitors).</p>
+    <p style="margin-top:var(--space-2)">No swimming ability required: you can enter the sea wearing a life vest.</p>
     <div class="btn-row" style="margin-top:var(--space-6)"><a class="btn btn--ghost" href="/en/tour/precios/">{{ t.seePricing }} →</a></div>
   </div>
 </section>
 
-<section class="section section--warm">
+<section class="section section--warm" style="padding-block:var(--space-12)">
+  <div class="container reveal">
+    <div class="factbar">
+      <div><b>4 hours</b><span>of unforgettable sailing</span></div>
+      <div><b>30 min</b><span>from central Lima</span></div>
+      <div><b>Daily departures</b><span>by reservation</span></div>
+      <div><b>Private pier</b><span>in La Punta, Callao</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
   <div class="container reveal">
     <p class="eyebrow">Why Ecocruceros</p>
     <h2>The pioneers of marine ecotourism in Peru</h2>
     <div class="grid cols-3" style="margin-top:var(--space-6)">
       <div class="stack"><h3>Nearly 30 years</h3><p>Experience we're proud of, devoted to your comfort and peace of mind.</p></div>
-      <div class="stack"><h3>Private pier</h3><p>We depart from La Punta, 10 min from the public pier.</p></div>
-      <div class="stack"><h3>Two-deck yacht</h3><p>Comfort and stability on the open sea.</p></div>
+      <div class="stack"><h3>Private pier</h3><p>We depart from La Punta, 30 minutes from central Lima.</p></div>
+      <div class="stack"><h3>Two-deck yacht</h3><p>Comfort and stability on the open sea, with a lounge, restrooms and galley on board.</p></div>
     </div>
+    <div class="btn-row" style="margin-top:var(--space-6)"><a class="btn btn--ghost" href="/en/nosotros/">About our company →</a></div>
   </div>
 </section>
 
@@ -77,7 +107,7 @@ eyebrow: "Ecocruceros · La Punta, Callao"
   </div>
 </section>
 
-<section class="section">
+<section class="section section--sky">
   <div class="container reveal">
     <p class="eyebrow">What our guests say</p>
     <h2>4.6★ on TripAdvisor · 193 reviews</h2>
@@ -85,11 +115,14 @@ eyebrow: "Ecocruceros · La Punta, Callao"
   </div>
 </section>
 
-<section class="section section--warm">
+<section class="section section--sea cta-band">
   <div class="container center reveal">
     <p class="eyebrow">Pricing</p>
     <h2>{{ t.from }} S/179 (residents) · {{ t.from }} US$69 (visitors)</h2>
-    <p class="lead" style="margin-inline:auto">SERNANP fee not included. We arrange everything by WhatsApp.</p>
-    <div class="btn-row" style="justify-content:center;margin-top:var(--space-6)"><a class="btn btn--ghost" href="/en/tour/precios/">{{ t.seePricing }} →</a></div>
+    <p class="lead" style="margin-inline:auto;color:#dff1f8">SERNANP fee not included. We arrange everything by WhatsApp.</p>
+    <div class="btn-row" style="justify-content:center;margin-top:var(--space-6)">
+      <a class="btn btn--gold" data-wa-source="home-pricing" href="{{ t.wa.pricing | wa }}">Book on WhatsApp</a>
+      <a class="btn btn--ghost" href="/en/tour/precios/">{{ t.seePricing }} →</a>
+    </div>
   </div>
 </section>
