@@ -23,7 +23,7 @@ eyebrow: "Ecocruceros · La Punta, Callao"
       <a class="btn btn--ghost btn--lg" href="/en/tour/" style="color:#fff;border-color:rgba(255,255,255,.6)">{{ t.seeTour }}</a>
     </div>
     <div class="hero__trust">
-      <span>★ 4.6 · 193 {{ t.trust.reviews }} (TripAdvisor)</span><span>· {{ t.trust.years }}</span><span>· SERNANP · Green Destinations certified</span>
+      <a href="{{ site.tripadvisor.url }}" target="_blank" rel="noopener" style="color:#fff;text-decoration:underline">★ 4.6 · 193 {{ t.trust.reviews }} (TripAdvisor)</a><span>· {{ t.trust.years }}</span><span>· SERNANP · Green Destinations certified</span>
     </div>
   </div>
 </section>
@@ -111,7 +111,11 @@ eyebrow: "Ecocruceros · La Punta, Callao"
   <div class="container reveal">
     <p class="eyebrow">What our guests say</p>
     <h2>4.6★ on TripAdvisor · 193 reviews</h2>
-    <p><a href="{{ site.tripadvisor.url }}" target="_blank" rel="noopener">See our TripAdvisor profile →</a><br><span class="pending">{{ t.pending }} — featured reviews (C5).</span></p>
+    <p class="lead">#10 of 97 attractions in Lima. Read real reviews from guests who've already sailed with us.</p>
+    <div class="btn-row" style="margin-top:var(--space-6)">
+      <a class="btn btn--primary" href="{{ site.tripadvisor.url }}" target="_blank" rel="noopener">Read the reviews on TripAdvisor →</a>
+    </div>
+    <p style="margin-top:var(--space-4)"><span class="pending">{{ t.pending }} — featured 5★ reviews to be added.</span></p>
   </div>
 </section>
 

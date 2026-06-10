@@ -26,7 +26,7 @@ eyebrow: "Ecocruceros · La Punta, Callao"
       <a class="btn btn--ghost btn--lg" href="/tour/" style="color:#fff;border-color:rgba(255,255,255,.6)">{{ t.seeTour }}</a>
     </div>
     <div class="hero__trust">
-      <span>★ 4.6 · 193 {{ t.trust.reviews }} (TripAdvisor)</span>
+      <a href="{{ site.tripadvisor.url }}" target="_blank" rel="noopener" style="color:#fff;text-decoration:underline">★ 4.6 · 193 {{ t.trust.reviews }} (TripAdvisor)</a>
       <span>· {{ t.trust.years }}</span>
       <span>· Certificado SERNANP · Green Destinations</span>
     </div>
@@ -123,7 +123,11 @@ eyebrow: "Ecocruceros · La Punta, Callao"
   <div class="container reveal">
     <p class="eyebrow">Lo que dicen nuestros pasajeros</p>
     <h2>4.6★ en TripAdvisor · 193 reseñas</h2>
-    <p><a href="{{ site.tripadvisor.url }}" target="_blank" rel="noopener">Ver nuestro perfil en TripAdvisor →</a><br><span class="pending">{{ t.pending }} — reseñas destacadas (C5).</span></p>
+    <p class="lead">N.º 10 de 97 atracciones en Lima. Lee las opiniones reales de quienes ya navegaron con nosotros.</p>
+    <div class="btn-row" style="margin-top:var(--space-6)">
+      <a class="btn btn--primary" href="{{ site.tripadvisor.url }}" target="_blank" rel="noopener">Leer las reseñas en TripAdvisor →</a>
+    </div>
+    <p style="margin-top:var(--space-4)"><span class="pending">{{ t.pending }} — reseñas destacadas de 5★ por incorporar.</span></p>
   </div>
 </section>
 

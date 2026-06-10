@@ -23,7 +23,7 @@ module.exports = {
   ],
   // Press / featured videos provided by the client
   video: {
-    cnn: "8su-OCd9VUE",            // CNN report (2006)
+    cnn: "924dvKLBvpQ",            // CNN report
     incas: "jyLkU4to6aY",          // "El Tour de los Incas" YouTube report
     incasChannel: "El Tour de los Incas"
   },

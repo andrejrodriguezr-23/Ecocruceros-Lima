@@ -14,7 +14,7 @@ module.exports = {
       home: "Inicio", tour: "Tour", about: "Nosotros", sustain: "Sostenibilidad",
       gallery: "Galería", faq: "Preguntas Frecuentes", blog: "Blog", contact: "Contacto",
       route: "Recorrido", pricing: "Precios", safety: "Seguridad", certs: "Certificaciones",
-      offers: "Ofertas", private: "Servicios privados"
+      offers: "Ofertas"
     },
     footer: {
       nav: "Navegación", tourCol: "El Tour", contactCol: "Contacto",
@@ -45,7 +45,7 @@ module.exports = {
       home: "Home", tour: "Tour", about: "About", sustain: "Sustainability",
       gallery: "Gallery", faq: "FAQ", blog: "Blog", contact: "Contact",
       route: "Route", pricing: "Pricing", safety: "Safety", certs: "Certifications",
-      offers: "Offers", private: "Private charters"
+      offers: "Offers"
     },
     footer: {
       nav: "Navigation", tourCol: "The Tour", contactCol: "Contact",
