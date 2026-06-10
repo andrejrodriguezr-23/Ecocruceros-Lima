@@ -92,6 +92,20 @@
     });
   })();
 
+  /* ---- Reviews carousel (arrows scroll one card left/right) ---- */
+  document.querySelectorAll("[data-carousel]").forEach(function (c) {
+    var track = c.querySelector("[data-carousel-track]");
+    if (!track) return;
+    var prev = c.querySelector("[data-carousel-prev]");
+    var next = c.querySelector("[data-carousel-next]");
+    function step() {
+      var slide = track.querySelector(".review-slide");
+      return slide ? slide.getBoundingClientRect().width + 16 : track.clientWidth;
+    }
+    if (prev) prev.addEventListener("click", function () { track.scrollBy({ left: -step(), behavior: "smooth" }); });
+    if (next) next.addEventListener("click", function () { track.scrollBy({ left: step(), behavior: "smooth" }); });
+  });
+
   /* ---- Scroll reveal (respects reduced motion) ---- */
   var reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
   var reveals = document.querySelectorAll(".reveal");

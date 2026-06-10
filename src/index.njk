@@ -123,11 +123,28 @@ eyebrow: "Ecocruceros · La Punta, Callao"
   <div class="container reveal">
     <p class="eyebrow">Lo que dicen nuestros pasajeros</p>
     <h2>4.6★ en TripAdvisor · 193 reseñas</h2>
-    <p class="lead">N.º 10 de 97 atracciones en Lima. Lee las opiniones reales de quienes ya navegaron con nosotros.</p>
+    <p class="lead">N.º 10 de 97 atracciones en Lima. Opiniones reales de quienes ya navegaron con nosotros.</p>
+    {% if reviews and reviews.length %}
+    <div class="review-carousel" data-carousel>
+      <div class="review-track" data-carousel-track>
+        {% for r in reviews %}
+        <div class="review-slide"><article class="review-card">
+          <div class="review-stars" title="5 de 5" aria-label="5 de 5 estrellas">★★★★★</div>
+          {% if r.title %}<h3 class="review-title">{{ r.title }}</h3>{% endif %}
+          <p class="review-text">“{{ r.text }}”</p>
+          <p class="review-meta">{{ r.name }}{% if r.location %} · {{ r.location }}{% endif %}{% if r.date %} · {{ r.date }}{% endif %}<br><span class="review-source">vía TripAdvisor</span></p>
+        </article></div>
+        {% endfor %}
+      </div>
+      <div class="carousel-nav">
+        <button type="button" class="carousel-btn" data-carousel-prev aria-label="Reseña anterior">‹</button>
+        <button type="button" class="carousel-btn" data-carousel-next aria-label="Siguiente reseña">›</button>
+      </div>
+    </div>
+    {% endif %}
     <div class="btn-row" style="margin-top:var(--space-6)">
       <a class="btn btn--primary" href="{{ site.tripadvisor.url }}" target="_blank" rel="noopener">Leer las reseñas en TripAdvisor →</a>
     </div>
-    <p style="margin-top:var(--space-4)"><span class="pending">{{ t.pending }} — reseñas destacadas de 5★ por incorporar.</span></p>
   </div>
 </section>
 
