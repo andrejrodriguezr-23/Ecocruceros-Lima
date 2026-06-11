@@ -39,20 +39,34 @@ module.exports = {
     rank: "#10 de 97",
     url: "https://www.tripadvisor.com/Attraction_Review-g294316-d2473812-Reviews-Ecocruceros-Lima_Lima_Region.html"
   },
-  // VERIFIED pricing (ecocruceros.com)
+  // Embarkation / meeting point (client address note, 2026)
+  embarkation: {
+    name: "Muelle Club Canottieri",
+    address: "Malecón Figueredo 800, La Punta, Callao",
+    directions_es: "A la altura de la cuadra 8 de la Av. Bolognesi. Ingresa al malecón por las calles Elías Aguirre o Diego Ferré.",
+    directions_en: "By block 8 of Av. Bolognesi. Enter the boardwalk via Elías Aguirre or Diego Ferré streets.",
+    mapsLink: "https://goo.gl/maps/fxPELJUwnQKw85LU8",
+    mapsEmbed: "https://www.google.com/maps?q=Muelle%20Club%20Canottieri%20La%20Punta%20Callao&output=embed"
+  },
+  // VERIFIED pricing — official 2026 flyers (residents in S/, foreigners in US$)
   pricing: {
     residents: [
       { who_es: "Adultos", who_en: "Adults", price: "S/179" },
-      { who_es: "Niños (2–12)", who_en: "Children (2–12)", price: "S/149" },
+      { who_es: "Niños (2 a 12 años)", who_en: "Children (2–12)", price: "S/149" },
       { who_es: "Infantes", who_en: "Infants", price_es: "Gratis (1 por familia)", price_en: "Free (1 per family)" }
     ],
     foreigners: [
       { who_es: "Adultos", who_en: "Adults", price: "US$69" },
-      { who_es: "Estudiantes", who_en: "Students", price: "US$59", note_es: "con carné universitario", note_en: "university card required" },
-      { who_es: "Niños (2–12)", who_en: "Children (2–12)", price: "US$49" }
+      { who_es: "Niños (2 a 12 años)", who_en: "Children (2–12)", price: "US$59" }
     ],
-    extra_es: "Tarifa SERNANP no incluida (S/11 residentes / US$5 + embarque extranjeros).",
-    extra_en: "SERNANP fee not included (S/11 residents / US$5 + boarding for foreigners)."
+    // "No incluye" per the official flyers: S/26 residents · US$8 foreigners (SERNANP + tasa de embarque)
+    extra_es: "No incluye: S/26 por persona (residentes) — ingreso al área natural protegida (SERNANP) y tasa de embarque en muelle privado. Visitantes extranjeros: US$8.",
+    extra_en: "Not included: S/26 per person (residents) — protected-area entrance (SERNANP) and private-pier boarding fee. International visitors: US$8.",
+    images: {
+      residents: "/assets/img/precios-residentes.jpeg",
+      foreigners: "/assets/img/precios-extranjeros.jpeg",
+      horarios: "/assets/img/horarios-embarque.jpeg"
+    }
   },
   // VERIFIED route stops
   route: [

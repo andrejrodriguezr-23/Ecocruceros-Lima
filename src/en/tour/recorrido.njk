@@ -13,9 +13,12 @@ description: "The Palomino Islands tour route: La Punta, El Camotal, San Lorenzo
     <p class="lead">Each departure crosses Callao bay — its history and its wildlife — all the way to the Palomino Islands.</p>
     <div class="video-wrap" style="margin-top:var(--space-6)">
       <div class="embed">
-        <iframe src="https://www.youtube-nocookie.com/embed/{{ site.video.incas }}" title="Palomino Islands tour route — video" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <video controls playsinline preload="metadata" poster="/assets/img/recorrido-poster.jpg" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;background:#000">
+          <source src="/assets/video/recorrido-islas-palomino.mp4" type="video/mp4">
+          Your browser does not support HTML5 video. <a href="/assets/video/recorrido-islas-palomino.mp4">Download the video</a>.
+        </video>
       </div>
-      <p class="embed-caption">Watch the journey on video — a report by the <strong>{{ site.video.incasChannel }}</strong> channel. Each stop of the route is detailed below.</p>
+      <p class="embed-caption"><strong>Our Route</strong> — a look at the full voyage, from our private pier in La Punta to the sea-lion colony of the Palomino Islands. Each stop is detailed below.</p>
     </div>
   </div>
 </section>
@@ -33,7 +36,17 @@ description: "The Palomino Islands tour route: La Punta, El Camotal, San Lorenzo
     </div>
     <div style="margin-top:var(--space-8)">
       <h3>Duration &amp; logistics</h3>
-      <p>Approximate duration: <strong>4 hours</strong>. <strong>Daily departures by reservation</strong> (Mon–Fri 11:30 a. m.; Sat, Sun &amp; holidays 10:00 a. m.). Boarding is from our private pier in La Punta, Callao; the exact address is shared once your booking is confirmed.</p>
+      <p>Approximate duration: <strong>4 hours</strong>. <strong>Daily departures by reservation</strong> (Mon–Fri 11:30 a. m.; Sat, Sun &amp; holidays 10:00 a. m.).</p>
+      <p style="margin-top:var(--space-3)"><strong>Meeting point:</strong> {{ site.embarkation.name }} — {{ site.embarkation.address }}. {{ site.embarkation.directions_en }} <a href="{{ site.embarkation.mapsLink }}" target="_blank" rel="noopener">Open in Google Maps →</a></p>
+      <div class="grid cols-2" style="margin-top:var(--space-6);align-items:start">
+        <figure style="margin:0;max-width:380px">
+          <img class="zoomable" src="{{ site.pricing.images.horarios }}" alt="Ecocruceros boarding times: Monday to Friday 11:30 a.m.; weekends and holidays 10:00 a.m." loading="lazy" width="1080" height="1080" style="border-radius:var(--radius);box-shadow:var(--shadow-2);border:1px solid var(--border)">
+          <figcaption class="embed-caption" style="text-align:center">Boarding times · tap to enlarge</figcaption>
+        </figure>
+        <div class="embed embed--map">
+          <iframe src="{{ site.embarkation.mapsEmbed }}" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Meeting point map — Muelle Club Canottieri, La Punta, Callao"></iframe>
+        </div>
+      </div>
     </div>
   </div>
 </section>

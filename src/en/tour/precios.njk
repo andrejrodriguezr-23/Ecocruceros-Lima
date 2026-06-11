@@ -21,16 +21,32 @@ description: "Palomino Islands tour pricing for residents (from S/179) and visit
       <button role="tab" id="tab-ext" aria-controls="panel-ext" aria-selected="false">Visitors (US$)</button>
     </div>
     <div role="tabpanel" id="panel-res" aria-labelledby="tab-res">
-      <table class="price-table tnum"><tbody>
-        {% for row in site.pricing.residents %}<tr><td>{{ row.who_en }}{% if row.note_en %} <small>({{ row.note_en }})</small>{% endif %}</td><td>{{ row.price or row.price_en }}</td></tr>{% endfor %}
-      </tbody></table>
-      <p class="price-note">{{ site.pricing.extra_en }}</p>
+      <div class="grid cols-2" style="align-items:start">
+        <div>
+          <table class="price-table tnum"><tbody>
+            {% for row in site.pricing.residents %}<tr><td>{{ row.who_en }}{% if row.note_en %} <small>({{ row.note_en }})</small>{% endif %}</td><td>{{ row.price or row.price_en }}</td></tr>{% endfor %}
+          </tbody></table>
+          <p class="price-note">{{ site.pricing.extra_en }}</p>
+        </div>
+        <figure style="margin:0;max-width:440px;justify-self:center">
+          <img class="zoomable" src="{{ site.pricing.images.residents }}" alt="Palomino Islands Tour prices for Peruvians and residents: adult S/179, children 2 to 12 years S/149." loading="lazy" width="1131" height="1600" style="border-radius:var(--radius);box-shadow:var(--shadow-2);border:1px solid var(--border)">
+          <figcaption class="embed-caption" style="text-align:center">Peruvians &amp; residents rate · tap to enlarge</figcaption>
+        </figure>
+      </div>
     </div>
     <div role="tabpanel" id="panel-ext" aria-labelledby="tab-ext" hidden>
-      <table class="price-table tnum"><tbody>
-        {% for row in site.pricing.foreigners %}<tr><td>{{ row.who_en }}{% if row.note_en %} <small>({{ row.note_en }})</small>{% endif %}</td><td>{{ row.price }}</td></tr>{% endfor %}
-      </tbody></table>
-      <p class="price-note">{{ site.pricing.extra_en }}</p>
+      <div class="grid cols-2" style="align-items:start">
+        <div>
+          <table class="price-table tnum"><tbody>
+            {% for row in site.pricing.foreigners %}<tr><td>{{ row.who_en }}{% if row.note_en %} <small>({{ row.note_en }})</small>{% endif %}</td><td>{{ row.price }}</td></tr>{% endfor %}
+          </tbody></table>
+          <p class="price-note">{{ site.pricing.extra_en }}</p>
+        </div>
+        <figure style="margin:0;max-width:440px;justify-self:center">
+          <img class="zoomable" src="{{ site.pricing.images.foreigners }}" alt="Palomino Islands Tour prices for foreigners: adult US$69, children 2 to 12 years US$59." loading="lazy" width="1131" height="1600" style="border-radius:var(--radius);box-shadow:var(--shadow-2);border:1px solid var(--border)">
+          <figcaption class="embed-caption" style="text-align:center">Foreigners' rate · tap to enlarge</figcaption>
+        </figure>
+      </div>
     </div>
     <p style="margin-top:var(--space-3);color:var(--text-secondary)">We arrange availability and payment via WhatsApp.</p>
   </div>
