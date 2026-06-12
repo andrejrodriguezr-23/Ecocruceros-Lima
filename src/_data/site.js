@@ -19,7 +19,7 @@ module.exports = {
   // Departure schedule (client correction). Tour runs daily, by prior reservation.
   schedule: [
     { es: "Lunes a viernes", en: "Monday to Friday", time: "11:30 a. m." },
-    { es: "Sábados, domingos y feriados", en: "Sat, Sun & holidays", time: "10:00 a. m.", note_es: "2:00 p. m. (por confirmar)", note_en: "2:00 p. m. (to confirm)" }
+    { es: "Sábados, domingos y feriados", en: "Sat, Sun & holidays", time: "10:00 a. m." }
   ],
   // Press / featured videos provided by the client
   video: {

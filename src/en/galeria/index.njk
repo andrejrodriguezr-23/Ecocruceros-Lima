@@ -16,10 +16,26 @@ description: "Real photos and videos of the Palomino Islands voyage: sea lions, 
 
 <section class="section">
   <div class="container">
-    <div class="gallery-grid">
-      {% for n in [1,2,3,4,5,6,7,8] %}<div class="asset-pending">{{ t.assetPending }} · photo {{ n }} (D3/D5)</div>{% endfor %}
+    <p class="eyebrow">Photos</p>
+    <h2>Moments from the voyage</h2>
+    <div class="gallery-grid" style="margin-top:var(--space-6)">
+      {% for n in [1,2,3,4,5,6,7] %}
+      <img class="zoomable" src="/assets/img/galeria/g{{ n }}.jpg" alt="Guests swimming with sea lions and the wildlife of the Palomino Islands" loading="lazy" style="width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:var(--radius);display:block">
+      {% endfor %}
     </div>
-    <p style="margin-top:var(--space-4);color:var(--text-secondary)"><span class="pending">{{ t.pending }} — real gallery photos and videos (D3/D5).</span> Once added, each image will carry the <code>zoomable</code> class to enlarge on click.</p>
+  </div>
+</section>
+
+<section class="section section--sky">
+  <div class="container">
+    <p class="eyebrow">Marine wildlife</p>
+    <h2>The wildlife of the Palomino Islands</h2>
+    <p class="lead">Seabirds, sea lions and other species of Peru's cold sea that you'll see on the voyage. Tap any card to enlarge it.</p>
+    <div class="fauna-grid" style="margin-top:var(--space-8)">
+      {% for n in range(1, 51) %}
+      <img class="zoomable" src="/assets/img/fauna/f{{ n }}.jpg" alt="Palomino Islands marine wildlife card" loading="lazy">
+      {% endfor %}
+    </div>
   </div>
 </section>
 
