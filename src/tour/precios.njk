@@ -22,41 +22,25 @@ description: "Precios del tour a las Islas Palomino para residentes (desde S/179
     </div>
 
     <div role="tabpanel" id="panel-res" aria-labelledby="tab-res">
-      <div class="grid cols-2" style="align-items:start">
-        <div>
-          <table class="price-table tnum">
-            <tbody>
-            {% for row in site.pricing.residents %}
-              <tr><td>{{ row.who_es }}{% if row.note_es %} <small>({{ row.note_es }})</small>{% endif %}</td><td>{{ row.price or row.price_es }}</td></tr>
-            {% endfor %}
-            </tbody>
-          </table>
-          <p class="price-note">{{ site.pricing.extra_es }}</p>
-        </div>
-        <figure style="margin:0;max-width:440px;justify-self:center">
-          <img class="zoomable" src="{{ site.pricing.images.residents }}" alt="Precios Tour Islas Palomino para peruanos y residentes: adulto S/179, niños de 2 a 12 años S/149." loading="lazy" width="1131" height="1600" style="border-radius:var(--radius);box-shadow:var(--shadow-2);border:1px solid var(--border)">
-          <figcaption class="embed-caption" style="text-align:center">Tarifa peruanos y residentes · toca para ampliar</figcaption>
-        </figure>
-      </div>
+      <table class="price-table tnum">
+        <tbody>
+        {% for row in site.pricing.residents %}
+          <tr><td>{{ row.who_es }}{% if row.note_es %} <small>({{ row.note_es }})</small>{% endif %}</td><td>{{ row.price or row.price_es }}</td></tr>
+        {% endfor %}
+        </tbody>
+      </table>
+      <p class="price-note">{{ site.pricing.extra_es }}</p>
     </div>
 
     <div role="tabpanel" id="panel-ext" aria-labelledby="tab-ext" hidden>
-      <div class="grid cols-2" style="align-items:start">
-        <div>
-          <table class="price-table tnum">
-            <tbody>
-            {% for row in site.pricing.foreigners %}
-              <tr><td>{{ row.who_es }}{% if row.note_es %} <small>({{ row.note_es }})</small>{% endif %}</td><td>{{ row.price }}</td></tr>
-            {% endfor %}
-            </tbody>
-          </table>
-          <p class="price-note">{{ site.pricing.extra_es }}</p>
-        </div>
-        <figure style="margin:0;max-width:440px;justify-self:center">
-          <img class="zoomable" src="{{ site.pricing.images.foreigners }}" alt="Palomino Islands Tour prices for foreigners: adult US$69, children 2 to 12 years US$59." loading="lazy" width="1131" height="1600" style="border-radius:var(--radius);box-shadow:var(--shadow-2);border:1px solid var(--border)">
-          <figcaption class="embed-caption" style="text-align:center">Tarifa extranjeros · toca para ampliar</figcaption>
-        </figure>
-      </div>
+      <table class="price-table tnum">
+        <tbody>
+        {% for row in site.pricing.foreigners %}
+          <tr><td>{{ row.who_es }}{% if row.note_es %} <small>({{ row.note_es }})</small>{% endif %}</td><td>{{ row.price }}</td></tr>
+        {% endfor %}
+        </tbody>
+      </table>
+      <p class="price-note">{{ site.pricing.extra_es }}</p>
     </div>
 
     <p style="margin-top:var(--space-3);color:var(--text-secondary)">Coordinamos disponibilidad y pago por WhatsApp.</p>
@@ -73,5 +57,48 @@ description: "Precios del tour a las Islas Palomino para residentes (desde S/179
       <div class="step"><strong>Datos de pasajeros</strong><p>Envías nombres, edades, documentos y nacionalidades.</p></div>
       <div class="step"><strong>¡Listo!</strong><p>Tras el pago te enviamos la dirección de embarque.</p></div>
     </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <p class="eyebrow">Antes de reservar</p>
+    <h2>Políticas de reservas y pagos</h2>
+    <div class="grid cols-2" style="margin-top:var(--space-6)">
+      <div class="card card--top"><div class="card__body">
+        <h3>Reservas</h3>
+        <ul style="padding-left:var(--space-6);margin:0">
+          <li>Envía tu solicitud por WhatsApp o al correo <a href="mailto:reservas@ecocruceros.com">reservas@ecocruceros.com</a>.</li>
+          <li>Indica nombres, edades, número de documento y nacionalidad de cada pasajero.</li>
+          <li>Te recomendamos consultar la disponibilidad antes de reservar.</li>
+          <li>Los servicios privados conviene reservarlos con anticipación.</li>
+          <li><strong>Grupos:</strong> un pasajero liberado a partir de 15 pasajeros.</li>
+        </ul>
+      </div></div>
+      <div class="card card--top"><div class="card__body">
+        <h3>Pagos</h3>
+        <ul style="padding-left:var(--space-6);margin:0">
+          <li>El servicio se paga al <strong>100%</strong>, como máximo <strong>24 horas antes</strong> de la salida.</li>
+          <li>Envíanos por correo la constancia del pago realizado.</li>
+          <li>No se realizan pagos en línea a través de este sitio web.</li>
+        </ul>
+      </div></div>
+      <div class="card card--top"><div class="card__body">
+        <h3>Servicios y traslados</h3>
+        <ul style="padding-left:var(--space-6);margin:0">
+          <li>El tiempo de espera para recoger a los pasajeros es de <strong>15 minutos</strong>. Si no logramos contactarte, se considerará <strong>NO SHOW</strong> y se cobrará una cantidad proporcional de la reserva.</li>
+          <li>Revisa tus pertenencias antes de terminar el servicio: la empresa no se responsabiliza por objetos personales olvidados.</li>
+          <li>El recojo desde otros distritos (San Borja, Barranco, La Molina, etc.) tiene un recargo adicional. Consúltalo con anticipación.</li>
+        </ul>
+      </div></div>
+      <div class="card card--top-gold"><div class="card__body">
+        <h3>Anulaciones</h3>
+        <ul style="padding-left:var(--space-6);margin:0">
+          <li>Puedes anular tu reserva hasta <strong>24 horas antes</strong> de iniciar el servicio.</li>
+          <li>Pasado ese plazo, la reserva se considera <strong>no show</strong>.</li>
+        </ul>
+      </div></div>
+    </div>
+    <div class="btn-row" style="margin-top:var(--space-8)"><a class="btn btn--gold" data-wa-source="precios-policies" href="{{ t.wa.pricing | wa }}">Reservar por WhatsApp</a></div>
   </div>
 </section>

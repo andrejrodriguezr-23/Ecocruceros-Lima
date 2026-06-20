@@ -61,12 +61,7 @@ module.exports = {
     ],
     // "No incluye" per the official flyers: S/26 residents · US$8 foreigners (SERNANP + tasa de embarque)
     extra_es: "No incluye: S/26 por persona (residentes) — ingreso al área natural protegida (SERNANP) y tasa de embarque en muelle privado. Visitantes extranjeros: US$8.",
-    extra_en: "Not included: S/26 per person (residents) — protected-area entrance (SERNANP) and private-pier boarding fee. International visitors: US$8.",
-    images: {
-      residents: "/assets/img/precios-residentes.jpeg",
-      foreigners: "/assets/img/precios-extranjeros.jpeg",
-      horarios: "/assets/img/horarios-embarque.jpeg"
-    }
+    extra_en: "Not included: S/26 per person (residents) — protected-area entrance (SERNANP) and private-pier boarding fee. International visitors: US$8."
   },
   // VERIFIED route stops
   route: [

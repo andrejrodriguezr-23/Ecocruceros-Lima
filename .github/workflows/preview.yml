@@ -18,7 +18,7 @@ name: Preview deploy (staging on github.io)
 
 on:
   push:
-    branches: [claude/zealous-goldberg-0e9phz]
+    branches: [claude/blissful-knuth-1i9brd]
   workflow_dispatch:
 
 permissions:
