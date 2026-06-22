@@ -34,6 +34,8 @@
 {%- elif name == "ticket" -%}<path d="M3 9V7a1 1 0 0 1 1-1h16a1 1 0 0 1 1 1v2a2 2 0 0 0 0 4v2a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1v-2a2 2 0 0 0 0-4z"/><line x1="13" y1="7" x2="13" y2="17" stroke-dasharray="2 2"/>
 {%- elif name == "clock" -%}<circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/>
 {%- elif name == "camera" -%}<rect x="2" y="7" width="20" height="14" rx="2"/><path d="M8 7l1.5-3h5L16 7"/><circle cx="12" cy="14" r="3.5"/>
+{%- elif name == "cloud" or name == "weather" -%}<path d="M17.5 19a4.5 4.5 0 0 0 .5-8.97A6 6 0 0 0 6 9.5 4.5 4.5 0 0 0 6.5 19z"/>
+{%- elif name == "pin" or name == "map" -%}<path d="M12 21s7-5.5 7-11a7 7 0 0 0-14 0c0 5.5 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/>
 {%- else -%}<circle cx="12" cy="12" r="9"/>
 {%- endif -%}
 </svg>

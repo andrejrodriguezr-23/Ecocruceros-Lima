@@ -4,6 +4,7 @@ title: "Nuestra empresa — Pioneros del ecoturismo marino"
 description: "Somos la primera operadora de ecoturismo marino del Perú: creadores, promotores y defensores de las Islas Palomino. Casi 30 años de experiencia y conservación."
 ---
 {% set t = i18n[lang] %}
+{% from "partials/icons.njk" import icon %}
 
 <section class="hero" style="min-height:min(52vh,460px)">
   <div class="hero__media"><img src="/assets/img/galeria/g3.jpg" alt="Pasajeras nadando con los lobos marinos en las Islas Palomino, Callao"></div>
@@ -44,14 +45,17 @@ description: "Somos la primera operadora de ecoturismo marino del Perú: creador
     <h2>Tres pilares de nuestra travesía</h2>
     <div class="grid cols-3" style="margin-top:var(--space-6)">
       <article class="card card--top"><div class="card__body">
+        <span class="icon-chip">{{ icon("award") }}</span>
         <h3>Pioneros en ecoturismo marino</h3>
         <p>La primera operadora de ecoturismo marino del Perú. Creadores y defensores de las Islas Palomino, hemos visto recuperarse el ecosistema y sus poblaciones de aves y lobos marinos.</p>
       </div></article>
       <article class="card card--top"><div class="card__body">
+        <span class="icon-chip">{{ icon("users") }}</span>
         <h3>Experiencia y conservación</h3>
         <p>Nuestra tripulación y colaboradores son navegantes de larga trayectoria, los más experimentados y conocedores del circuito Islas Palomino y la zona de las Islas del Callao.</p>
       </div></article>
       <article class="card card--top-gold"><div class="card__body">
+        <span class="icon-chip icon-chip--gold">{{ icon("shield") }}</span>
         <h3>Seguridad y confort</h3>
         <p>El yate es la embarcación que mejor se adecúa a nuestros pasajeros. Contamos con equipos sofisticados: radar, ecosonda, radiobaliza, GPS, chalecos y balsas salvavidas.</p>
       </div></article>

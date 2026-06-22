@@ -4,6 +4,7 @@ title: "Route & itinerary"
 description: "The Palomino Islands tour route: La Punta, El Camotal, San Lorenzo, El Frontón, Cavinzas and Palomino. History and wildlife at every stop."
 ---
 {% set t = i18n[lang] %}
+{% from "partials/icons.njk" import icon %}
 
 <section class="section section--warm">
   <div class="container">
@@ -28,6 +29,7 @@ description: "The Palomino Islands tour route: La Punta, El Camotal, San Lorenzo
     <div class="grid cols-2">
       {% for stop in site.route %}
       <article class="card card--top reveal"><div class="card__body">
+        <span class="icon-chip">{{ icon("pin") }}</span>
         <p class="eyebrow">Stop {{ loop.index }}</p>
         <h3>{{ stop.en }}</h3>
         <p>{{ stop.desc_en }}</p>
