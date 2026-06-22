@@ -11,7 +11,15 @@ description: "The Palomino Islands tour route: La Punta, El Camotal, San Lorenzo
     <p class="eyebrow" style="margin-top:var(--space-4)">Route</p>
     <h1>Six stops, one unforgettable voyage</h1>
     <p class="lead">Each departure crosses Callao bay — its history and its wildlife — all the way to the Palomino Islands.</p>
-    <div class="asset-pending" style="margin-top:var(--space-6)">{{ t.assetPending }} · route map (to be created from the verified stops)</div>
+    <div class="video-wrap" style="margin-top:var(--space-6)">
+      <div class="embed">
+        <video controls playsinline preload="metadata" poster="/assets/img/galeria/g6.jpg" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;background:#000">
+          <source src="/assets/video/recorrido-islas-palomino.mp4" type="video/mp4">
+          Your browser does not support HTML5 video. <a href="/assets/video/recorrido-islas-palomino.mp4">Download the video</a>.
+        </video>
+      </div>
+      <p class="embed-caption"><strong>Our Route</strong> — a look at the full voyage, from our private pier in La Punta to the sea-lion colony of the Palomino Islands. Each stop is detailed below.</p>
+    </div>
   </div>
 </section>
 
@@ -19,7 +27,7 @@ description: "The Palomino Islands tour route: La Punta, El Camotal, San Lorenzo
   <div class="container">
     <div class="grid cols-2">
       {% for stop in site.route %}
-      <article class="card reveal"><div class="card__body">
+      <article class="card card--top reveal"><div class="card__body">
         <p class="eyebrow">Stop {{ loop.index }}</p>
         <h3>{{ stop.en }}</h3>
         <p>{{ stop.desc_en }}</p>
@@ -27,9 +35,22 @@ description: "The Palomino Islands tour route: La Punta, El Camotal, San Lorenzo
       {% endfor %}
     </div>
     <div style="margin-top:var(--space-8)">
-      <h3>Duration & logistics</h3>
-      <p>Approximate duration: 3–4 hours. Departures are <strong>by reservation</strong> (no fixed schedule). The exact boarding address is shared once your booking is confirmed.</p>
-      <p style="margin-top:var(--space-2)"><span class="pending">{{ t.pending }} — boarding address and booking lead time (B5, B10)</span></p>
+      <h3>Duration &amp; logistics</h3>
+      <p>Approximate duration: <strong>3.5 hours</strong>. <strong>Daily departures by reservation</strong> (Mon–Fri 11:30 a. m.; Sat, Sun &amp; holidays 10:00 a. m.).</p>
+      <p style="margin-top:var(--space-3)"><strong>Meeting point:</strong> {{ site.embarkation.name }} — {{ site.embarkation.address }}. {{ site.embarkation.directions_en }} <a href="{{ site.embarkation.mapsLink }}" target="_blank" rel="noopener">Open in Google Maps →</a></p>
+      <div class="grid cols-2" style="margin-top:var(--space-6);align-items:start">
+        <table class="schedule">
+          <caption>Boarding times</caption>
+          <tbody>
+          {% for s in site.schedule %}
+            <tr><td>{{ s.en }}{% if s.note_en %}<br><small style="color:var(--text-secondary)">{{ s.note_en }}</small>{% endif %}</td><td>{{ s.time }}</td></tr>
+          {% endfor %}
+          </tbody>
+        </table>
+        <div class="embed embed--map">
+          <iframe src="{{ site.embarkation.mapsEmbed }}" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Meeting point map — Muelle Club Canottieri, La Punta, Callao"></iframe>
+        </div>
+      </div>
     </div>
   </div>
 </section>

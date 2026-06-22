@@ -1,0 +1,67 @@
+name: Preview deploy (staging on github.io)
+
+# Publishes an ISOLATED preview of the work-in-progress site for client review.
+#
+# Why this is safe for the live domain:
+#   • Runs ONLY on the development branch (never on main).
+#   • Builds with a path prefix so the site serves from the GitHub project URL:
+#       https://andrejrodriguezr-23.github.io/Ecocruceros-Lima/
+#   • DELETES the CNAME file from the build, so this preview can never claim or
+#     affect the live custom domain ecocruceros.com (hosted elsewhere with the
+#     old website).
+#   • Publishes the built site to a dedicated `gh-pages` branch. It does NOT use
+#     the protected `github-pages` deployment environment, so it deploys cleanly
+#     from a feature branch with no extra repo settings.
+#
+# Production (main -> ecocruceros.com) is handled separately by deploy.yml and
+# is untouched by this workflow.
+
+on:
+  push:
+    branches: [claude/blissful-knuth-1i9brd]
+  workflow_dispatch:
+
+permissions:
+  contents: write   # needed to push the built site to the gh-pages branch
+
+concurrency:
+  group: preview-pages
+  cancel-in-progress: true
+
+jobs:
+  preview:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      # Build under the project sub-path so assets resolve at /Ecocruceros-Lima/...
+      - name: Build site (preview)
+        run: npx @11ty/eleventy --pathprefix=/Ecocruceros-Lima/
+
+      # Critical: keep the live custom domain out of the preview deploy.
+      - name: Remove custom-domain CNAME from preview
+        run: rm -f _site/CNAME
+
+      - name: Publish to gh-pages branch
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          cd _site
+          touch .nojekyll            # serve folders/files verbatim (no Jekyll)
+          git init -q
+          git checkout -q -b gh-pages
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git commit -q -m "Preview build ${GITHUB_SHA}"
+          git push -f "https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git" gh-pages

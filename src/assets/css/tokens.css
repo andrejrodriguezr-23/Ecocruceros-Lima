@@ -1,25 +1,36 @@
 /* ============================================================
    Ecocruceros — Design Tokens (Phase 5)
-   Concept: "El Pacífico de La Punta" — deep Humboldt palette
+   Concept: "El Pacífico de La Punta" — brand palette
+   Marine blue · mustard · blue · light blue · white
    ============================================================ */
 :root {
   /* --- Primitive colors --- */
-  --c-navy-900:#06222F; --c-navy-800:#0B2A3A; --c-navy-700:#103B50;
-  --c-cyan-600:#0C7FB0; --c-cyan-500:#19A7DE; --c-cyan-100:#E2F4FB;
+  --c-navy-900:#06222F; --c-navy-800:#0B2A3A; --c-navy-700:#103B50; --c-navy-600:#16506B;
+  --c-cyan-700:#0E6B8A; --c-cyan-600:#0C7FB0; --c-cyan-500:#19A7DE; --c-cyan-300:#7CCBE9;
+  --c-cyan-200:#BFE6F5; --c-cyan-100:#E2F4FB;
+  /* Brand mustard / gold (replaces the old orange "sun" as the warm accent) */
+  --c-mustard-700:#A9790A; --c-mustard-600:#C8920F; --c-mustard-500:#E0A82E;
+  --c-mustard-400:#EDC04F; --c-mustard-300:#F3D582; --c-mustard-100:#FBEFCB;
+  /* Warning amber — kept distinct from the brand accent for "PENDING" dev flags */
   --c-sun-600:#D8641A;  --c-sun-500:#F08A24;  --c-sun-100:#FDEBD6;
-  --c-foam-50:#F7FAFB;  --c-sand-50:#FBF7F0;
-  --c-ink-600:#41525B;  --c-line-200:#D7E2E8; --c-white:#FFFFFF;
+  --c-foam-50:#F4FAFC;  --c-sand-50:#FBF6EC;
+  --c-ink-600:#41525B;  --c-line-200:#D2E1E9; --c-white:#FFFFFF;
   --c-wa-green:#25D366; --c-wa-green-d:#0A7C42;
 
   /* --- Semantic --- */
-  --bg:var(--c-foam-50); --bg-warm:var(--c-sand-50); --bg-dark:var(--c-navy-900);
+  --bg:var(--c-foam-50); --bg-warm:var(--c-sand-50); --bg-sky:var(--c-cyan-100); --bg-dark:var(--c-navy-900);
   --surface:var(--c-white); --surface-info:var(--c-cyan-100);
   --text:var(--c-navy-800); --text-secondary:var(--c-ink-600);
   --text-on-dark:#EAF4F8; --text-on-dark-soft:#B8CDD6;
   --primary:var(--c-cyan-600); --primary-strong:var(--c-navy-800);
-  --accent:var(--c-sun-600); --border:var(--c-line-200);
+  --accent:var(--c-mustard-500); --accent-strong:var(--c-mustard-700); --accent-soft:var(--c-mustard-100);
+  --border:var(--c-line-200);
+  /* Signature gradients — used to add colour and depth across the site */
+  --grad-sea:linear-gradient(135deg,var(--c-navy-800) 0%,var(--c-cyan-600) 60%,var(--c-cyan-500) 100%);
+  --grad-sky:linear-gradient(180deg,#FFFFFF 0%,var(--c-cyan-100) 100%);
+  --grad-gold:linear-gradient(135deg,var(--c-mustard-500),var(--c-mustard-400));
   --wa-bg:var(--c-wa-green-d); --wa-bg-hover:#0C8E4C; --wa-text:var(--c-white); --wa-glow:var(--c-wa-green);
-  --focus-ring:var(--c-sun-600);
+  --focus-ring:var(--c-mustard-600);
 
   /* --- Typography --- */
   --font-display:"Fraunces","Georgia","Times New Roman",serif;

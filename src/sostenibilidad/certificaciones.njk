@@ -24,10 +24,21 @@ description: "Green Destinations, Marca Perú, SERNANP, Por la Conservación, ES
         {% else %}
         <div class="cert__logo"><img src="/assets/img/certs/{{ c.img }}" alt="{{ c.name }}" loading="lazy" width="88" height="88"></div>
         <b>{{ c.name }}</b>
-        <p class="pending" style="margin-top:6px">{{ t.pending }} — detalle/vigencia + enlace (C1)</p>
         {% endif %}
       </div>
       {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="section section--sky">
+  <div class="container reveal">
+    <p class="eyebrow">Sello CALTUR — MINCETUR</p>
+    <h2>Buenas prácticas reconocidas por el Estado</h2>
+    <p class="lead">A través del sistema CALTUR de Aplicación de Buenas Prácticas, el Ministerio de Comercio Exterior y Turismo (MINCETUR) reconoce a Ecocruceros en dos modalidades de operación. Vigencia: diciembre de 2026.</p>
+    <div class="grid cols-2" style="margin-top:var(--space-6)">
+      <div class="card card--top"><div class="card__body"><h3>Transporte turístico acuático</h3><p>Reconocimiento a la aplicación de buenas prácticas de gestión del servicio de agencias de viajes y turismo que opera el servicio de <strong>transporte turístico acuático</strong>.</p></div></div>
+      <div class="card card--top"><div class="card__body"><h3>Avistamiento de fauna marina</h3><p>Reconocimiento a la aplicación de buenas prácticas de gestión del servicio de agencias de viajes y turismo que opera el servicio de <strong>avistamiento de fauna marina</strong>.</p></div></div>
     </div>
   </div>
 </section>
@@ -37,8 +48,8 @@ description: "Green Destinations, Marca Perú, SERNANP, Por la Conservación, ES
     <p class="eyebrow">Reconocimientos</p>
     <h2>Premios y prensa</h2>
     <div class="grid cols-2" style="margin-top:var(--space-6)">
-      <div class="card"><div class="card__body"><h3>Premio al turismo sostenible 2025</h3><p>Reconocimiento por promover el turismo sostenible. <span class="pending">{{ t.pending }} — nombre/emisor oficial (C2)</span></p></div></div>
-      <div class="card"><div class="card__body"><h3>PromPerú</h3><p>Destacó nuestros tours a las Islas Palomino (2025). <span class="pending">{{ t.pending }} — enlace (C7)</span></p></div></div>
+      <div class="card"><div class="card__body"><h3>Premio FIASEET 2024 — Turismo Sostenible</h3><p><strong>2.º lugar</strong> en el 3.<sup>er</sup> Concurso de Buenas Prácticas en Turismo Sostenible y ODS «hacia una generación de igualdad», de la Federación Internacional de Asociaciones de Ejecutivas de Empresas Turísticas (FIASEET) y su Comité de Turismo Sostenible (COMTUS). Categoría Asociadas · octubre de 2024.</p></div></div>
+      <div class="card"><div class="card__body"><h3>PromPerú</h3><p>Destacó nuestros tours a las Islas Palomino (2025). <a href="https://www.youtube.com/watch?v=jBhNrgPsMN8" target="_blank" rel="noopener">Ver el video →</a></p></div></div>
     </div>
     <div class="card" style="margin-top:var(--space-6)"><div class="card__body"><h3>TripAdvisor</h3><p>4.6★ · 193 reseñas · #10 de 97 tours en Lima. <a href="{{ site.tripadvisor.url }}" target="_blank" rel="noopener">Ver perfil →</a></p></div></div>
   </div>

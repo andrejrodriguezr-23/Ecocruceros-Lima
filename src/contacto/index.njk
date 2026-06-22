@@ -1,33 +1,57 @@
 ---
 permalink: /contacto/
-title: "Contacto"
-description: "Reserva tu tour a las Islas Palomino por WhatsApp (+51 986 671 093). También por correo. La Punta, Callao, Perú."
+title: "Contacto y reservas"
+description: "Reserva tu tour a las Islas Palomino por WhatsApp (+51 986 671 093) o al (01) 226-8530. Oficina en Av. Arequipa 4964, Miraflores. La Punta, Callao, Perú."
 ---
 {% set t = i18n[lang] %}
 
-<section class="section">
+<section class="section section--sky">
   <div class="container">
     <nav class="breadcrumbs" aria-label="breadcrumb"><a href="/">Inicio</a><span>›</span> Contacto</nav>
-    <p class="eyebrow" style="margin-top:var(--space-4)">Contacto</p>
+    <p class="eyebrow" style="margin-top:var(--space-4)">Contacto y reservas</p>
     <h1>Hablemos por WhatsApp</h1>
     <p class="lead">La forma más rápida de reservar y resolver dudas. {{ t.weReply }}.</p>
+    <div class="btn-row" style="margin-top:var(--space-6)">
+      <a class="btn btn--gold btn--lg" data-wa-source="contacto" href="{{ t.wa.general | wa }}">Reservar por WhatsApp</a>
+    </div>
+  </div>
+</section>
 
-    <div class="grid cols-2" style="margin-top:var(--space-8)">
-      <div class="card"><div class="card__body stack">
-        <h3>WhatsApp</h3>
+<section class="section">
+  <div class="container">
+    <div class="grid cols-2" style="align-items:start">
+      <div class="card card--top"><div class="card__body stack">
+        <h3>WhatsApp y teléfono</h3>
         <p style="font-size:1.25rem;font-weight:600;color:var(--text)">{{ site.whatsappDisplay }}</p>
+        <p>Oficina: <strong>{{ site.phone }}</strong></p>
         <p style="color:var(--text-secondary)">🕐 {{ t.hours }}.</p>
-      </div></div>
-      <div class="card"><div class="card__body stack">
-        <h3>Otros canales</h3>
         <p>Correo: <a href="mailto:{{ site.email }}">{{ site.email }}</a></p>
-        <p>Ubicación: {{ site.location }}<br><small>La dirección exacta de embarque se comparte al reservar. <span class="pending">{{ t.pending }} (E4)</span></small></p>
         <p>Redes:
           <a href="{{ site.social.facebook }}" rel="noopener" target="_blank">Facebook</a> ·
           <a href="{{ site.social.instagram }}" rel="noopener" target="_blank">Instagram</a> ·
           <a href="{{ site.social.youtube }}" rel="noopener" target="_blank">YouTube</a>
         </p>
       </div></div>
+      <div class="card card--top-gold"><div class="card__body stack">
+        <h3>Embarque y oficina</h3>
+        <p><strong>Embarque:</strong> muelle privado en La Punta, Callao. La dirección exacta se comparte al confirmar la reserva.</p>
+        <p><strong>Oficina:</strong> {{ site.office.address }}</p>
+        <p><strong>Formas de pago</strong> (siempre con pago previo):</p>
+        <ul class="checklist">
+          <li>En nuestra oficina de Miraflores.</li>
+          <li>Transferencia o depósito bancario (te compartimos los números de cuenta al reservar).</li>
+          <li>Puntos de venta de <strong>Tu Entrada</strong> en Plaza Vea o Vivanda, con previa reserva.</li>
+        </ul>
+      </div></div>
+    </div>
+
+    <div style="margin-top:var(--space-8)">
+      <h2>Cómo llegar a nuestra oficina</h2>
+      <p style="margin-top:var(--space-2);color:var(--text-secondary)">{{ site.office.address }}</p>
+      <div class="embed embed--map" style="margin-top:var(--space-4)">
+        <iframe src="{{ site.office.mapsEmbed }}" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Mapa — oficina Ecocruceros, Av. Arequipa 4964, Miraflores"></iframe>
+      </div>
+      <p class="embed-caption"><a href="{{ site.office.mapsLink }}" rel="noopener" target="_blank">Abrir en Google Maps →</a></p>
     </div>
   </div>
 </section>

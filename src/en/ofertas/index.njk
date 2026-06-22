@@ -1,0 +1,67 @@
+---
+permalink: /en/ofertas/
+title: "Offers & rates for the Palomino Islands tour"
+description: "Rates for residents and visitors, discounts for children and students, infants free, and group offers. Ask about current promotions on WhatsApp."
+---
+{% set t = i18n[lang] %}
+
+<section class="section section--sea">
+  <div class="container">
+    <nav class="breadcrumbs" aria-label="breadcrumb" style="color:#cfe6f0"><a href="/en/" style="color:#cfe6f0">Home</a><span>›</span> Offers</nav>
+    <p class="eyebrow" style="margin-top:var(--space-4)">Offers</p>
+    <h1>Rates &amp; promotions</h1>
+    <p class="lead">Clear prices for everyone, with discounts for children, students and groups. The SERNANP fee is paid separately.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <p class="eyebrow">Residents in Peru</p>
+    <h2>Resident rates</h2>
+    <div class="grid cols-3" style="margin-top:var(--space-6)">
+      <div class="offer-card"><div class="offer-body">
+        <h3>Adults</h3><p class="price-big">S/179 <small>per person</small></p>
+        <p style="color:var(--text-secondary)">Full 3.5-hour voyage with everything included.</p>
+      </div></div>
+      <div class="offer-card"><div class="offer-body">
+        <h3>Children (2–12)</h3><p class="price-big">S/149 <small>per child</small></p>
+        <p style="color:var(--text-secondary)">Special rate for the youngest in the family.</p>
+      </div></div>
+      <div class="offer-card"><span class="ribbon">Free</span><div class="offer-body">
+        <h3>Infants</h3><p class="price-big">Free <small>1 per family</small></p>
+        <p style="color:var(--text-secondary)">One infant travels free per family.</p>
+      </div></div>
+    </div>
+
+    <p class="eyebrow" style="margin-top:var(--space-12)">International visitors</p>
+    <h2>Visitor rates</h2>
+    <div class="grid cols-3" style="margin-top:var(--space-6)">
+      <div class="offer-card"><div class="offer-body">
+        <h3>Adults</h3><p class="price-big">US$69 <small>per person</small></p>
+        <p style="color:var(--text-secondary)">Full 3.5-hour voyage, everything included.</p>
+      </div></div>
+      <div class="offer-card"><div class="offer-body">
+        <h3>Children (2–12)</h3><p class="price-big">US$59 <small>per child</small></p>
+        <p style="color:var(--text-secondary)">Special rate for children.</p>
+      </div></div>
+    </div>
+    <p class="price-note" style="margin-top:var(--space-6);color:var(--text-secondary)">{{ site.pricing.extra_en }}</p>
+  </div>
+</section>
+
+<section class="section section--sky">
+  <div class="container">
+    <div class="grid cols-2" style="align-items:stretch">
+      <div class="card card--top-gold"><div class="card__body stack">
+        <h3>Travelling as a group?</h3>
+        <p>Coordinate your group's booking for the Palomino Islands tour and ask about rates by number of passengers.</p>
+        <div class="btn-row"><a class="btn btn--ghost" data-wa-source="ofertas-grupos" href="{{ t.wa.pricing | wa }}">Book as a group →</a></div>
+      </div></div>
+      <div class="card card--top"><div class="card__body stack">
+        <h3>Current promotions</h3>
+        <p>We run seasonal and early-booking promotions. Message us on WhatsApp and we'll share the offers available for your date.</p>
+        <div class="btn-row"><a class="btn btn--gold" data-wa-source="ofertas-promos" href="{{ t.wa.pricing | wa }}">Ask on WhatsApp</a></div>
+      </div></div>
+    </div>
+  </div>
+</section>

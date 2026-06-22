@@ -33,14 +33,28 @@ strong{font-weight:600}
 .section{padding-block:var(--space-16)}
 @media (min-width:768px){.section{padding-block:var(--space-24)}}
 .section--warm{background:var(--bg-warm)}
-.section--dark{background:var(--bg-dark);color:var(--text-on-dark)}
+.section--sky{background:var(--grad-sky)}
+.section--sea{background:var(--grad-sea);color:var(--text-on-dark)}
+.section--sea h1,.section--sea h2,.section--sea h3{color:#fff}
+.section--sea p{color:#dff1f8}
+.section--sea .eyebrow{color:var(--c-mustard-300)}
+.section--dark{background:linear-gradient(160deg,var(--c-navy-900),var(--c-navy-800) 55%,var(--c-navy-700));color:var(--text-on-dark)}
 .section--dark h1,.section--dark h2,.section--dark h3{color:#fff}
 .section--dark p{color:var(--text-on-dark-soft)}
 
-.eyebrow{font-family:var(--font-body);font-weight:600;font-size:var(--fs-eyebrow);letter-spacing:.08em;text-transform:uppercase;color:var(--primary);margin-bottom:var(--space-3)}
+.eyebrow{font-family:var(--font-body);font-weight:700;font-size:var(--fs-eyebrow);letter-spacing:.08em;text-transform:uppercase;color:var(--primary);margin-bottom:var(--space-3)}
+/* Decorative gold tick before eyebrows adds brand colour without hurting contrast */
+.eyebrow::before{content:"";display:inline-block;width:22px;height:3px;border-radius:2px;background:var(--grad-gold);vertical-align:middle;margin-right:10px;margin-bottom:3px}
+.center .eyebrow::before{display:none}
 .section--dark .eyebrow{color:var(--c-cyan-500)}
+.section--dark .eyebrow::before,.section--sea .eyebrow::before{background:var(--c-mustard-400)}
 .lead{font-size:var(--fs-body-lg);color:var(--text-secondary)}
 .section--dark .lead{color:var(--text-on-dark-soft)}
+
+/* Long-form copy: justified for an even, brochure-like edge (client request) */
+.prose{max-width:var(--measure)}
+.prose p{margin-top:var(--space-3)}
+.justify,.prose.justify p{text-align:justify;text-justify:inter-word;hyphens:auto}
 
 .grid{display:grid;gap:var(--space-6)}
 @media (min-width:768px){.cols-2{grid-template-columns:repeat(2,1fr)} .cols-3{grid-template-columns:repeat(3,1fr)}}

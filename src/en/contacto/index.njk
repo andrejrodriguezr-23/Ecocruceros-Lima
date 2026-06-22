@@ -1,32 +1,57 @@
 ---
 permalink: /en/contacto/
-title: "Contact"
-description: "Book your Palomino Islands tour on WhatsApp (+51 986 671 093). Also by email. La Punta, Callao, Peru."
+title: "Contact & booking"
+description: "Book your Palomino Islands tour on WhatsApp (+51 986 671 093) or call (01) 226-8530. Office at Av. Arequipa 4964, Miraflores. La Punta, Callao, Peru."
 ---
 {% set t = i18n[lang] %}
 
-<section class="section">
+<section class="section section--sky">
   <div class="container">
     <nav class="breadcrumbs" aria-label="breadcrumb"><a href="/en/">Home</a><span>›</span> Contact</nav>
-    <p class="eyebrow" style="margin-top:var(--space-4)">Contact</p>
+    <p class="eyebrow" style="margin-top:var(--space-4)">Contact &amp; booking</p>
     <h1>Let's talk on WhatsApp</h1>
     <p class="lead">The fastest way to book and ask questions. {{ t.weReply }}.</p>
-    <div class="grid cols-2" style="margin-top:var(--space-8)">
-      <div class="card"><div class="card__body stack">
-        <h3>WhatsApp</h3>
+    <div class="btn-row" style="margin-top:var(--space-6)">
+      <a class="btn btn--gold btn--lg" data-wa-source="contacto" href="{{ t.wa.general | wa }}">Book on WhatsApp</a>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="grid cols-2" style="align-items:start">
+      <div class="card card--top"><div class="card__body stack">
+        <h3>WhatsApp &amp; phone</h3>
         <p style="font-size:1.25rem;font-weight:600;color:var(--text)">{{ site.whatsappDisplay }}</p>
+        <p>Office: <strong>{{ site.phone }}</strong></p>
         <p style="color:var(--text-secondary)">🕐 {{ t.hours }}.</p>
-      </div></div>
-      <div class="card"><div class="card__body stack">
-        <h3>Other channels</h3>
         <p>Email: <a href="mailto:{{ site.email }}">{{ site.email }}</a></p>
-        <p>Location: {{ site.location }}<br><small>The exact boarding address is shared when you book. <span class="pending">{{ t.pending }} (E4)</span></small></p>
         <p>Social:
           <a href="{{ site.social.facebook }}" rel="noopener" target="_blank">Facebook</a> ·
           <a href="{{ site.social.instagram }}" rel="noopener" target="_blank">Instagram</a> ·
           <a href="{{ site.social.youtube }}" rel="noopener" target="_blank">YouTube</a>
         </p>
       </div></div>
+      <div class="card card--top-gold"><div class="card__body stack">
+        <h3>Boarding &amp; office</h3>
+        <p><strong>Boarding:</strong> private pier in La Punta, Callao. The exact address is shared once your booking is confirmed.</p>
+        <p><strong>Office:</strong> {{ site.office.address }}</p>
+        <p><strong>Payment methods</strong> (always paid in advance):</p>
+        <ul class="checklist">
+          <li>At our Miraflores office.</li>
+          <li>Bank transfer or deposit (we share the account numbers when you book).</li>
+          <li><strong>Tu Entrada</strong> points of sale at Plaza Vea or Vivanda, with prior reservation.</li>
+        </ul>
+      </div></div>
+    </div>
+
+    <div style="margin-top:var(--space-8)">
+      <h2>How to reach our office</h2>
+      <p style="margin-top:var(--space-2);color:var(--text-secondary)">{{ site.office.address }}</p>
+      <div class="embed embed--map" style="margin-top:var(--space-4)">
+        <iframe src="{{ site.office.mapsEmbed }}" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Map — Ecocruceros office, Av. Arequipa 4964, Miraflores"></iframe>
+      </div>
+      <p class="embed-caption"><a href="{{ site.office.mapsLink }}" rel="noopener" target="_blank">Open in Google Maps →</a></p>
     </div>
   </div>
 </section>
