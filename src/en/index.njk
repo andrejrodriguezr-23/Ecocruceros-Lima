@@ -5,6 +5,7 @@ description: "Sail with the pioneers of marine ecotourism in Peru. Palomino Isla
 eyebrow: "Ecocruceros · La Punta, Callao"
 ---
 {% set t = i18n[lang] %}
+{% from "partials/icons.njk" import icon %}
 
 <section class="hero">
   <div class="hero__media"><img src="/assets/img/hero-swim-lobos.jpg" alt="Guests swimming with sea lions at the Palomino Islands, Callao"></div>
@@ -30,9 +31,9 @@ eyebrow: "Ecocruceros · La Punta, Callao"
 <section class="section" style="padding-block:var(--space-12)">
   <div class="container reveal">
     <div class="trust-strip">
-      <div class="item"><span class="num tnum">30</span> years of experience</div>
+      <div class="item"><span class="num tnum count" data-count="30">30</span> years of experience</div>
       <div class="item"><span class="num tnum">4.6★</span> · 193 reviews</div>
-      <div class="item"><span class="num tnum">5,000+</span> sea lions</div>
+      <div class="item"><span class="num tnum count" data-count="5000" data-suffix="+">5,000+</span> sea lions</div>
       <div class="item"><span class="num tnum">30 min</span> from central Lima</div>
     </div>
   </div>
@@ -48,6 +49,13 @@ eyebrow: "Ecocruceros · La Punta, Callao"
       <article class="card card--top"><div class="card__body"><span class="tag tag--ok">Guaranteed</span><h3>Humboldt penguins</h3><p>And guano birds at the Cavinzas Islands.</p></div></article>
       <article class="card card--top-gold"><div class="card__body"><span class="tag tag--seasonal">Seasonal</span><h3>Whale sightings</h3><p>Possible in some months · not guaranteed.</p></div></article>
     </div>
+    <div class="video-wrap" style="margin-top:var(--space-8)">
+      <video controls playsinline preload="none" poster="/assets/img/hero-swim-lobos.jpg" style="display:block;width:100%;border-radius:var(--radius);box-shadow:var(--shadow-2);background:#000">
+        <source src="/assets/video/nado-con-lobos.mp4" type="video/mp4">
+        Your browser does not support HTML5 video. <a href="/assets/video/nado-con-lobos.mp4">Download the video</a>.
+      </video>
+      <p class="embed-caption" style="text-align:center">Our guests swimming with the sea lions — no swimming ability required.</p>
+    </div>
     <div class="btn-row" style="margin-top:var(--space-8)"><a class="btn btn--primary" href="/en/tour/">{{ t.seeTour }} →</a></div>
   </div>
 </section>
@@ -56,21 +64,25 @@ eyebrow: "Ecocruceros · La Punta, Callao"
   <div class="container reveal">
     <p class="eyebrow">What's included</p>
     <h2>Everything ready for your voyage</h2>
-    <p class="lead">Your ticket includes everything you need to enjoy the day with peace of mind:</p>
-    <ul class="checklist checklist--2" style="margin-top:var(--space-6)">
-      <li>Swim with the <strong>sea lions</strong> in their habitat.</li>
-      <li>Bird and penguin watching.</li>
-      <li><strong>Bilingual</strong> tourism guide (English–Spanish) on board.</li>
-      <li>Life vest throughout the entire voyage.</li>
-      <li>Wetsuits for swimming in the colder season.</li>
-      <li>Cold and hot drinks and snacks — <strong>unlimited</strong>.</li>
-      <li>Seasickness tablets.</li>
-      <li>Boarding at our <strong>private pier</strong> for greater safety.</li>
-      <li>Two-deck yacht with 2 cabins, 2 restrooms, lounge and galley.</li>
-      <li>Travel insurance.</li>
-    </ul>
-    <p style="margin-top:var(--space-6)"><strong>Not included:</strong> S/26 (residents) / US$8 (visitors) for the protected natural area (SERNANP) entrance and boarding fee.</p>
-    <p style="margin-top:var(--space-2)">No swimming ability required: you can enter the sea wearing a life vest.</p>
+    <div class="media-split" style="margin-top:var(--space-8)">
+      <div class="media-split__media media-split__media--tall">
+        <img src="/assets/img/galeria/g5.jpg" alt="Guests enjoying the Palomino Islands voyage">
+        <span class="media-split__badge">All included in your ticket</span>
+      </div>
+      <ul class="feature-list">
+        <li>{{ icon("swim") }}<span>Swim with the <strong>sea lions</strong> in their habitat.</span></li>
+        <li>{{ icon("bird") }}<span>Bird and penguin watching.</span></li>
+        <li>{{ icon("guide") }}<span><strong>Bilingual</strong> tourism guide on board.</span></li>
+        <li>{{ icon("vest") }}<span>Life vest throughout the entire voyage.</span></li>
+        <li>{{ icon("wetsuit") }}<span>Wetsuits for swimming in the colder season.</span></li>
+        <li>{{ icon("drinks") }}<span>Cold and hot drinks and snacks — <strong>unlimited</strong>.</span></li>
+        <li>{{ icon("pill") }}<span>Seasickness tablets.</span></li>
+        <li>{{ icon("anchor") }}<span>Boarding at our <strong>private pier</strong>.</span></li>
+        <li>{{ icon("boat") }}<span>Two-deck yacht: 2 cabins, 2 restrooms, lounge and galley.</span></li>
+        <li>{{ icon("shield") }}<span>Travel insurance.</span></li>
+      </ul>
+    </div>
+    <p style="margin-top:var(--space-6)"><strong>Not included:</strong> S/26 (residents) / US$8 (visitors) for the protected natural area (SERNANP) entrance and boarding fee. No swimming ability required: you can enter the sea wearing a life vest.</p>
     <div class="btn-row" style="margin-top:var(--space-6)"><a class="btn btn--ghost" href="/en/tour/precios/">{{ t.seePricing }} →</a></div>
   </div>
 </section>

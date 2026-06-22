@@ -4,6 +4,7 @@ title: "Sostenibilidad y conservación"
 description: "El 'Eco' no es una etiqueta: operamos dentro de una Reserva Nacional con prácticas de bajo impacto y certificaciones de turismo sostenible."
 ---
 {% set t = i18n[lang] %}
+{% from "partials/icons.njk" import icon %}
 
 <section class="section section--dark">
   <div class="container reveal">
@@ -28,12 +29,12 @@ description: "El 'Eco' no es una etiqueta: operamos dentro de una Reserva Nacion
     <h2>Nuestros compromisos ambientales</h2>
     <p class="lead">Operamos bajo un enfoque de sostenibilidad y bajo impacto, con prácticas concretas a bordo de nuestras embarcaciones.</p>
     <div class="grid cols-3" style="margin-top:var(--space-6)">
-      <div class="card card--top"><div class="card__body"><h3>Sin plástico de un solo uso</h3><p>Hemos eliminado de forma progresiva el plástico de un solo uso: servimos las bebidas en <strong>tazas de loza reutilizables</strong> y, cuando es necesario, en vasitos de cartón biodegradable.</p></div></div>
-      <div class="card card--top"><div class="card__body"><h3>Cero residuos al mar</h3><p>Está <strong>prohibido arrojar cualquier residuo al mar</strong>. Todos los desechos generados a bordo se retornan a tierra para su disposición final, con tachos diferenciados durante la navegación.</p></div></div>
-      <div class="card card--top"><div class="card__body"><h3>Uso eficiente del agua</h3><p>Controlamos el uso del agua potable durante el servicio y la limpieza, y promovemos su consumo responsable entre pasajeros y tripulación.</p></div></div>
-      <div class="card card--top"><div class="card__body"><h3>Consumo responsable de bebidas</h3><p>Preparamos las bebidas calientes y frías solo a solicitud y según el número real de pasajeros, evitando el desperdicio de insumos y alimentos.</p></div></div>
-      <div class="card card--top-gold"><div class="card__body"><h3>Tarifa SERNANP</h3><p>Aporte oficial a la conservación de la Reserva Nacional.</p></div></div>
-      <div class="card card--top"><div class="card__body"><h3>Sensibilización ambiental</h3><p>Informamos a nuestros pasajeros sobre las buenas prácticas a bordo y capacitamos periódicamente a la tripulación en sostenibilidad y manejo de residuos.</p></div></div>
+      <div class="card card--top"><div class="card__body"><span class="icon-chip">{{ icon("no-plastic") }}</span><h3>Sin plástico de un solo uso</h3><p>Hemos eliminado de forma progresiva el plástico de un solo uso: servimos las bebidas en <strong>tazas de loza reutilizables</strong> y, cuando es necesario, en vasitos de cartón biodegradable.</p></div></div>
+      <div class="card card--top"><div class="card__body"><span class="icon-chip">{{ icon("recycle") }}</span><h3>Cero residuos al mar</h3><p>Está <strong>prohibido arrojar cualquier residuo al mar</strong>. Todos los desechos generados a bordo se retornan a tierra para su disposición final, con tachos diferenciados durante la navegación.</p></div></div>
+      <div class="card card--top"><div class="card__body"><span class="icon-chip">{{ icon("droplet") }}</span><h3>Uso eficiente del agua</h3><p>Controlamos el uso del agua potable durante el servicio y la limpieza, y promovemos su consumo responsable entre pasajeros y tripulación.</p></div></div>
+      <div class="card card--top"><div class="card__body"><span class="icon-chip">{{ icon("drinks") }}</span><h3>Consumo responsable de bebidas</h3><p>Preparamos las bebidas calientes y frías solo a solicitud y según el número real de pasajeros, evitando el desperdicio de insumos y alimentos.</p></div></div>
+      <div class="card card--top-gold"><div class="card__body"><span class="icon-chip icon-chip--gold">{{ icon("award") }}</span><h3>Tarifa SERNANP</h3><p>Aporte oficial a la conservación de la Reserva Nacional.</p></div></div>
+      <div class="card card--top"><div class="card__body"><span class="icon-chip">{{ icon("users") }}</span><h3>Sensibilización ambiental</h3><p>Informamos a nuestros pasajeros sobre las buenas prácticas a bordo y capacitamos periódicamente a la tripulación en sostenibilidad y manejo de residuos.</p></div></div>
     </div>
   </div>
 </section>
@@ -44,10 +45,10 @@ description: "El 'Eco' no es una etiqueta: operamos dentro de una Reserva Nacion
     <h2>Aprende a separar tus residuos</h2>
     <p class="lead">Separar correctamente la basura facilita el reúso y el reciclaje, y reduce la extracción de recursos naturales del ecosistema. A bordo encontrarás tachos diferenciados:</p>
     <div class="grid cols-2" style="margin-top:var(--space-6)">
-      <div class="card card--top"><div class="card__body"><h3>Residuos reciclables</h3><p>Plástico, vidrio, cartón y metales. Recuerda enjuagarlos antes de desecharlos.</p></div></div>
-      <div class="card card--top"><div class="card__body"><h3>Residuos orgánicos</h3><p>Restos de comida.</p></div></div>
-      <div class="card card--top"><div class="card__body"><h3>Residuos no aprovechables</h3><p>Pañuelos usados, mascarillas y papeles o cartón contaminados con comida.</p></div></div>
-      <div class="card card--top"><div class="card__body"><h3>Residuos de papel</h3><p>Destinado exclusivamente a residuos de papel limpio.</p></div></div>
+      <div class="card card--top"><div class="card__body"><span class="icon-chip">{{ icon("recycle") }}</span><h3>Residuos reciclables</h3><p>Plástico, vidrio, cartón y metales. Recuerda enjuagarlos antes de desecharlos.</p></div></div>
+      <div class="card card--top"><div class="card__body"><span class="icon-chip">{{ icon("leaf") }}</span><h3>Residuos orgánicos</h3><p>Restos de comida.</p></div></div>
+      <div class="card card--top"><div class="card__body"><span class="icon-chip">{{ icon("trash") }}</span><h3>Residuos no aprovechables</h3><p>Pañuelos usados, mascarillas y papeles o cartón contaminados con comida.</p></div></div>
+      <div class="card card--top"><div class="card__body"><span class="icon-chip">{{ icon("paper") }}</span><h3>Residuos de papel</h3><p>Destinado exclusivamente a residuos de papel limpio.</p></div></div>
     </div>
     <p style="margin-top:var(--space-6);font-weight:600">Cuidemos juntos el mar: deposita tus residuos en los tachos y ayuda a proteger la vida marina.</p>
   </div>

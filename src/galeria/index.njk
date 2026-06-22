@@ -4,6 +4,7 @@ title: "Galería y videos"
 description: "Fotos y videos reales de la travesía a las Islas Palomino: lobos marinos, el yate y el recorrido. Incluye reportajes de CNN y de El Tour de los Incas."
 ---
 {% set t = i18n[lang] %}
+{% from "partials/icons.njk" import icon %}
 
 <section class="section section--sky">
   <div class="container">
@@ -19,7 +20,7 @@ description: "Fotos y videos reales de la travesía a las Islas Palomino: lobos 
     <p class="eyebrow">Fotos</p>
     <h2>Momentos de la travesía</h2>
     <div class="gallery-grid" style="margin-top:var(--space-6)">
-      {% for n in range(1, 16) %}
+      {% for n in range(1, 21) %}
       <img class="zoomable" src="/assets/img/galeria/g{{ n }}.jpg" alt="Pasajeros nadando con los lobos marinos en las Islas Palomino" loading="lazy" style="width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:var(--radius);display:block">
       {% endfor %}
     </div>
@@ -30,11 +31,52 @@ description: "Fotos y videos reales de la travesía a las Islas Palomino: lobos 
   <div class="container">
     <p class="eyebrow">Fauna marina</p>
     <h2>La fauna de las Islas Palomino</h2>
-    <p class="lead">Aves, lobos marinos y demás especies del mar frío peruano que verás en la travesía. Toca cada ficha para ampliarla.</p>
-    <div class="fauna-grid" style="margin-top:var(--space-8)">
-      {% for n in range(1, 51) %}
-      <img class="zoomable" src="/assets/img/fauna/f{{ n }}.jpg" alt="Ficha de fauna marina de las Islas Palomino" loading="lazy">
+    <p class="lead">Aves, lobos marinos y demás especies del mar frío peruano que verás en la travesía. <strong>Toca una ficha</strong> para ver su comportamiento, alimentación, hábitat y reproducción.</p>
+    <div class="fauna-grid stagger" style="margin-top:var(--space-8)">
+      {% for s in fauna %}
+      <button type="button" class="fauna-card reveal" style="--i:{{ loop.index0 % 12 }}" data-fauna="{{ s.slug }}" aria-haspopup="dialog" aria-label="{{ s.name_es }} — ver ficha">
+        <span class="fauna-card__media">
+          <img src="{{ s.photo }}" alt="{{ s.name_es }} ({{ s.sci }})" loading="lazy">
+          <span class="fauna-card__ph">{{ icon("camera","ico ico--lg") }}<small>Foto próximamente</small></span>
+          <span class="fauna-card__n">{{ s.n }}</span>
+          <span class="fauna-card__type">{{ s.type_es }}</span>
+        </span>
+        <span class="fauna-card__body">
+          <span class="fauna-card__name">{{ s.name_es }}</span>
+          <span class="fauna-card__sci">{{ s.sci }}</span>
+          <span class="fauna-card__more">Ver ficha {{ icon("info") }}</span>
+        </span>
+      </button>
       {% endfor %}
+    </div>
+
+    {# Hidden detail content — cloned into the modal when a card is tapped #}
+    <div hidden>
+      {% for s in fauna %}
+      <div class="fauna-detail" data-detail="{{ s.slug }}">
+        <div class="fdetail__head">
+          <div class="fdetail__photo"><img src="{{ s.photo }}" alt="{{ s.name_es }}" onerror="this.style.display='none'"></div>
+          <div class="fdetail__intro">
+            <p class="eyebrow" style="margin-bottom:6px">{{ s.type_es }}</p>
+            <h3>{{ s.name_es }}</h3>
+            <p class="fdetail__sci">{{ s.name_en }} · <em>{{ s.sci }}</em></p>
+            <span class="fdetail__life">{{ icon("clock") }} Vive ~{{ s.lifespan }} años</span>
+          </div>
+        </div>
+        <div class="fdetail__grid">
+          <div><h4>{{ icon("info") }} Comportamiento</h4><p>{{ s.behavior_es }}</p></div>
+          <div><h4>{{ icon("fish") }} Alimento</h4><ul>{% for f in s.food_es %}<li>{{ f }}</li>{% endfor %}</ul></div>
+          <div><h4>{{ icon("anchor") }} Hábitat</h4><p>{{ s.habitat_es }}</p></div>
+          <div><h4>{{ icon("award") }} Reproducción</h4><p>{{ s.repro_es }}</p></div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+
+    <div class="fmodal" data-fmodal aria-hidden="true">
+      <div class="fmodal__panel" role="dialog" aria-modal="true" aria-label="Ficha de fauna" data-fmodal-panel>
+        <button type="button" class="fmodal__close" data-fmodal-close aria-label="Cerrar">&times;</button>
+      </div>
     </div>
   </div>
 </section>
