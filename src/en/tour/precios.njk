@@ -4,6 +4,7 @@ title: "Pricing & booking"
 description: "Palomino Islands tour pricing for residents (from S/179) and visitors (from US$69). No online payment — everything by WhatsApp."
 ---
 {% set t = i18n[lang] %}
+{% from "partials/icons.njk" import icon %}
 
 <section class="section section--warm">
   <div class="container">
@@ -55,6 +56,7 @@ description: "Palomino Islands tour pricing for residents (from S/179) and visit
     <h2>Booking &amp; payment policies</h2>
     <div class="grid cols-2" style="margin-top:var(--space-6)">
       <div class="card card--top"><div class="card__body">
+        <span class="icon-chip">{{ icon("reservas") }}</span>
         <h3>Bookings</h3>
         <ul style="padding-left:var(--space-6);margin:0">
           <li>Send your request via WhatsApp or to <a href="mailto:reservas@ecocruceros.com">reservas@ecocruceros.com</a>.</li>
@@ -65,6 +67,7 @@ description: "Palomino Islands tour pricing for residents (from S/179) and visit
         </ul>
       </div></div>
       <div class="card card--top"><div class="card__body">
+        <span class="icon-chip">{{ icon("pagos") }}</span>
         <h3>Payments</h3>
         <ul style="padding-left:var(--space-6);margin:0">
           <li>The service is paid in <strong>full (100%)</strong>, at the latest <strong>24 hours before</strong> departure.</li>
@@ -73,6 +76,7 @@ description: "Palomino Islands tour pricing for residents (from S/179) and visit
         </ul>
       </div></div>
       <div class="card card--top"><div class="card__body">
+        <span class="icon-chip">{{ icon("traslados") }}</span>
         <h3>Service & transfers</h3>
         <ul style="padding-left:var(--space-6);margin:0">
           <li>The waiting time to pick up passengers is <strong>15 minutes</strong>. If we cannot reach you, it will be treated as a <strong>NO SHOW</strong> and a proportional charge will apply.</li>
@@ -81,6 +85,7 @@ description: "Palomino Islands tour pricing for residents (from S/179) and visit
         </ul>
       </div></div>
       <div class="card card--top-gold"><div class="card__body">
+        <span class="icon-chip icon-chip--gold">{{ icon("anulaciones") }}</span>
         <h3>Cancellations</h3>
         <ul style="padding-left:var(--space-6);margin:0">
           <li>You may cancel your booking up to <strong>24 hours before</strong> the service starts.</li>

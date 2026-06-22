@@ -5,6 +5,7 @@ description: "Navega con los pioneros del ecoturismo marino en el Perú. Tour a 
 eyebrow: "Ecocruceros · La Punta, Callao"
 ---
 {% set t = i18n[lang] %}
+{% from "partials/icons.njk" import icon %}
 
 <!-- H1 HERO -->
 <section class="hero">
@@ -36,9 +37,9 @@ eyebrow: "Ecocruceros · La Punta, Callao"
 <section class="section" style="padding-block:var(--space-12)">
   <div class="container reveal">
     <div class="trust-strip">
-      <div class="item"><span class="num tnum">30</span> años de trayectoria</div>
+      <div class="item"><span class="num tnum count" data-count="30">30</span> años de trayectoria</div>
       <div class="item"><span class="num tnum">4.6★</span> · 193 reseñas</div>
-      <div class="item"><span class="num tnum">5,000+</span> lobos marinos</div>
+      <div class="item"><span class="num tnum count" data-count="5000" data-suffix="+">5,000+</span> lobos marinos</div>
       <div class="item"><span class="num tnum">30 min</span> del centro de Lima</div>
     </div>
   </div>
@@ -55,6 +56,13 @@ eyebrow: "Ecocruceros · La Punta, Callao"
       <article class="card card--top"><div class="card__body"><span class="tag tag--ok">Garantizado</span><h3>Pingüinos de Humboldt</h3><p>Y aves guaneras en las Islas Cavinzas.</p></div></article>
       <article class="card card--top-gold"><div class="card__body"><span class="tag tag--seasonal">Temporada</span><h3>Avistamiento de ballenas</h3><p>Posible en ciertos meses · no garantizado.</p></div></article>
     </div>
+    <div class="video-wrap" style="margin-top:var(--space-8)">
+      <video controls playsinline preload="none" poster="/assets/img/hero-swim-lobos.jpg" style="display:block;width:100%;border-radius:var(--radius);box-shadow:var(--shadow-2);background:#000">
+        <source src="/assets/video/nado-con-lobos.mp4" type="video/mp4">
+        Tu navegador no admite video HTML5. <a href="/assets/video/nado-con-lobos.mp4">Descarga el video</a>.
+      </video>
+      <p class="embed-caption" style="text-align:center">Nuestros pasajeros nadando con los lobos marinos — no es necesario saber nadar.</p>
+    </div>
     <div class="btn-row" style="margin-top:var(--space-8)"><a class="btn btn--primary" href="/tour/">{{ t.seeTour }} →</a></div>
   </div>
 </section>
@@ -64,21 +72,25 @@ eyebrow: "Ecocruceros · La Punta, Callao"
   <div class="container reveal">
     <p class="eyebrow">Qué incluye</p>
     <h2>Todo listo para tu travesía</h2>
-    <p class="lead">Tu pasaje incluye todo lo necesario para disfrutar con tranquilidad:</p>
-    <ul class="checklist checklist--2" style="margin-top:var(--space-6)">
-      <li>Nado con los <strong>lobos marinos</strong> en su hábitat.</li>
-      <li>Avistamiento de aves y pingüinos.</li>
-      <li>Guía de turismo <strong>bilingüe</strong> (inglés–español) a bordo.</li>
-      <li>Chaleco salvavidas durante toda la travesía.</li>
-      <li>Trajes de neopreno (wetsuits) para nadar en épocas de frío.</li>
-      <li>Bebidas frías y calientes y snacks — <strong>ilimitado</strong>.</li>
-      <li>Pastillas para el mareo.</li>
-      <li>Embarque en <strong>muelle privado</strong> para mayor seguridad.</li>
-      <li>Yate de 2 pisos con 2 camarotes, 2 baños, sala y cocina.</li>
-      <li>Seguro de viaje.</li>
-    </ul>
-    <p style="margin-top:var(--space-6)"><strong>No incluye:</strong> pago de S/26 (residentes) / US$8 (extranjeros) por ingreso al área natural protegida (SERNANP) y tasa de embarque.</p>
-    <p style="margin-top:var(--space-2)">No es necesario saber nadar: puedes entrar al mar con chaleco salvavidas.</p>
+    <div class="media-split" style="margin-top:var(--space-8)">
+      <div class="media-split__media media-split__media--tall">
+        <img src="/assets/img/galeria/g5.jpg" alt="Pasajeros disfrutando la travesía a las Islas Palomino">
+        <span class="media-split__badge">Todo incluido en tu pasaje</span>
+      </div>
+      <ul class="feature-list">
+        <li>{{ icon("swim") }}<span>Nado con los <strong>lobos marinos</strong> en su hábitat.</span></li>
+        <li>{{ icon("bird") }}<span>Avistamiento de aves y pingüinos.</span></li>
+        <li>{{ icon("guide") }}<span>Guía de turismo <strong>bilingüe</strong> a bordo.</span></li>
+        <li>{{ icon("vest") }}<span>Chaleco salvavidas durante toda la travesía.</span></li>
+        <li>{{ icon("wetsuit") }}<span>Trajes de neopreno para nadar en épocas de frío.</span></li>
+        <li>{{ icon("drinks") }}<span>Bebidas frías y calientes y snacks — <strong>ilimitado</strong>.</span></li>
+        <li>{{ icon("pill") }}<span>Pastillas para el mareo.</span></li>
+        <li>{{ icon("anchor") }}<span>Embarque en <strong>muelle privado</strong>.</span></li>
+        <li>{{ icon("boat") }}<span>Yate de 2 pisos: 2 camarotes, 2 baños, sala y cocina.</span></li>
+        <li>{{ icon("shield") }}<span>Seguro de viaje.</span></li>
+      </ul>
+    </div>
+    <p style="margin-top:var(--space-6)"><strong>No incluye:</strong> pago de S/26 (residentes) / US$8 (extranjeros) por ingreso al área natural protegida (SERNANP) y tasa de embarque. No es necesario saber nadar: puedes entrar al mar con chaleco salvavidas.</p>
     <div class="btn-row" style="margin-top:var(--space-6)"><a class="btn btn--ghost" href="/tour/precios/">{{ t.seePricing }} →</a></div>
   </div>
 </section>
