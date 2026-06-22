@@ -4,23 +4,32 @@ title: "Seguridad a bordo"
 description: "Tu seguridad es lo primero: chalecos salvavidas, equipo de neopreno y protocolos a bordo en el tour a las Islas Palomino."
 ---
 {% set t = i18n[lang] %}
+{% from "partials/icons.njk" import icon %}
 
 <section class="section section--warm">
   <div class="container">
     <nav class="breadcrumbs" aria-label="breadcrumb"><a href="/">Inicio</a><span>›</span><a href="/tour/">El Tour</a><span>›</span> Seguridad</nav>
-    <p class="eyebrow" style="margin-top:var(--space-4)">Seguridad</p>
-    <h1>Tu seguridad es lo primero</h1>
-    <p class="lead">Navegar con casi 30 años de experiencia significa protocolos claros y equipo adecuado para toda la familia.</p>
+    <div class="media-split" style="margin-top:var(--space-4)">
+      <div class="media-split__media">
+        <img src="/assets/img/galeria/g1.jpg" alt="Pasajero con chaleco salvavidas durante la travesía a las Islas Palomino">
+        <span class="media-split__badge">Chaleco salvavidas para todos</span>
+      </div>
+      <div>
+        <p class="eyebrow">Seguridad</p>
+        <h1>Tu seguridad es lo primero</h1>
+        <p class="lead">Navegar con casi 30 años de experiencia significa protocolos claros y equipo adecuado para toda la familia.</p>
+      </div>
+    </div>
   </div>
 </section>
 
 <section class="section">
   <div class="container stack">
-    <div class="card card--top"><div class="card__body"><h3>Equipo de seguridad</h3><p>Todos los pasajeros viajan con <strong>chaleco salvavidas</strong>. Contamos además con chalecos adicionales para quienes deseen nadar con los lobos marinos, y trajes de neopreno (wetsuits) con stock limitado en temporada de frío.</p></div></div>
-    <div class="card card--top"><div class="card__body"><h3>No es necesario saber nadar</h3><p>Puedes entrar al mar con chaleco salvavidas. Nuestra tripulación te acompaña en todo momento durante la parada para nadar con los lobos. <a href="/tour/#nadar">Mira el video →</a></p></div></div>
-    <div class="card card--top"><div class="card__body"><h3>Tripulación y equipos de navegación</h3><p>Una tripulación experimentada y equipos sofisticados a bordo: GPS, radar, ecosonda, radiobaliza, balsas salvavidas y la pirotecnia respectiva (pistola de señales y humo).</p></div></div>
-    <div class="card card--top-gold"><div class="card__body"><h3>A bordo</h3><p>Entregamos una pastilla para el mareo, gratis, a cada pasajero al iniciar el recorrido. Siguiendo nuestras recomendaciones, es poco probable marearse.</p></div></div>
-    <div class="card card--top"><div class="card__body"><h3>Seguro de viajes</h3><p>Todos los pasajeros están <strong>asegurados</strong> durante la travesía.</p></div></div>
-    <div class="card card--top"><div class="card__body"><h3>Política por clima</h3><p>Por tu seguridad, el tour puede reprogramarse o cancelarse cuando las condiciones del mar o el clima lo requieran; en ese caso coordinamos contigo una nueva fecha o la opción que corresponda.</p></div></div>
+    <div class="card card--top"><div class="card__body"><span class="icon-chip">{{ icon("vest") }}</span><h3>Equipo de seguridad</h3><p>Todos los pasajeros viajan con <strong>chaleco salvavidas</strong>. Contamos además con chalecos adicionales para quienes deseen nadar con los lobos marinos, y trajes de neopreno (wetsuits) con stock limitado en temporada de frío.</p></div></div>
+    <div class="card card--top"><div class="card__body"><span class="icon-chip">{{ icon("swim") }}</span><h3>No es necesario saber nadar</h3><p>Puedes entrar al mar con chaleco salvavidas. Nuestra tripulación te acompaña en todo momento durante la parada para nadar con los lobos. <a href="/tour/#nadar">Mira el video →</a></p></div></div>
+    <div class="card card--top"><div class="card__body"><span class="icon-chip">{{ icon("users") }}</span><h3>Tripulación y equipos de navegación</h3><p>Una tripulación experimentada y equipos sofisticados a bordo: GPS, radar, ecosonda, radiobaliza, balsas salvavidas y la pirotecnia respectiva (pistola de señales y humo).</p></div></div>
+    <div class="card card--top-gold"><div class="card__body"><span class="icon-chip icon-chip--gold">{{ icon("pill") }}</span><h3>A bordo</h3><p>Entregamos una pastilla para el mareo, gratis, a cada pasajero al iniciar el recorrido. Siguiendo nuestras recomendaciones, es poco probable marearse.</p></div></div>
+    <div class="card card--top"><div class="card__body"><span class="icon-chip">{{ icon("shield") }}</span><h3>Seguro de viajes</h3><p>Todos los pasajeros están <strong>asegurados</strong> durante la travesía.</p></div></div>
+    <div class="card card--top"><div class="card__body"><span class="icon-chip">{{ icon("cloud") }}</span><h3>Política por clima</h3><p>Por tu seguridad, el tour puede reprogramarse o cancelarse cuando las condiciones del mar o el clima lo requieran; en ese caso coordinamos contigo una nueva fecha o la opción que corresponda.</p></div></div>
   </div>
 </section>

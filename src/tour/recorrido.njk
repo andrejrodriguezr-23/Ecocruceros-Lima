@@ -4,6 +4,7 @@ title: "Recorrido e itinerario del tour"
 description: "El recorrido del tour a las Islas Palomino: La Punta, El Camotal, San Lorenzo, El Frontón, Cavinzas y Palomino. Historia y fauna en cada parada."
 ---
 {% set t = i18n[lang] %}
+{% from "partials/icons.njk" import icon %}
 
 <section class="section section--warm">
   <div class="container">
@@ -28,6 +29,7 @@ description: "El recorrido del tour a las Islas Palomino: La Punta, El Camotal, 
     <div class="grid cols-2">
       {% for stop in site.route %}
       <article class="card card--top reveal"><div class="card__body">
+        <span class="icon-chip">{{ icon("pin") }}</span>
         <p class="eyebrow">Parada {{ loop.index }}</p>
         <h3>{{ stop.es }}</h3>
         <p>{{ stop.desc_es }}</p>

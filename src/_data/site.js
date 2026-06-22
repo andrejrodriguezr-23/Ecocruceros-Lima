@@ -51,17 +51,17 @@ module.exports = {
   // VERIFIED pricing — official 2026 flyers (residents in S/, foreigners in US$)
   pricing: {
     residents: [
-      { who_es: "Adultos", who_en: "Adults", price: "S/179" },
-      { who_es: "Niños (2 a 12 años)", who_en: "Children (2–12)", price: "S/149" },
+      { who_es: "Adultos", who_en: "Adults", price: "S/. 179" },
+      { who_es: "Niños (2 a 12 años)", who_en: "Children (2–12)", price: "S/. 149" },
       { who_es: "Infantes", who_en: "Infants", price_es: "Gratis (1 por familia)", price_en: "Free (1 per family)" }
     ],
     foreigners: [
       { who_es: "Adultos", who_en: "Adults", price: "US$69" },
       { who_es: "Niños (2 a 12 años)", who_en: "Children (2–12)", price: "US$59" }
     ],
-    // "No incluye" per the official flyers: S/26 residents · US$8 foreigners (SERNANP + tasa de embarque)
-    extra_es: "No incluye: S/26 por persona (residentes) — ingreso al área natural protegida (SERNANP) y tasa de embarque en muelle privado. Visitantes extranjeros: US$8.",
-    extra_en: "Not included: S/26 per person (residents) — protected-area entrance (SERNANP) and private-pier boarding fee. International visitors: US$8."
+    // "No incluye" per the official flyers: S/. 26 residents · US$8 foreigners (SERNANP + tasa de embarque)
+    extra_es: "No incluye: S/. 26 por persona (residentes) — ingreso al área natural protegida (SERNANP) y tasa de embarque en muelle privado. Visitantes extranjeros: US$8.",
+    extra_en: "Not included: S/. 26 per person (residents) — protected-area entrance (SERNANP) and private-pier boarding fee. International visitors: US$8."
   },
   // VERIFIED route stops
   route: [

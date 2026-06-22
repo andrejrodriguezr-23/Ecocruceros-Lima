@@ -4,6 +4,7 @@ title: "Our company — Pioneers of marine ecotourism"
 description: "We are Peru's first marine ecotourism operator: creators, promoters and defenders of the Palomino Islands. Nearly 30 years of experience and conservation."
 ---
 {% set t = i18n[lang] %}
+{% from "partials/icons.njk" import icon %}
 
 <section class="hero" style="min-height:min(52vh,460px)">
   <div class="hero__media"><img src="/assets/img/galeria/g3.jpg" alt="Guests swimming with sea lions at the Palomino Islands, Callao"></div>
@@ -44,14 +45,17 @@ description: "We are Peru's first marine ecotourism operator: creators, promoter
     <h2>Three pillars of our voyage</h2>
     <div class="grid cols-3" style="margin-top:var(--space-6)">
       <article class="card card--top"><div class="card__body">
+        <span class="icon-chip">{{ icon("award") }}</span>
         <h3>Pioneers in marine ecotourism</h3>
         <p>Peru's first marine ecotourism operator. As creators and defenders of the Palomino Islands, we've watched the ecosystem and its seabird and sea-lion populations recover.</p>
       </div></article>
       <article class="card card--top"><div class="card__body">
+        <span class="icon-chip">{{ icon("users") }}</span>
         <h3>Experience &amp; conservation</h3>
         <p>Our crew and collaborators are long-standing sailors — the most experienced and knowledgeable of the Palomino Islands circuit and the Callao islands area.</p>
       </div></article>
       <article class="card card--top-gold"><div class="card__body">
+        <span class="icon-chip icon-chip--gold">{{ icon("shield") }}</span>
         <h3>Safety &amp; comfort</h3>
         <p>The yacht is the vessel that best suits our passengers. We carry sophisticated equipment: radar, echo sounder, radio beacon, GPS, life vests and life rafts.</p>
       </div></article>
