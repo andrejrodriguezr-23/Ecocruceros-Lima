@@ -9,9 +9,16 @@ description: "The Palomino Islands tour route: La Punta, El Camotal, San Lorenzo
 <section class="section section--warm">
   <div class="container">
     <nav class="breadcrumbs" aria-label="breadcrumb"><a href="/en/">Home</a><span>›</span><a href="/en/tour/">The Tour</a><span>›</span> Route</nav>
-    <p class="eyebrow" style="margin-top:var(--space-4)">Route</p>
-    <h1>Six stops, one unforgettable voyage</h1>
-    <p class="lead">Each departure crosses Callao bay — its history and its wildlife — all the way to the Palomino Islands.</p>
+    <div class="media-split" style="margin-top:var(--space-4)">
+      <div class="media-split__media">
+        <img src="/assets/img/galeria/g13.jpg" alt="Voyage across Callao bay heading to the Palomino Islands" loading="lazy">
+      </div>
+      <div>
+        <p class="eyebrow">Route</p>
+        <h1>Six stops, one unforgettable voyage</h1>
+        <p class="lead">Each departure crosses Callao bay — its history and its wildlife — all the way to the Palomino Islands.</p>
+      </div>
+    </div>
     <div class="video-wrap" style="margin-top:var(--space-6)">
       <div class="embed">
         <video controls playsinline preload="metadata" poster="/assets/img/galeria/g6.jpg" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;background:#000">
@@ -27,8 +34,11 @@ description: "The Palomino Islands tour route: La Punta, El Camotal, San Lorenzo
 <section class="section">
   <div class="container">
     <div class="grid cols-2">
+      {%- set stopPhotos = [14,15,16,17,18,19] -%}
       {% for stop in site.route %}
-      <article class="card card--top reveal"><div class="card__body">
+      <article class="card card--top reveal">
+        <div class="card__media"><img src="/assets/img/galeria/g{{ stopPhotos[loop.index0] }}.jpg" alt="{{ stop.en }} — Palomino Islands voyage" loading="lazy"></div>
+        <div class="card__body">
         <span class="icon-chip">{{ icon("pin") }}</span>
         <p class="eyebrow">Stop {{ loop.index }}</p>
         <h3>{{ stop.en }}</h3>

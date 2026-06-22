@@ -20,7 +20,7 @@ description: "Fotos y videos reales de la travesía a las Islas Palomino: lobos 
     <p class="eyebrow">Fotos</p>
     <h2>Momentos de la travesía</h2>
     <div class="gallery-grid" style="margin-top:var(--space-6)">
-      {%- set galleryNums = [4,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35] -%}
+      {%- set galleryNums = [4,22,23,24,25,26,27,28,29,30,31,32,33,34,35] -%}
       {% for n in galleryNums %}
       <img class="zoomable" src="/assets/img/galeria/g{{ n }}.jpg" alt="Pasajeros nadando con los lobos marinos en las Islas Palomino" loading="lazy" style="width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:var(--radius);display:block">
       {% endfor %}
@@ -56,7 +56,7 @@ description: "Fotos y videos reales de la travesía a las Islas Palomino: lobos 
       {% for s in fauna %}
       <div class="fauna-detail" data-detail="{{ s.slug }}">
         <div class="fdetail__head">
-          <div class="fdetail__photo"><img src="{{ s.photo }}" alt="{{ s.name_es }}" onerror="this.style.display='none'"></div>
+          <div class="fdetail__photo"><img src="{{ s.photo }}" alt="{{ s.name_es }}" loading="lazy" decoding="async" onerror="this.style.display='none'"></div>
           <div class="fdetail__intro">
             <p class="eyebrow" style="margin-bottom:6px">{{ s.type_es }}</p>
             <h3>{{ s.name_es }}</h3>
