@@ -5,13 +5,13 @@
  * rebuilt as a real-photo grid + tap-to-expand detail (client request:
  * keep the info, use real photos, combine image + text, less wall-of-text).
  *
- * Photos are supplied by the client and uploaded to
- * /assets/img/fauna/real/NN-slug.jpg (see plan / shopping list).
- * Until a photo exists the card shows a branded placeholder tile.
+ * Photos are supplied by the client and live in
+ * /assets/img/galeria/NN-slug.jpg (see plan / shopping list).
+ * If a photo is missing the card shows a branded placeholder tile.
  *
  * Bilingual: ES fields render on the Spanish gallery, EN on /en/.
  */
-const base = "/assets/img/fauna/real/";
+const base = "/assets/img/galeria/";
 
 module.exports = [
   {
