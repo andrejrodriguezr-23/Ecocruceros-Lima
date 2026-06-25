@@ -5,22 +5,36 @@ description: "Real photos and videos of the Palomino Islands voyage: sea lions, 
 ---
 {% set t = i18n[lang] %}
 
+{#- Photos relocated into the marketing pages (g1, g2, g6, g9, g11, g14) are
+    intentionally NOT shown here, so no image is ever repeated across the site. -#}
+{%- set photos = [
+  { f: "g3.jpg",  alt: "Three passengers smile in the water with the sea lion colony spread across the rocks behind them" },
+  { f: "g4.jpg",  alt: "A couple swims in life vests in front of hundreds of sea lions on the rocks" },
+  { f: "g5.jpg",  alt: "Two visitors pose in the water beside a rocky cave of the Palomino Islands" },
+  { f: "g7.jpg",  alt: "A group of friends swims while one films the moment in front of the cliff" },
+  { f: "g8.jpg",  alt: "Two young people smile in the water with the cliffs of the Palomino Islands behind them" },
+  { f: "g10.jpg", alt: "A passenger and a child swim with a life ring in front of the sea lion colony" },
+  { f: "g12.jpg", alt: "A visitor enjoys a relaxed swim in the Callao sea, beside the sea lions' rocks" },
+  { f: "g13.jpg", alt: "A family swims with a float in front of the cliffs of the Palomino Islands" },
+  { f: "g15.jpg", alt: "Two friends celebrate in the water after swimming with the sea lions of the Palomino Islands" }
+] -%}
+
 <section class="section section--sky">
   <div class="container">
     <nav class="breadcrumbs" aria-label="breadcrumb"><a href="/en/">Home</a><span>›</span> Gallery</nav>
     <p class="eyebrow" style="margin-top:var(--space-4)">Gallery</p>
     <h1>The experience, in real images</h1>
-    <p class="lead">We only use authentic photos and videos from our voyages. Click any photo to enlarge it.</p>
+    <p class="lead">We only use authentic photos and videos from our trips. Click any photo to enlarge it.</p>
   </div>
 </section>
 
 <section class="section">
   <div class="container">
     <p class="eyebrow">Photos</p>
-    <h2>Moments from the voyage</h2>
+    <h2>Moments from the trip</h2>
     <div class="gallery-grid" style="margin-top:var(--space-6)">
-      {% for n in range(1, 16) %}
-      <img class="zoomable" src="/assets/img/galeria/g{{ n }}.jpg" alt="Guests swimming with sea lions at the Palomino Islands" loading="lazy" style="width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:var(--radius);display:block">
+      {% for p in photos %}
+      <img class="zoomable" src="/assets/img/galeria/{{ p.f }}" alt="{{ p.alt }}" loading="lazy" style="width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:var(--radius);display:block">
       {% endfor %}
     </div>
   </div>
@@ -30,10 +44,10 @@ description: "Real photos and videos of the Palomino Islands voyage: sea lions, 
   <div class="container">
     <p class="eyebrow">Marine wildlife</p>
     <h2>The wildlife of the Palomino Islands</h2>
-    <p class="lead">Seabirds, sea lions and other species of Peru's cold sea that you'll see on the voyage. Tap any card to enlarge it.</p>
+    <p class="lead">Birds, sea lions and other species of the cold Peruvian sea you'll see on the trip. Tap each card to enlarge it.</p>
     <div class="fauna-grid" style="margin-top:var(--space-8)">
       {% for n in range(1, 51) %}
-      <img class="zoomable" src="/assets/img/fauna/f{{ n }}.jpg" alt="Palomino Islands marine wildlife card" loading="lazy">
+      <img class="zoomable" src="/assets/img/fauna/f{{ n }}.jpg" alt="Palomino Islands marine wildlife card (species {{ n }} of 50)" loading="lazy">
       {% endfor %}
     </div>
   </div>
@@ -49,13 +63,13 @@ description: "Real photos and videos of the Palomino Islands voyage: sea lions, 
         <div class="embed">
           <iframe src="https://www.youtube-nocookie.com/embed/{{ site.video.incas }}" title="Report — El Tour de los Incas" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </div>
-        <p class="embed-caption">Report by the YouTube channel <strong>{{ site.video.incasChannel }}</strong>.</p>
+        <p class="embed-caption">A report from the YouTube channel <strong>{{ site.video.incasChannel }}</strong>.</p>
       </div>
       <div>
         <div class="embed">
           <iframe src="https://www.youtube-nocookie.com/embed/{{ site.video.cnn }}" title="CNN report (2006)" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </div>
-        <p class="embed-caption">Our work, featured in a <strong>CNN</strong> report (2006).</p>
+        <p class="embed-caption">Our work, recognised in a <strong>CNN</strong> report (2006).</p>
       </div>
     </div>
 

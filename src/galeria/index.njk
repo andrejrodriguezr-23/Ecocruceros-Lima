@@ -5,6 +5,20 @@ description: "Fotos y videos reales de la travesía a las Islas Palomino: lobos 
 ---
 {% set t = i18n[lang] %}
 
+{#- Photos relocated into the marketing pages (g1, g2, g6, g9, g11, g14) are
+    intentionally NOT shown here, so no image is ever repeated across the site. -#}
+{%- set photos = [
+  { f: "g3.jpg",  alt: "Tres pasajeras sonríen en el agua con la colonia de lobos marinos extendida sobre las rocas" },
+  { f: "g4.jpg",  alt: "Pareja de visitantes nada con chalecos salvavidas frente a cientos de lobos marinos en las rocas" },
+  { f: "g5.jpg",  alt: "Dos visitantes posan en el agua junto a una cueva rocosa de las Islas Palomino" },
+  { f: "g7.jpg",  alt: "Grupo de amigas nada mientras una compañera graba el momento frente al acantilado" },
+  { f: "g8.jpg",  alt: "Dos jóvenes sonríen en el agua con los acantilados de las Islas Palomino al fondo" },
+  { f: "g10.jpg", alt: "Una pasajera y un niño nadan con un salvavidas frente a la colonia de lobos marinos" },
+  { f: "g12.jpg", alt: "Un visitante disfruta del nado relajado en el mar del Callao, junto a las rocas de los lobos" },
+  { f: "g13.jpg", alt: "Una familia nada junto a un flotador frente a los acantilados de las Islas Palomino" },
+  { f: "g15.jpg", alt: "Dos amigos celebran en el agua tras nadar con los lobos marinos de las Islas Palomino" }
+] -%}
+
 <section class="section section--sky">
   <div class="container">
     <nav class="breadcrumbs" aria-label="breadcrumb"><a href="/">Inicio</a><span>›</span> Galería</nav>
@@ -19,8 +33,8 @@ description: "Fotos y videos reales de la travesía a las Islas Palomino: lobos 
     <p class="eyebrow">Fotos</p>
     <h2>Momentos de la travesía</h2>
     <div class="gallery-grid" style="margin-top:var(--space-6)">
-      {% for n in range(1, 16) %}
-      <img class="zoomable" src="/assets/img/galeria/g{{ n }}.jpg" alt="Pasajeros nadando con los lobos marinos en las Islas Palomino" loading="lazy" style="width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:var(--radius);display:block">
+      {% for p in photos %}
+      <img class="zoomable" src="/assets/img/galeria/{{ p.f }}" alt="{{ p.alt }}" loading="lazy" style="width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:var(--radius);display:block">
       {% endfor %}
     </div>
   </div>
@@ -33,7 +47,7 @@ description: "Fotos y videos reales de la travesía a las Islas Palomino: lobos 
     <p class="lead">Aves, lobos marinos y demás especies del mar frío peruano que verás en la travesía. Toca cada ficha para ampliarla.</p>
     <div class="fauna-grid" style="margin-top:var(--space-8)">
       {% for n in range(1, 51) %}
-      <img class="zoomable" src="/assets/img/fauna/f{{ n }}.jpg" alt="Ficha de fauna marina de las Islas Palomino" loading="lazy">
+      <img class="zoomable" src="/assets/img/fauna/f{{ n }}.jpg" alt="Ficha de fauna marina de las Islas Palomino (especie {{ n }} de 50)" loading="lazy">
       {% endfor %}
     </div>
   </div>

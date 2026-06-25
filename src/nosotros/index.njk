@@ -5,8 +5,9 @@ description: "Somos la primera operadora de ecoturismo marino del Perú: creador
 ---
 {% set t = i18n[lang] %}
 
-<section class="hero" style="min-height:min(52vh,460px)">
-  <div class="hero__media"><div class="asset-pending" style="height:100%;border:0;border-radius:0">{{ t.assetPending }} · foto histórica / La Punta (D3)</div></div>
+<!-- D3: foto histórica / La Punta pendiente del cliente. Hero con gradiente de marca mientras llega. -->
+<section class="hero" style="min-height:min(48vh,420px)">
+  <div class="hero__media"></div>
   <div class="container hero__inner reveal">
     <p class="eyebrow" style="color:var(--c-mustard-300)">Nuestra empresa</p>
     <h1>Los pioneros del ecoturismo marino en el Perú</h1>
@@ -15,12 +16,19 @@ description: "Somos la primera operadora de ecoturismo marino del Perú: creador
 
 <nav class="container breadcrumbs" aria-label="breadcrumb"><a href="/">Inicio</a><span>›</span> Nuestra empresa</nav>
 
+<!-- Intro (photo + short copy) -->
 <section class="section">
   <div class="container reveal">
-    <h2>Casi 30 años en altamar</h2>
-    <div class="prose justify" style="margin-top:var(--space-4)">
-      <p>Somos la <strong>primera operadora de ecoturismo marino del Perú</strong>: creadores, impulsadores, promotores y defensores de las Islas Palomino — Callao. Este esfuerzo nos ha permitido, durante todos estos años, ver la recuperación del ecosistema y de las diferentes poblaciones de aves y lobos marinos.</p>
-      <p>Ecocruceros nació en La Punta, Callao, con la misión de acercar a las personas a la fauna marina del Pacífico de forma responsable, segura y memorable.</p>
+    <div class="media">
+      <figure class="media__figure">
+        <img class="zoomable" src="/assets/img/galeria/g14.jpg" alt="Pasajeros nadan con chalecos salvavidas mientras las olas rompen sobre la roca de los lobos marinos en las Islas Palomino" loading="lazy">
+      </figure>
+      <div class="media__body">
+        <p class="eyebrow">Casi 30 años en altamar</p>
+        <h2>Primeros en las Islas Palomino</h2>
+        <p>Somos la <strong>primera operadora de ecoturismo marino del Perú</strong>: creadores, promotores y defensores de las Islas Palomino, Callao. En todos estos años hemos visto recuperarse el ecosistema y sus poblaciones de aves y lobos marinos.</p>
+        <p>Nacimos en La Punta con una misión: acercar a las personas a la fauna marina del Pacífico de forma responsable, segura y memorable.</p>
+      </div>
     </div>
   </div>
 </section>
@@ -31,16 +39,16 @@ description: "Somos la primera operadora de ecoturismo marino del Perú: creador
     <h2>Tres pilares de nuestra travesía</h2>
     <div class="grid cols-3" style="margin-top:var(--space-6)">
       <article class="card card--top"><div class="card__body">
-        <h3>Pioneros en ecoturismo marino</h3>
-        <p>La primera operadora de ecoturismo marino del Perú. Creadores y defensores de las Islas Palomino, hemos visto recuperarse el ecosistema y sus poblaciones de aves y lobos marinos.</p>
+        <h3>Pioneros</h3>
+        <p>La primera operadora de ecoturismo marino del Perú, creadores y defensores de las Islas Palomino.</p>
       </div></article>
       <article class="card card--top"><div class="card__body">
-        <h3>Experiencia y conservación</h3>
-        <p>Nuestra tripulación y colaboradores son navegantes de larga trayectoria, los más experimentados y conocedores del circuito Islas Palomino y la zona de las Islas del Callao.</p>
+        <h3>Experiencia</h3>
+        <p>Tripulación de larga trayectoria, la más conocedora del circuito Islas Palomino y la zona del Callao.</p>
       </div></article>
       <article class="card card--top-gold"><div class="card__body">
-        <h3>Seguridad y confort</h3>
-        <p>El yate es la embarcación que mejor se adecúa a nuestros pasajeros. Contamos con equipos sofisticados: radar, ecosonda, radiobaliza, GPS, chalecos y balsas salvavidas.</p>
+        <h3>Seguridad</h3>
+        <p>Yate con equipos sofisticados: radar, ecosonda, radiobaliza, GPS, chalecos y balsas salvavidas.</p>
       </div></article>
     </div>
   </div>
@@ -50,7 +58,7 @@ description: "Somos la primera operadora de ecoturismo marino del Perú: creador
   <div class="container reveal">
     <p class="eyebrow">En los medios</p>
     <h2>Reconocidos por CNN</h2>
-    <p class="lead">Nuestro trabajo se ha visto reconocido en un reportaje realizado por <strong>CNN</strong> en el 2006.</p>
+    <p class="lead">Nuestro trabajo fue reconocido en un reportaje de <strong>CNN</strong> en 2006.</p>
     <div class="video-wrap" style="margin-top:var(--space-6)">
       <div class="embed">
         <iframe src="https://www.youtube-nocookie.com/embed/{{ site.video.cnn }}" title="Reportaje de CNN sobre Ecocruceros (2006)" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>

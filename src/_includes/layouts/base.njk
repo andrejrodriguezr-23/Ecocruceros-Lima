@@ -13,6 +13,16 @@
   <meta property="og:description" content="{{ description }}">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="{{ 'es_PE' if lang=='es' else 'en_US' }}">
+  <meta property="og:image" content="https://ecocruceros.com{{ ogImage or '/assets/img/hero-swim-lobos.jpg' }}">
+  <meta property="og:image:alt" content="{{ title }}">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{{ title }} · {{ site.name }}">
+  <meta name="twitter:description" content="{{ description }}">
+  <meta name="twitter:image" content="https://ecocruceros.com{{ ogImage or '/assets/img/hero-swim-lobos.jpg' }}">
+  <link rel="icon" href="/assets/img/logo_ecocruceros.jpeg">
+  <link rel="apple-touch-icon" href="/assets/img/logo_ecocruceros.jpeg">
+  <meta name="theme-color" content="#06222F">
+  {% include "partials/schema.njk" %}
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   {% set fontHref = "https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Hanken+Grotesk:wght@400;500;600;700&display=swap" %}
@@ -30,6 +40,7 @@
     {{ content | safe }}
   </main>
   {% include "partials/footer.njk" %}
+  {% include "partials/sticky-cta.njk" %}
   {% include "partials/wa-float.njk" %}
   <script src="/assets/js/main.js" defer></script>
 </body>

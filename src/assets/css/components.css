@@ -305,3 +305,86 @@
 .fauna-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(190px,1fr));gap:var(--space-3)}
 @media (min-width:768px){.fauna-grid{grid-template-columns:repeat(auto-fill,minmax(220px,1fr))}}
 .fauna-grid img{width:100%;height:auto;display:block;border-radius:var(--radius-sm);border:1px solid var(--border);box-shadow:var(--shadow-1);background:var(--surface)}
+
+/* ============================================================
+   Media split — real photo BESIDE short copy. The core
+   "combine text with images" block (replaces walls of text).
+   ============================================================ */
+.media{display:grid;gap:var(--space-6);align-items:center}
+@media (min-width:880px){
+  .media{grid-template-columns:1fr 1fr;gap:var(--space-12)}
+  .media--reverse .media__figure{order:2}
+}
+.media__figure{margin:0;position:relative}
+.media__figure img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:var(--radius);box-shadow:var(--shadow-2);border:1px solid var(--border)}
+.media__figure figcaption{margin-top:var(--space-2);font-size:var(--fs-small);color:var(--text-secondary);text-align:center}
+.media__body>*+*{margin-top:var(--space-4)}
+.section--dark .media__figure img,.section--sea .media__figure img{border-color:rgba(255,255,255,.18)}
+
+/* ============================================================
+   Feature icons — scannable grid that replaces long bullet
+   checklists (fewer words, more visual).
+   ============================================================ */
+.feature-icons{list-style:none;padding:0;display:grid;grid-template-columns:repeat(2,1fr);gap:var(--space-4) var(--space-6);margin-top:var(--space-6)}
+@media (min-width:768px){.feature-icons{grid-template-columns:repeat(3,1fr)}}
+.feature-icons li{display:flex;gap:var(--space-3);align-items:flex-start}
+.feature-icons .fi-ico{flex:none;width:46px;height:46px;border-radius:13px;display:grid;place-items:center;background:var(--c-cyan-100);color:var(--c-cyan-700);box-shadow:var(--shadow-1)}
+.feature-icons .fi-ico svg{width:24px;height:24px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.feature-icons b{display:block;font-family:var(--font-body);font-weight:600;color:var(--text);line-height:1.25}
+.feature-icons small{display:block;color:var(--text-secondary);font-size:var(--fs-small);margin-top:2px}
+.section--dark .feature-icons .fi-ico,.section--sea .feature-icons .fi-ico{background:rgba(255,255,255,.1);color:var(--c-mustard-300)}
+.section--dark .feature-icons b,.section--sea .feature-icons b{color:#fff}
+.section--dark .feature-icons small,.section--sea .feature-icons small{color:var(--text-on-dark-soft)}
+
+/* ============================================================
+   All-in price compare — resident vs foreigner, SERNANP fee
+   shown honestly in the same block (no hidden surprises).
+   ============================================================ */
+.price-compare{display:grid;gap:var(--space-4);margin-top:var(--space-6)}
+@media (min-width:640px){.price-compare{grid-template-columns:1fr 1fr}}
+.price-compare .pc{background:var(--surface);border:1px solid var(--border);border-top:4px solid var(--c-cyan-500);border-radius:var(--radius);padding:var(--space-6);box-shadow:var(--shadow-2)}
+.price-compare .pc--gold{border-top-color:var(--c-mustard-500)}
+.price-compare .pc-who{font-weight:700;color:var(--text-secondary);font-size:.95rem}
+.price-compare .pc-from{font-family:var(--font-display);font-size:2rem;color:var(--c-cyan-700);line-height:1.05;margin-top:2px}
+.price-compare .pc-from small{font-size:.95rem;color:var(--text-secondary);font-family:var(--font-body)}
+.price-compare .pc-all{display:block;margin-top:var(--space-3);font-size:.9rem;color:var(--text-secondary);line-height:1.4}
+.price-compare .pc-all b{color:var(--text);font-weight:700}
+
+/* ============================================================
+   Safety / "how it works" strip — answers the #1 hesitation
+   (is it safe? do I need to swim?) right where it matters.
+   ============================================================ */
+.safety-strip{display:grid;gap:var(--space-4);margin-top:var(--space-6)}
+@media (min-width:768px){.safety-strip{grid-auto-flow:column;grid-auto-columns:1fr}}
+.safety-strip .sf{display:flex;gap:var(--space-3);align-items:flex-start;background:var(--surface);border:1px solid var(--border);border-left:4px solid var(--c-cyan-500);border-radius:var(--radius);padding:var(--space-4) var(--space-4) var(--space-4) var(--space-3);box-shadow:var(--shadow-1)}
+.safety-strip .sf svg{flex:none;width:26px;height:26px;fill:none;stroke:var(--c-cyan-700);stroke-width:2;stroke-linecap:round;stroke-linejoin:round;margin-top:2px}
+.safety-strip .sf b{display:block;font-family:var(--font-body);font-weight:700;color:var(--text)}
+.safety-strip .sf span{font-size:var(--fs-small);color:var(--text-secondary)}
+
+/* ============================================================
+   Inline proof badge — loud, clickable TripAdvisor social proof
+   placed next to CTAs (trust for first-time foreign visitors).
+   ============================================================ */
+.proof{display:inline-flex;flex-wrap:wrap;align-items:center;gap:6px var(--space-3);background:var(--surface);border:1px solid var(--border);border-radius:var(--radius-pill);padding:8px var(--space-4);box-shadow:var(--shadow-1);font-weight:600;font-size:.9rem;color:var(--text);text-decoration:none}
+a.proof:hover{box-shadow:var(--shadow-2);text-decoration:none}
+.proof .stars{color:var(--c-mustard-500);letter-spacing:2px}
+.proof .proof-rank{color:var(--text-secondary);font-weight:500}
+.hero .proof{background:rgba(255,255,255,.14);border-color:rgba(255,255,255,.35);color:#fff;backdrop-filter:blur(4px)}
+.hero .proof .proof-rank{color:#dff1f8}
+
+/* ============================================================
+   Sticky mobile booking bar — always-visible CTA on phones,
+   where most tourists browse.
+   ============================================================ */
+.sticky-cta{position:fixed;left:0;right:0;bottom:0;z-index:var(--z-sticky);
+  display:flex;gap:var(--space-3);align-items:center;justify-content:space-between;
+  padding:10px 14px;background:rgba(255,255,255,.97);backdrop-filter:saturate(1.2) blur(8px);
+  border-top:1px solid var(--border);box-shadow:0 -6px 20px -8px rgba(6,34,47,.28)}
+.sticky-cta__price{font-size:.82rem;line-height:1.2;color:var(--text-secondary)}
+.sticky-cta__price b{display:block;font-family:var(--font-display);color:var(--c-cyan-700);font-size:1.05rem}
+.sticky-cta .btn{min-height:46px;flex:none;padding-inline:var(--space-6)}
+@media (min-width:768px){.sticky-cta{display:none}}
+@media (max-width:767px){
+  body{padding-bottom:68px}              /* room for the sticky bar */
+  .wa-float{bottom:calc(70px + clamp(12px,3vw,20px))}  /* lift float above the bar */
+}

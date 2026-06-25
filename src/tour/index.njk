@@ -6,7 +6,7 @@ description: "Travesía en yate de 3 horas y media desde La Punta, Callao, para 
 {% set t = i18n[lang] %}
 
 <section class="hero" style="min-height:min(60vh,520px)">
-  <div class="hero__media"><div class="asset-pending" style="height:100%;border:0;border-radius:0">{{ t.assetPending }} · foto del tour (D3)</div></div>
+  <div class="hero__media"><img src="/assets/img/galeria/g9.jpg" alt="Pareja nadando entre risas con chalecos salvavidas frente a la colonia de lobos marinos de las Islas Palomino"></div>
   <div class="container hero__inner reveal">
     <p class="eyebrow" style="color:var(--c-mustard-300)">El Tour</p>
     <h1>Tour a las Islas Palomino</h1>
@@ -18,14 +18,16 @@ description: "Travesía en yate de 3 horas y media desde La Punta, Callao, para 
 
 <nav class="container breadcrumbs" aria-label="breadcrumb"><a href="/">Inicio</a><span>›</span> El Tour</nav>
 
-<!-- Intro (client copy) -->
+<!-- Intro + safety (answers the #1 question: is it safe?) -->
 <section class="section">
   <div class="container reveal">
     <p class="eyebrow">La travesía</p>
     <h2>Una travesía inolvidable a 30 minutos de Lima</h2>
-    <div class="prose justify" style="margin-top:var(--space-4)">
-      <p><strong>ECOCRUCEROS</strong> lo invita a disfrutar de una travesía inolvidable de 3 horas y media a sólo 30 minutos del centro de Lima, a bordo de un cómodo y seguro yate crucero, dotado de un sofisticado equipo de navegación, experimentada tripulación, baños y demás comodidades.</p>
-      <p>El tour a las Islas Palomino es uno de los más entretenidos en Lima: la travesía le brindará un fabuloso espectáculo natural producido por las aves del mar frío peruano y por los miles de lobos marinos, donde podrás nadar con ellos en su hábitat natural.</p>
+    <p class="lead">3 horas y media a bordo de un yate cómodo y seguro, con tripulación experimentada, hasta una colonia de miles de lobos marinos donde podrás nadar en su hábitat natural.</p>
+    <div class="safety-strip">
+      <div class="sf"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l7 3v5c0 4.4-3 7.6-7 9-4-1.4-7-4.6-7-9V6z"/><path d="M9 12l2 2 4-4"/></svg><span><b>No necesitas saber nadar</b><span>Entras al mar con chaleco salvavidas durante toda la travesía.</span></span></div>
+      <div class="sf"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 11c0 5.6-7 10-7 10z"/></svg><span><b>Los lobos no muerden</b><span>Nadas con los lobos bebés, juguetones y curiosos; los adultos quedan en la isla.</span></span></div>
+      <div class="sf"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2v20M5 8h14M7 11a5 5 0 0 0 10 0"/></svg><span><b>Embarque seguro</b><span>Muelle privado en La Punta, chalecos y seguro de viaje para todos.</span></span></div>
     </div>
   </div>
 </section>
@@ -43,19 +45,24 @@ description: "Travesía en yate de 3 horas y media desde La Punta, Callao, para 
   </div>
 </section>
 
-<!-- About the islands (client copy) -->
+<!-- The islands (photo + short copy) -->
 <section class="section">
   <div class="container reveal">
-    <p class="eyebrow">Las Islas Palomino</p>
-    <h2>Un santuario natural en el mar del Callao</h2>
-    <p class="lead">Un grupo de islas ubicadas en el mar del Callao, detrás de la Isla San Lorenzo, con una población aproximada de 5,000 a 8,000 lobos marinos. La zona ofrece muchas ventajas:</p>
-    <ul class="checklist checklist--2" style="margin-top:var(--space-6)">
-      <li>Garantiza contar todo el año con un número importante de lobos marinos.</li>
-      <li>Su cercanía a Lima la hace una opción de naturaleza ideal: el Callao está a 30 minutos de la capital.</li>
-      <li>Una travesía con mucha riqueza histórica y ecológica entre las islas de la zona.</li>
-      <li>Por sus antecedentes, brinda la opción de bañarse con los lobos marinos.</li>
-      <li>Se observan aves marinas como pelícanos, piqueros, zarcillos y pingüinos de Humboldt.</li>
-    </ul>
+    <div class="media">
+      <figure class="media__figure">
+        <img class="zoomable" src="/assets/img/hero-lobos-marinos.jpg" alt="Decenas de lobos marinos asoman la cabeza fuera del agua junto a las rocas de las Islas Palomino" loading="lazy">
+      </figure>
+      <div class="media__body">
+        <p class="eyebrow">Las Islas Palomino</p>
+        <h2>Un santuario natural en el mar del Callao</h2>
+        <p>Un grupo de islas detrás de la Isla San Lorenzo, con una población de 5,000 a 8,000 lobos marinos. Sus ventajas:</p>
+        <ul class="checklist" style="margin-top:var(--space-4)">
+          <li>Lobos marinos durante <strong>todo el año</strong>.</li>
+          <li>A solo 30 minutos de Lima.</li>
+          <li>Opción de bañarse con los lobos en su hábitat.</li>
+        </ul>
+      </div>
+    </div>
   </div>
 </section>
 
@@ -77,40 +84,38 @@ description: "Travesía en yate de 3 horas y media desde La Punta, Callao, para 
         </tbody>
       </table>
       <div class="stack">
-        <p><strong>Salidas diarias previa reserva.</strong> Coordinamos disponibilidad y la hora de tu grupo por WhatsApp.</p>
-        <p>El recorrido incluye una <strong>parada para nadar con los lobos marinos</strong>. A mitad del viaje de retorno se brinda un servicio de bebidas frías y calientes (no alcohólicas) y snacks tipo piqueos, de forma <strong>ilimitada</strong>.</p>
-        <div class="btn-row"><a class="btn btn--gold" data-wa-source="tour-schedule" href="{{ t.wa.tour | wa }}">Reservar por WhatsApp</a></div>
+        <p>Coordinamos la disponibilidad y la hora de tu grupo por WhatsApp. El recorrido incluye una <strong>parada para nadar con los lobos marinos</strong> y, en el retorno, bebidas y snacks de forma <strong>ilimitada</strong>.</p>
+        <div class="btn-row"><a class="btn btn--gold" data-wa-source="tour-schedule" href="{{ t.wa.tour | wa }}" target="_blank" rel="noopener">Reservar por WhatsApp</a></div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- What's included -->
+<!-- What's included (icons + flyer) -->
 <section class="section">
   <div class="container reveal">
-    <p class="eyebrow">Qué incluye</p>
-    <h2>Lo que está incluido</h2>
-    <ul class="checklist checklist--2" style="margin-top:var(--space-6)">
-      <li>Nado con los <strong>lobos marinos</strong> en su hábitat.</li>
-      <li>Avistamiento de aves y pingüinos.</li>
-      <li>Guía de turismo <strong>bilingüe</strong> (inglés–español) a bordo.</li>
-      <li>Chaleco salvavidas durante toda la travesía.</li>
-      <li>Trajes de neopreno (wetsuits) para nadar en épocas de frío.</li>
-      <li>Bebidas frías y calientes y snacks — <strong>ilimitado</strong>.</li>
-      <li>Pastillas para el mareo.</li>
-      <li>Embarque en <strong>muelle privado</strong> para mayor seguridad.</li>
-      <li>Yate de 2 pisos con 2 camarotes, 2 baños, sala y cocina.</li>
-      <li>Seguro de viaje.</li>
-    </ul>
-    <figure style="margin:var(--space-8) auto 0;max-width:380px">
-      <img class="zoomable" src="/assets/img/que-incluye.jpeg" alt="Tour Islas Palomino incluye: nado con lobos marinos, avistamiento de aves y pingüinos, trajes de neopreno, embarque en muelle privado, yate de 2 pisos con 2 camarotes y 2 baños, pastillas para el mareo y seguro de viaje." loading="lazy" style="border-radius:var(--radius);box-shadow:var(--shadow-2);border:1px solid var(--border)">
-      <figcaption class="embed-caption" style="text-align:center">Lo que incluye · toca para ampliar</figcaption>
-    </figure>
-    <p style="margin-top:var(--space-4)"><strong>No incluido:</strong> pago de S/26 (residentes) / US$8 (extranjeros) por ingreso al área natural protegida (SERNANP) y tasa de embarque.</p>
-    <div class="btn-row" style="margin-top:var(--space-6)">
-      <a class="btn btn--ghost" href="/tour/recorrido/">Ver el recorrido →</a>
-      <a class="btn btn--ghost" href="/tour/precios/">Ver precios →</a>
-      <a class="btn btn--ghost" href="/tour/seguridad/">Seguridad →</a>
+    <div class="media media--reverse">
+      <figure class="media__figure">
+        <img class="zoomable" src="/assets/img/que-incluye.jpeg" alt="Flyer del Tour Islas Palomino: nado con lobos marinos, avistamiento de aves y pingüinos, trajes de neopreno, embarque en muelle privado, yate de 2 pisos, pastillas para el mareo y seguro de viaje." loading="lazy" style="object-fit:contain;background:#fff;aspect-ratio:auto;max-height:520px">
+        <figcaption>Lo que incluye · toca para ampliar</figcaption>
+      </figure>
+      <div class="media__body">
+        <p class="eyebrow">Qué incluye</p>
+        <h2>Lo que está incluido</h2>
+        <ul class="feature-icons">
+          <li><span class="fi-ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2 7c1.8 1.6 3.6 1.6 5.5 0s3.7-1.6 5.5 0 3.7 1.6 5.5 0"/><path d="M2 13c1.8 1.6 3.6 1.6 5.5 0s3.7-1.6 5.5 0 3.7 1.6 5.5 0"/><path d="M2 19c1.8 1.6 3.6 1.6 5.5 0s3.7-1.6 5.5 0 3.7 1.6 5.5 0"/></svg></span><span><b>Nado con lobos marinos</b></span></li>
+          <li><span class="fi-ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l7 3v5c0 4.4-3 7.6-7 9-4-1.4-7-4.6-7-9V6z"/><path d="M9 12l2 2 4-4"/></svg></span><span><b>Chaleco salvavidas</b></span></li>
+          <li><span class="fi-ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h16v10H9l-4 4z"/><path d="M8 9h8M8 12h5"/></svg></span><span><b>Guía bilingüe</b></span></li>
+          <li><span class="fi-ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9h12l-1.2 9.2A2 2 0 0 1 14.8 20H9.2a2 2 0 0 1-2-1.8z"/><path d="M9 9V6a3 3 0 0 1 6 0v3"/></svg></span><span><b>Bebidas y snacks ilimitados</b></span></li>
+          <li><span class="fi-ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.5s6 5.8 6 9.7a6 6 0 0 1-12 0c0-3.9 6-9.7 6-9.7z"/></svg></span><span><b>Wetsuits en temporada fría</b></span></li>
+          <li><span class="fi-ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l7 3v5c0 4.4-3 7.6-7 9-4-1.4-7-4.6-7-9V6z"/><path d="M12 9.5v5M9.5 12h5"/></svg></span><span><b>Seguro de viaje</b></span></li>
+        </ul>
+        <p style="margin-top:var(--space-4);font-size:.9rem;color:var(--text-secondary)"><strong>No incluido:</strong> tarifa SERNANP (S/26 residentes · US$8 extranjeros).</p>
+        <div class="btn-row" style="margin-top:var(--space-4)">
+          <a class="btn btn--ghost" href="/tour/recorrido/">Ver el recorrido →</a>
+          <a class="btn btn--ghost" href="/tour/precios/">Ver precios →</a>
+        </div>
+      </div>
     </div>
   </div>
 </section>

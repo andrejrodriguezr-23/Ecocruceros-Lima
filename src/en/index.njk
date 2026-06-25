@@ -6,6 +6,7 @@ eyebrow: "Ecocruceros · La Punta, Callao"
 ---
 {% set t = i18n[lang] %}
 
+<!-- HERO -->
 <section class="hero">
   <div class="hero__media"><img src="/assets/img/hero-swim-lobos.jpg" alt="Guests swimming with sea lions at the Palomino Islands, Callao"></div>
   <div class="container hero__inner reveal">
@@ -17,17 +18,19 @@ eyebrow: "Ecocruceros · La Punta, Callao"
       <span class="rot">Swim with sea lions</span>
       <span class="rot">Daily departures · by reservation</span>
     </div>
-    <p class="lead">Sail the open Pacific with the <strong>pioneers of marine ecotourism in Peru</strong>. A yacht experience from La Punta, Callao, to a colony of 5,000+ sea lions.</p>
+    <p class="lead">A yacht trip from La Punta, Callao, to a colony of more than 5,000 sea lions — with the <strong>pioneers of marine ecotourism in Peru</strong>.</p>
     <div class="btn-row">
-      <a class="btn btn--gold btn--lg" data-wa-source="hero" href="{{ t.wa.tour | wa }}">Book on WhatsApp</a>
+      <a class="btn btn--gold btn--lg" data-wa-source="hero" href="{{ t.wa.tour | wa }}" target="_blank" rel="noopener">{{ t.book }}</a>
       <a class="btn btn--ghost btn--lg" href="/en/tour/" style="color:#fff;border-color:rgba(255,255,255,.6)">{{ t.seeTour }}</a>
     </div>
     <div class="hero__trust">
-      <a href="{{ site.tripadvisor.url }}" target="_blank" rel="noopener" style="color:#fff;text-decoration:underline">★ 4.6 · 193 {{ t.trust.reviews }} (TripAdvisor)</a><span>· {{ t.trust.years }}</span><span>· SERNANP · Green Destinations certified</span>
+      <a class="proof" href="{{ site.tripadvisor.url }}" target="_blank" rel="noopener"><span class="stars">★</span> 4.6 · 193 {{ t.trust.reviews }} <span class="proof-rank">· No. 10 of 97 in Lima · TripAdvisor</span></a>
     </div>
+    <p style="margin-top:var(--space-3);color:#eaf4f8;font-size:.9rem">{{ t.weReply }}</p>
   </div>
 </section>
 
+<!-- TRUST STRIP -->
 <section class="section" style="padding-block:var(--space-12)">
   <div class="container reveal">
     <div class="trust-strip">
@@ -39,47 +42,58 @@ eyebrow: "Ecocruceros · La Punta, Callao"
   </div>
 </section>
 
+<!-- THE EXPERIENCE -->
 <section class="section section--sky">
   <div class="container reveal">
-    <p class="eyebrow">The experience</p>
-    <h2>A real encounter with Pacific marine wildlife</h2>
-    <p class="lead">From La Punta's private pier we sail to the Palomino Islands, where you can swim alongside a colony of sea lions in their natural habitat.</p>
-    <div class="grid cols-3" style="margin-top:var(--space-8)">
-      <article class="card card--top"><div class="card__body"><span class="tag tag--ok">Guaranteed</span><h3>5,000+ sea lions</h3><p>Optional swim beside the colony at the Palomino Islands.</p></div></article>
-      <article class="card card--top"><div class="card__body"><span class="tag tag--ok">Guaranteed</span><h3>Humboldt penguins</h3><p>And guano birds at the Cavinzas Islands.</p></div></article>
-      <article class="card card--top-gold"><div class="card__body"><span class="tag tag--seasonal">Seasonal</span><h3>Whale sightings</h3><p>Possible in some months · not guaranteed.</p></div></article>
+    <div class="media">
+      <figure class="media__figure">
+        <img class="zoomable" src="/assets/img/galeria/g6.jpg" alt="Guest in a life vest swims next to a sea lion in the turquoise water of the Palomino Islands" loading="lazy">
+      </figure>
+      <div class="media__body">
+        <p class="eyebrow">The experience</p>
+        <h2>A real encounter with Pacific wildlife</h2>
+        <p>From the private pier in La Punta we sail out to the Palomino Islands, where you can swim alongside a colony of sea lions in their natural habitat.</p>
+        <ul class="checklist" style="margin-top:var(--space-4)">
+          <li><strong>5,000+ sea lions</strong> · optional swim</li>
+          <li>Humboldt penguins and guano birds at Cavinzas</li>
+          <li>Whale sightings in some months · not guaranteed</li>
+        </ul>
+        <div class="btn-row" style="margin-top:var(--space-6)"><a class="btn btn--primary" href="/en/tour/">{{ t.seeTour }} →</a></div>
+      </div>
     </div>
-    <div class="btn-row" style="margin-top:var(--space-8)"><a class="btn btn--primary" href="/en/tour/">{{ t.seeTour }} →</a></div>
   </div>
 </section>
 
+<!-- WHAT'S INCLUDED -->
 <section class="section">
   <div class="container reveal">
-    <p class="eyebrow">What's included</p>
-    <h2>Everything ready for your voyage</h2>
-    <p class="lead">Your ticket includes everything you need to enjoy the day with peace of mind:</p>
-    <ul class="checklist checklist--2" style="margin-top:var(--space-6)">
-      <li>Swim with the <strong>sea lions</strong> in their habitat.</li>
-      <li>Bird and penguin watching.</li>
-      <li><strong>Bilingual</strong> tourism guide (English–Spanish) on board.</li>
-      <li>Life vest throughout the entire voyage.</li>
-      <li>Wetsuits for swimming in the colder season.</li>
-      <li>Cold and hot drinks and snacks — <strong>unlimited</strong>.</li>
-      <li>Seasickness tablets.</li>
-      <li>Boarding at our <strong>private pier</strong> for greater safety.</li>
-      <li>Two-deck yacht with 2 cabins, 2 restrooms, lounge and galley.</li>
-      <li>Travel insurance.</li>
-    </ul>
-    <p style="margin-top:var(--space-6)"><strong>Not included:</strong> S/26 (residents) / US$8 (visitors) for the protected natural area (SERNANP) entrance and boarding fee.</p>
-    <p style="margin-top:var(--space-2)">No swimming ability required: you can enter the sea wearing a life vest.</p>
-    <div class="btn-row" style="margin-top:var(--space-6)"><a class="btn btn--ghost" href="/en/tour/precios/">{{ t.seePricing }} →</a></div>
+    <div class="media media--reverse">
+      <figure class="media__figure">
+        <img class="zoomable" src="/assets/img/galeria/g1.jpg" alt="Smiling visitor in a life vest swims in front of the Palomino Islands sea lion colony" loading="lazy">
+      </figure>
+      <div class="media__body">
+        <p class="eyebrow">What's included</p>
+        <h2>Everything ready for your trip</h2>
+        <ul class="feature-icons">
+          <li><span class="fi-ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2 7c1.8 1.6 3.6 1.6 5.5 0s3.7-1.6 5.5 0 3.7 1.6 5.5 0"/><path d="M2 13c1.8 1.6 3.6 1.6 5.5 0s3.7-1.6 5.5 0 3.7 1.6 5.5 0"/><path d="M2 19c1.8 1.6 3.6 1.6 5.5 0s3.7-1.6 5.5 0 3.7 1.6 5.5 0"/></svg></span><span><b>Swim with sea lions</b><small>In their natural habitat</small></span></li>
+          <li><span class="fi-ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l7 3v5c0 4.4-3 7.6-7 9-4-1.4-7-4.6-7-9V6z"/><path d="M9 12l2 2 4-4"/></svg></span><span><b>No need to swim well</b><small>Life vest on board</small></span></li>
+          <li><span class="fi-ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h16v10H9l-4 4z"/><path d="M8 9h8M8 12h5"/></svg></span><span><b>Bilingual guide</b><small>English &amp; Spanish</small></span></li>
+          <li><span class="fi-ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9h12l-1.2 9.2A2 2 0 0 1 14.8 20H9.2a2 2 0 0 1-2-1.8z"/><path d="M9 9V6a3 3 0 0 1 6 0v3"/></svg></span><span><b>Drinks &amp; snacks</b><small>Unlimited on board</small></span></li>
+          <li><span class="fi-ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.5s6 5.8 6 9.7a6 6 0 0 1-12 0c0-3.9 6-9.7 6-9.7z"/></svg></span><span><b>Wetsuits</b><small>In the cold season</small></span></li>
+          <li><span class="fi-ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l7 3v5c0 4.4-3 7.6-7 9-4-1.4-7-4.6-7-9V6z"/><path d="M12 9.5v5M9.5 12h5"/></svg></span><span><b>Travel insurance</b><small>All passengers</small></span></li>
+        </ul>
+        <p style="margin-top:var(--space-4);font-size:.9rem;color:var(--text-secondary)">Does not include the SERNANP fee (S/26 residents · US$8 foreigners).</p>
+        <div class="btn-row" style="margin-top:var(--space-4)"><a class="btn btn--ghost" href="/en/tour/precios/">{{ t.seePricing }} →</a></div>
+      </div>
+    </div>
   </div>
 </section>
 
+<!-- SCHEDULE / FACT BAND -->
 <section class="section section--warm" style="padding-block:var(--space-12)">
   <div class="container reveal">
     <div class="factbar">
-      <div><b>3½ hours</b><span>of unforgettable sailing</span></div>
+      <div><b>3½ hours</b><span>an unforgettable trip</span></div>
       <div><b>30 min</b><span>from central Lima</span></div>
       <div><b>Daily departures</b><span>by reservation</span></div>
       <div><b>Private pier</b><span>in La Punta, Callao</span></div>
@@ -87,39 +101,36 @@ eyebrow: "Ecocruceros · La Punta, Callao"
   </div>
 </section>
 
-<section class="section">
-  <div class="container reveal">
-    <p class="eyebrow">Why Ecocruceros</p>
-    <h2>The pioneers of marine ecotourism in Peru</h2>
-    <div class="grid cols-3" style="margin-top:var(--space-6)">
-      <div class="stack"><h3>Nearly 30 years</h3><p>Experience we're proud of, devoted to your comfort and peace of mind.</p></div>
-      <div class="stack"><h3>Private pier</h3><p>We depart from La Punta, 30 minutes from central Lima.</p></div>
-      <div class="stack"><h3>Two-deck yacht</h3><p>Comfort and stability on the open sea, with a lounge, restrooms and galley on board.</p></div>
-    </div>
-    <div class="btn-row" style="margin-top:var(--space-6)"><a class="btn btn--ghost" href="/en/nosotros/">About our company →</a></div>
-  </div>
-</section>
-
+<!-- SUSTAINABILITY -->
 <section class="section section--dark">
   <div class="container reveal">
     <p class="eyebrow">Sustainability</p>
-    <h2>The "Eco" is not a label</h2>
-    <p class="lead">We operate within a National Reserve, with low-impact practices and the backing of sustainable-tourism certifications.</p>
+    <h2>"Eco" is not a label</h2>
+    <p class="lead">We operate inside a National Reserve, with low-impact practices and the backing of sustainable-tourism certifications.</p>
     <div class="btn-row" style="margin-top:var(--space-6)"><a class="btn btn--ghost" href="/en/sostenibilidad/">{{ t.nav.sustain }} →</a></div>
   </div>
 </section>
 
+<!-- REVIEWS -->
 <section class="section section--sky">
   <div class="container reveal">
-    <p class="eyebrow">What our guests say</p>
-    <h2>4.6★ on TripAdvisor · 193 reviews</h2>
-    <p class="lead">#10 of 97 attractions in Lima. Real reviews from guests who've already sailed with us.</p>
+    <div class="media">
+      <figure class="media__figure">
+        <img class="zoomable" src="/assets/img/galeria/g2.jpg" alt="Three smiling passengers in life vests swim in front of the Palomino Islands sea lion colony" loading="lazy">
+      </figure>
+      <div class="media__body">
+        <p class="eyebrow">What our passengers say</p>
+        <h2>4.6★ on TripAdvisor · 193 reviews</h2>
+        <p>No. 10 of 97 attractions in Lima. Real reviews from travellers who have already sailed with us.</p>
+        <a class="proof" href="{{ site.tripadvisor.url }}" target="_blank" rel="noopener"><span class="stars">★</span> 4.6 · 193 {{ t.trust.reviews }} <span class="proof-rank">· TripAdvisor</span></a>
+      </div>
+    </div>
     {% if reviews and reviews.length %}
-    <div class="review-carousel" data-carousel>
+    <div class="review-carousel" data-carousel style="margin-top:var(--space-12)">
       <div class="review-track" data-carousel-track>
         {% for r in reviews %}
         <div class="review-slide"><article class="review-card">
-          <div class="review-stars" title="5 of 5" aria-label="5 out of 5 stars">★★★★★</div>
+          <div class="review-stars" title="5 of 5" aria-label="5 of 5 stars">★★★★★</div>
           {% if r.title_en %}<h3 class="review-title">{{ r.title_en }}</h3>{% endif %}
           <p class="review-text">“{{ r.text_en }}”</p>
           <p class="review-meta">{{ r.name }}{% if r.location_en %} · {{ r.location_en }}{% endif %}{% if r.date_en %} · {{ r.date_en }}{% endif %}<br><span class="review-source">via TripAdvisor</span></p>
@@ -132,20 +143,30 @@ eyebrow: "Ecocruceros · La Punta, Callao"
       </div>
     </div>
     {% endif %}
-    <div class="btn-row" style="margin-top:var(--space-6)">
-      <a class="btn btn--primary" href="{{ site.tripadvisor.url }}" target="_blank" rel="noopener">Read the reviews on TripAdvisor →</a>
-    </div>
   </div>
 </section>
 
+<!-- PRICING CLOSE -->
 <section class="section section--sea cta-band">
   <div class="container center reveal">
     <p class="eyebrow">Pricing</p>
-    <h2>{{ t.from }} S/179 (residents) · {{ t.from }} US$69 (visitors)</h2>
-    <p class="lead" style="margin-inline:auto;color:#dff1f8">SERNANP fee not included. We arrange everything by WhatsApp.</p>
+    <h2>Clear pricing, no surprises</h2>
+    <div class="price-compare" style="text-align:left;max-width:700px;margin-inline:auto">
+      <div class="pc">
+        <span class="pc-who">Residents in Peru</span>
+        <div class="pc-from">{{ t.from }} S/179 <small>/ adult</small></div>
+        <span class="pc-all">+ S/26 SERNANP fee = <b>S/205 per person, all in</b></span>
+      </div>
+      <div class="pc pc--gold">
+        <span class="pc-who">International visitors</span>
+        <div class="pc-from">{{ t.from }} US$69 <small>/ adult</small></div>
+        <span class="pc-all">+ US$8 SERNANP fee = <b>US$77 per person, all in</b></span>
+      </div>
+    </div>
     <div class="btn-row" style="justify-content:center;margin-top:var(--space-6)">
-      <a class="btn btn--gold" data-wa-source="home-pricing" href="{{ t.wa.pricing | wa }}">Book on WhatsApp</a>
+      <a class="btn btn--gold" data-wa-source="home-pricing" href="{{ t.wa.pricing | wa }}" target="_blank" rel="noopener">{{ t.book }}</a>
       <a class="btn btn--ghost" href="/en/tour/precios/">{{ t.seePricing }} →</a>
     </div>
+    <p style="margin-top:var(--space-3);color:#dff1f8;font-size:.9rem">{{ t.weReply }}</p>
   </div>
 </section>

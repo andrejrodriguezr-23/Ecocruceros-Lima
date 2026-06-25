@@ -1,0 +1,6 @@
+{% set t = i18n[lang] %}
+{#- Always-visible booking bar on phones. Hidden ≥768px via CSS. -#}
+<div class="sticky-cta" role="complementary" aria-label="{{ t.book }}">
+  <span class="sticky-cta__price">{{ t.from }}<b>{{ 'S/179' if lang == 'es' else 'US$69' }}</b></span>
+  <a class="btn btn--gold" data-wa-source="sticky" href="{{ t.wa.tour | wa }}" target="_blank" rel="noopener">{{ t.book }}</a>
+</div>

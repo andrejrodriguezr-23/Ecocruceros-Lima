@@ -5,8 +5,9 @@ description: "We are Peru's first marine ecotourism operator: creators, promoter
 ---
 {% set t = i18n[lang] %}
 
-<section class="hero" style="min-height:min(52vh,460px)">
-  <div class="hero__media"><div class="asset-pending" style="height:100%;border:0;border-radius:0">{{ t.assetPending }} · heritage / La Punta photo (D3)</div></div>
+<!-- D3: historic / La Punta photo pending from client. Brand-gradient hero until it arrives. -->
+<section class="hero" style="min-height:min(48vh,420px)">
+  <div class="hero__media"></div>
   <div class="container hero__inner reveal">
     <p class="eyebrow" style="color:var(--c-mustard-300)">Our company</p>
     <h1>The pioneers of marine ecotourism in Peru</h1>
@@ -15,12 +16,19 @@ description: "We are Peru's first marine ecotourism operator: creators, promoter
 
 <nav class="container breadcrumbs" aria-label="breadcrumb"><a href="/en/">Home</a><span>›</span> Our company</nav>
 
+<!-- Intro -->
 <section class="section">
   <div class="container reveal">
-    <h2>Nearly 30 years on the open sea</h2>
-    <div class="prose justify" style="margin-top:var(--space-4)">
-      <p>We are <strong>Peru's first marine ecotourism operator</strong>: creators, drivers, promoters and defenders of the Palomino Islands — Callao. Over the years, this effort has let us witness the recovery of the ecosystem and of the various populations of seabirds and sea lions.</p>
-      <p>Ecocruceros was born in La Punta, Callao, with a mission to bring people closer to Pacific marine wildlife — responsibly, safely and memorably.</p>
+    <div class="media">
+      <figure class="media__figure">
+        <img class="zoomable" src="/assets/img/galeria/g14.jpg" alt="Passengers swim in life vests as waves break over the sea lion rock at the Palomino Islands" loading="lazy">
+      </figure>
+      <div class="media__body">
+        <p class="eyebrow">Nearly 30 years at sea</p>
+        <h2>First at the Palomino Islands</h2>
+        <p>We are <strong>Peru's first marine ecotourism operator</strong>: creators, promoters and defenders of the Palomino Islands, Callao. Over these years we have watched the ecosystem and its bird and sea lion populations recover.</p>
+        <p>We were born in La Punta with one mission: to bring people closer to the Pacific's marine wildlife in a responsible, safe and memorable way.</p>
+      </div>
     </div>
   </div>
 </section>
@@ -28,19 +36,19 @@ description: "We are Peru's first marine ecotourism operator: creators, promoter
 <section class="section section--sky">
   <div class="container reveal">
     <p class="eyebrow">What defines us</p>
-    <h2>Three pillars of our voyage</h2>
+    <h2>Three pillars of our trip</h2>
     <div class="grid cols-3" style="margin-top:var(--space-6)">
       <article class="card card--top"><div class="card__body">
-        <h3>Pioneers in marine ecotourism</h3>
-        <p>Peru's first marine ecotourism operator. As creators and defenders of the Palomino Islands, we've watched the ecosystem and its seabird and sea-lion populations recover.</p>
+        <h3>Pioneers</h3>
+        <p>Peru's first marine ecotourism operator, creators and defenders of the Palomino Islands.</p>
       </div></article>
       <article class="card card--top"><div class="card__body">
-        <h3>Experience &amp; conservation</h3>
-        <p>Our crew and collaborators are long-standing sailors — the most experienced and knowledgeable of the Palomino Islands circuit and the Callao islands area.</p>
+        <h3>Experience</h3>
+        <p>A long-serving crew, the most knowledgeable about the Palomino Islands circuit and the Callao area.</p>
       </div></article>
       <article class="card card--top-gold"><div class="card__body">
-        <h3>Safety &amp; comfort</h3>
-        <p>The yacht is the vessel that best suits our passengers. We carry sophisticated equipment: radar, echo sounder, radio beacon, GPS, life vests and life rafts.</p>
+        <h3>Safety</h3>
+        <p>A yacht with sophisticated equipment: radar, echo sounder, EPIRB, GPS, life vests and life rafts.</p>
       </div></article>
     </div>
   </div>
@@ -50,10 +58,10 @@ description: "We are Peru's first marine ecotourism operator: creators, promoter
   <div class="container reveal">
     <p class="eyebrow">In the media</p>
     <h2>Featured by CNN</h2>
-    <p class="lead">Our work was recognised in a report by <strong>CNN</strong> in 2006.</p>
+    <p class="lead">Our work was recognised in a <strong>CNN</strong> report in 2006.</p>
     <div class="video-wrap" style="margin-top:var(--space-6)">
       <div class="embed">
-        <iframe src="https://www.youtube-nocookie.com/embed/{{ site.video.cnn }}" title="CNN report about Ecocruceros (2006)" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <iframe src="https://www.youtube-nocookie.com/embed/{{ site.video.cnn }}" title="CNN report on Ecocruceros (2006)" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
       </div>
     </div>
   </div>

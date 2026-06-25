@@ -1,0 +1,107 @@
+{%- set t = i18n[lang] -%}
+{%- set base = "https://ecocruceros.com" -%}
+{%- set isHome = page.url == "/" or page.url == "/en/" -%}
+{%- set isTour = page.url == "/tour/" or page.url == "/en/tour/" -%}
+{%- set isFaq = page.url == "/faq/" or page.url == "/en/faq/" -%}
+{%- set cur = "PEN" if lang == "es" else "USD" -%}
+{%- set price = "179" if lang == "es" else "69" -%}
+{#- Organization + WebSite: emitted on every page -#}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "TravelAgency",
+      "@id": "{{ base }}/#org",
+      "name": "Ecocruceros",
+      "url": "{{ base }}/",
+      "logo": "{{ base }}/assets/img/logo_ecocruceros.jpeg",
+      "image": "{{ base }}/assets/img/hero-swim-lobos.jpg",
+      "description": "{{ 'Pioneros del ecoturismo marino en el Perú. Tour a las Islas Palomino para nadar con lobos marinos, desde La Punta, Callao.' if lang == 'es' else 'Pioneers of marine ecotourism in Peru. Palomino Islands tour to swim with sea lions, from La Punta, Callao.' }}",
+      "telephone": "+51 986 671 093",
+      "email": "{{ site.email }}",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Av. Arequipa 4964, Of. 202",
+        "addressLocality": "Miraflores",
+        "addressRegion": "Lima",
+        "addressCountry": "PE"
+      },
+      "areaServed": "Lima, Perú",
+      "sameAs": [
+        "{{ site.social.facebook }}",
+        "{{ site.social.instagram }}",
+        "{{ site.social.youtube }}",
+        "{{ site.tripadvisor.url }}"
+      ],
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "{{ site.tripadvisor.rating }}",
+        "reviewCount": "{{ site.tripadvisor.reviews }}",
+        "bestRating": "5"
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "{{ base }}/#website",
+      "url": "{{ base }}/",
+      "name": "Ecocruceros",
+      "inLanguage": "{{ 'es-PE' if lang == 'es' else 'en' }}",
+      "publisher": { "@id": "{{ base }}/#org" }
+    }{% if isHome or isTour %},
+    {
+      "@type": "Product",
+      "name": "{{ 'Tour a las Islas Palomino' if lang == 'es' else 'Palomino Islands Tour' }}",
+      "image": "{{ base }}/assets/img/hero-swim-lobos.jpg",
+      "description": "{{ 'Travesía en yate de 3½ horas desde La Punta, Callao, para nadar con más de 5,000 lobos marinos en las Islas Palomino.' if lang == 'es' else '3½-hour yacht trip from La Punta, Callao, to swim with 5,000+ sea lions at the Palomino Islands.' }}",
+      "brand": { "@id": "{{ base }}/#org" },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "{{ site.tripadvisor.rating }}",
+        "reviewCount": "{{ site.tripadvisor.reviews }}",
+        "bestRating": "5"
+      },
+      "offers": {
+        "@type": "Offer",
+        "price": "{{ price }}",
+        "priceCurrency": "{{ cur }}",
+        "availability": "https://schema.org/InStock",
+        "url": "{{ base }}{{ '/en/tour/' if lang == 'en' else '/tour/' }}"
+      }
+    }{% endif %}{% if isFaq %},
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {%- set faqs_es = [
+          { q: "¿Cuánto dura el tour?", a: "El tour a las Islas Palomino dura aproximadamente 3 horas y media." },
+          { q: "¿Puedo entrar al mar si no sé nadar?", a: "Sí, puedes entrar al mar con chaleco salvavidas durante toda la travesía." },
+          { q: "¿Los lobos marinos muerden?", a: "No. Nadarás con los lobos bebés, que son juguetones y curiosos; los lobos adultos permanecen en la isla." },
+          { q: "¿Cuánto tiempo puedo nadar con los lobos marinos?", a: "Se puede nadar un promedio de 30 a 40 minutos." },
+          { q: "¿Dónde queda el lugar de embarque?", a: "Embarcamos desde un muelle privado en La Punta, Callao. La dirección exacta se indica al momento de la reserva." },
+          { q: "¿Qué incluye el tour?", a: "Guía bilingüe, chaleco salvavidas, parada para nadar con los lobos, bebidas frías y calientes y snacks ilimitados, pastilla para el mareo y seguro de viaje. Wetsuits con stock limitado en temporada de frío." },
+          { q: "¿Cómo hago la reserva y cuándo pago?", a: "La reserva se coordina por WhatsApp. El pago es siempre previo: en oficina, por transferencia o depósito, o en los puntos de venta de Tu Entrada en Plaza Vea o Vivanda." },
+          { q: "¿Pueden viajar niños y adultos mayores?", a: "No hay límite de edad: pueden viajar incluso bebés. Los adultos mayores pueden viajar siempre que tengan un buen estado de salud." }
+        ] -%}
+        {%- set faqs_en = [
+          { q: "How long is the tour?", a: "The Palomino Islands tour lasts about 3 and a half hours." },
+          { q: "Can I go in the water if I cannot swim?", a: "Yes. You can enter the sea with a life vest, worn throughout the trip." },
+          { q: "Do the sea lions bite?", a: "No. You swim with the playful, curious sea lion pups; the adult sea lions stay on the island." },
+          { q: "How long can I swim with the sea lions?", a: "You can swim for an average of 30 to 40 minutes." },
+          { q: "Where is the boarding point?", a: "We board from a private pier in La Punta, Callao. The exact address is given when you book." },
+          { q: "What does the tour include?", a: "Bilingual guide, life vest, a stop to swim with the sea lions, unlimited hot and cold drinks and snacks, a seasickness tablet and travel insurance. Wetsuits are available in limited stock in the cold season." },
+          { q: "How do I book and when do I pay?", a: "Booking is arranged on WhatsApp. Payment is always in advance: at the office, by bank transfer or deposit, or at Tu Entrada points of sale in Plaza Vea or Vivanda." },
+          { q: "Can children and older adults take the tour?", a: "There is no age limit: even babies can travel. Older adults are welcome as long as they are in good health." }
+        ] -%}
+        {%- set faqs = faqs_es if lang == "es" else faqs_en -%}
+        {%- for f in faqs %}
+        {
+          "@type": "Question",
+          "name": {{ f.q | dump | safe }},
+          "acceptedAnswer": { "@type": "Answer", "text": {{ f.a | dump | safe }} }
+        }{% if not loop.last %},{% endif %}
+        {%- endfor %}
+      ]
+    }{% endif %}
+  ]
+}
+</script>
