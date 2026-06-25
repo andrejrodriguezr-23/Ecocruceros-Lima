@@ -105,6 +105,9 @@
 .hero .btn-row{margin-top:var(--space-6)}
 .hero__trust{margin-top:var(--space-6);display:flex;flex-wrap:wrap;gap:var(--space-4);align-items:center;font-weight:600;font-size:.9rem}
 .hero__trust span{display:inline-flex;align-items:center;gap:6px}
+/* Discreet photo credit for licensed hero images (removed once a client-owned photo is used) */
+.hero__credit{position:absolute;right:8px;bottom:6px;z-index:1;margin:0;max-width:none;font-size:.62rem;color:rgba(255,255,255,.62);letter-spacing:.02em}
+.hero__credit a{color:inherit;text-decoration:underline}
 
 /* Rotating hero taglines (client: bigger, bolder phrases that change on their own) */
 .hero__rotator{margin-top:var(--space-4);min-height:2.4em;display:flex;align-items:center}
