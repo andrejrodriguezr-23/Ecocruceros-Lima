@@ -21,7 +21,7 @@ description: "El recorrido del tour a las Islas Palomino: La Punta, El Camotal, 
     </div>
     <div class="video-wrap" style="margin-top:var(--space-6)">
       <div class="embed">
-        <video controls playsinline preload="metadata" poster="/assets/img/galeria/g6.jpg" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;background:#000">
+        <video controls playsinline preload="metadata" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;background:#000">
           <source src="/assets/video/recorrido-islas-palomino.mp4" type="video/mp4">
           Tu navegador no admite video HTML5. <a href="/assets/video/recorrido-islas-palomino.mp4">Descarga el video</a>.
         </video>
@@ -34,7 +34,7 @@ description: "El recorrido del tour a las Islas Palomino: La Punta, El Camotal, 
 <section class="section">
   <div class="container">
     <div class="grid cols-2">
-      {%- set stopPhotos = [14,15,16,17,23,19] -%}
+      {%- set stopPhotos = [14,15,16,17,13,19] -%}
       {% for stop in site.route %}
       <article class="card card--top reveal">
         <div class="card__media"><img src="/assets/img/galeria/g{{ stopPhotos[loop.index0] }}.jpg" alt="{{ stop.es }} — travesía a las Islas Palomino" loading="lazy"></div>
