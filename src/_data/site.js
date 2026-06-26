@@ -13,7 +13,7 @@ module.exports = {
   // Office (client correction: show a location map, hide bank-account numbers)
   office: {
     address: "Av. Arequipa 4964, Of. 202, 2.º piso — Miraflores, Lima, Perú",
-    mapsEmbed: "https://www.google.com/maps?q=Av.%20Arequipa%204964%20Miraflores%20Lima%20Per%C3%BA&output=embed",
+    mapsEmbed: "https://maps.google.com/maps?q=Av.+Arequipa+4964,+Miraflores,+Lima&z=16&output=embed",
     mapsLink: "https://www.google.com/maps/search/?api=1&query=Av.+Arequipa+4964+Miraflores+Lima"
   },
   // Departure schedule (client correction). Tour runs daily, by prior reservation.
@@ -46,7 +46,7 @@ module.exports = {
     directions_es: "A la altura de la cuadra 8 de la Av. Bolognesi. Ingresa al malecón por las calles Elías Aguirre o Diego Ferré.",
     directions_en: "By block 8 of Av. Bolognesi. Enter the boardwalk via Elías Aguirre or Diego Ferré streets.",
     mapsLink: "https://goo.gl/maps/fxPELJUwnQKw85LU8",
-    mapsEmbed: "https://www.google.com/maps?q=Muelle%20Club%20Canottieri%20La%20Punta%20Callao&output=embed"
+    mapsEmbed: "https://maps.google.com/maps?q=Club+Canottieri+La+Punta+Callao&z=15&output=embed"
   },
   // VERIFIED pricing — official 2026 flyers (residents in S/, foreigners in US$)
   pricing: {
