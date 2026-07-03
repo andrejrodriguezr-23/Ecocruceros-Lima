@@ -25,8 +25,8 @@ description: "Precios del tour a las Islas Palomino para residentes (desde S/. 1
 <section class="section">
   <div class="container" data-price-tabs>
     <div class="price-tabs" role="tablist" aria-label="Tipo de tarifa">
-      <button role="tab" id="tab-res" aria-controls="panel-res" aria-selected="true">Residentes (S/)</button>
-      <button role="tab" id="tab-ext" aria-controls="panel-ext" aria-selected="false">Extranjeros (US$)</button>
+      <button role="tab" id="tab-res" aria-controls="panel-res" aria-selected="true">{{ site.pricing.residents_title_es }} (S/)</button>
+      <button role="tab" id="tab-ext" aria-controls="panel-ext" aria-selected="false">{{ site.pricing.foreigners_title_es }} (US$)</button>
     </div>
 
     <div role="tabpanel" id="panel-res" aria-labelledby="tab-res">
@@ -86,11 +86,10 @@ description: "Precios del tour a las Islas Palomino para residentes (desde S/. 1
         <span class="icon-chip">{{ icon("reservas") }}</span>
         <h3>Reservas</h3>
         <ul style="padding-left:var(--space-6);margin:0">
-          <li>Envía tu solicitud por WhatsApp o al correo <a href="mailto:reservas@ecocruceros.com">reservas@ecocruceros.com</a>.</li>
+          <li>Envía tu solicitud por WhatsApp o al correo <a href="mailto:{{ site.email }}">{{ site.email }}</a>.</li>
           <li>Indica nombres, edades, número de documento y nacionalidad de cada pasajero.</li>
           <li>Te recomendamos consultar la disponibilidad antes de reservar.</li>
           <li>Los servicios privados conviene reservarlos con anticipación.</li>
-          <li><strong>Grupos:</strong> un pasajero liberado a partir de 15 pasajeros.</li>
         </ul>
       </div></div>
       <div class="card card--top"><div class="card__body">

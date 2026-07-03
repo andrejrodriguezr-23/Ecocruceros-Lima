@@ -2,7 +2,7 @@
 permalink: /
 title: "Tour Islas Palomino — Nada con lobos marinos en Lima"
 description: "Navega con los pioneros del ecoturismo marino en el Perú. Tour a las Islas Palomino desde La Punta, Callao: nada con más de 5,000 lobos marinos. Reserva por WhatsApp."
-eyebrow: "Ecocruceros · La Punta, Callao"
+eyebrow: "ECOCRUCEROS · La Punta, Callao"
 ---
 {% set t = i18n[lang] %}
 {% from "partials/icons.njk" import icon %}
@@ -13,20 +13,21 @@ eyebrow: "Ecocruceros · La Punta, Callao"
     <img src="/assets/img/hero-swim-lobos.jpg" alt="Pasajeros nadando con los lobos marinos en las Islas Palomino, Callao">
   </div>
   <div class="container hero__inner reveal">
-    <p class="eyebrow" style="color:var(--c-mustard-300)">{{ eyebrow }}</p>
+    <p class="eyebrow eyebrow--brand">{{ eyebrow }}</p>
     <h1>Nada con los lobos marinos de las Islas Palomino</h1>
     <div class="hero__rotator" data-rotator data-interval="4200" aria-hidden="true">
       <span class="rot rot--lg is-on">Visita las Islas Palomino</span>
+      <span class="rot">A solo 30 minutos desde Miraflores</span>
       <span class="rot">En cómodos y seguros yates de dos pisos</span>
       <span class="rot">Nada con lobos marinos</span>
       <span class="rot">Salidas diarias · previa reserva</span>
     </div>
-    <p class="lead">Navega en altamar con los <strong>pioneros del ecoturismo marino en el Perú</strong>. Una travesía en yate desde La Punta, Callao, hasta una colonia de más de 5,000 lobos marinos.</p>
+    <p class="lead">Navega en altamar con los <strong>pioneros del ecoturismo marino en el Perú</strong>. Una travesía en yate desde La Punta, Callao — <strong>a solo 30 minutos desde Miraflores</strong> — hasta una colonia de más de 5,000 lobos marinos.</p>
     <div class="btn-row">
       <a class="btn btn--ghost btn--lg" href="/tour/" style="color:#fff;border-color:rgba(255,255,255,.6)">{{ t.seeTour }}</a>
     </div>
     <div class="hero__trust">
-      <a href="{{ site.tripadvisor.url }}" target="_blank" rel="noopener" style="color:#fff;text-decoration:underline">★ 4.6 · 193 {{ t.trust.reviews }} (TripAdvisor)</a>
+      <span>★ {{ site.rating.value }} · {% if site.rating.getyourguideUrl %}<a href="{{ site.rating.getyourguideUrl }}" target="_blank" rel="noopener" style="color:#fff;text-decoration:underline">GetYourGuide</a>{% else %}GetYourGuide{% endif %} · <a href="{{ site.tripadvisor.url }}" target="_blank" rel="noopener" style="color:#fff;text-decoration:underline">Tripadvisor</a> · <a href="{{ site.rating.googleUrl }}" target="_blank" rel="noopener" style="color:#fff;text-decoration:underline">reseñas de Google</a></span>
       <span>· {{ t.trust.years }}</span>
       <span>· Certificado SERNANP · Green Destinations</span>
     </div>
@@ -37,10 +38,10 @@ eyebrow: "Ecocruceros · La Punta, Callao"
 <section class="section" style="padding-block:var(--space-12)">
   <div class="container reveal">
     <div class="trust-strip">
-      <div class="item"><span class="num tnum count" data-count="30">30</span> años de trayectoria</div>
-      <div class="item"><span class="num tnum">4.6★</span> · 193 reseñas</div>
+      <div class="item"><span class="num tnum count" data-count="30">30</span> años de experiencia</div>
+      <div class="item"><span class="num tnum">4.9★</span> GetYourGuide · Tripadvisor · Google</div>
       <div class="item"><span class="num tnum count" data-count="5000" data-suffix="+">5,000+</span> lobos marinos</div>
-      <div class="item"><span class="num tnum">30 min</span> del centro de Lima</div>
+      <div class="item"><span class="num tnum">30 min</span> desde Miraflores</div>
     </div>
   </div>
 </section>
@@ -76,7 +77,7 @@ eyebrow: "Ecocruceros · La Punta, Callao"
         <li>{{ icon("guide") }}<span>Guía de turismo <strong>bilingüe</strong> a bordo.</span></li>
         <li>{{ icon("vest") }}<span>Chaleco salvavidas durante toda la travesía.</span></li>
         <li>{{ icon("wetsuit") }}<span>Trajes de neopreno para nadar en épocas de frío.</span></li>
-        <li>{{ icon("drinks") }}<span>Bebidas frías y calientes y snacks — <strong>ilimitado</strong>.</span></li>
+        <li>{{ icon("drinks") }}<span>Bebidas calientes (té, manzanilla y anís), bebidas frías no alcohólicas y frutas — <strong>ilimitado</strong>.</span></li>
         <li>{{ icon("pill") }}<span>Pastillas para el mareo.</span></li>
         <li>{{ icon("anchor") }}<span>Embarque en <strong>muelle privado</strong>.</span></li>
         <li>{{ icon("boat") }}<span>Yate de 2 pisos: 2 camarotes, 2 baños, sala y cocina.</span></li>
@@ -93,7 +94,7 @@ eyebrow: "Ecocruceros · La Punta, Callao"
   <div class="container reveal">
     <div class="factbar">
       <div><b>3½ horas</b><span>de travesía inolvidable</span></div>
-      <div><b>30 min</b><span>del centro de Lima</span></div>
+      <div><b>30 min</b><span>desde Miraflores</span></div>
       <div><b>Salidas diarias</b><span>previa reserva</span></div>
       <div><b>Muelle privado</b><span>en La Punta, Callao</span></div>
     </div>
@@ -106,14 +107,14 @@ eyebrow: "Ecocruceros · La Punta, Callao"
     <div class="media-split media-split--reverse">
       <div class="media-split__media">
         <img src="/assets/img/galeria/g7.jpg" alt="Grupo de pasajeras disfrutando el tour a las Islas Palomino">
-        <span class="media-split__badge">Casi 30 años de experiencia</span>
+        <span class="media-split__badge">30 años de experiencia</span>
       </div>
       <div>
         <p class="eyebrow">Por qué Ecocruceros</p>
         <h2>Los pioneros del ecoturismo marino en el Perú</h2>
         <ul class="feature-list" style="margin-top:var(--space-4)">
-          <li>{{ icon("clock") }}<span><strong>Casi 30 años</strong> de experiencia que cuidamos para tu comodidad y tranquilidad.</span></li>
-          <li>{{ icon("anchor") }}<span><strong>Muelle privado</strong>: zarpamos desde La Punta, a 30 minutos del centro de Lima.</span></li>
+          <li>{{ icon("clock") }}<span><strong>30 años de experiencia</strong> que cuidamos para tu comodidad y tranquilidad.</span></li>
+          <li>{{ icon("anchor") }}<span><strong>Muelle privado</strong>: zarpamos desde La Punta, a solo 30 minutos desde Miraflores.</span></li>
           <li>{{ icon("boat") }}<span><strong>Yate de dos cubiertas</strong>, con salón, baños y cocina a bordo.</span></li>
         </ul>
         <div class="btn-row" style="margin-top:var(--space-6)"><a class="btn btn--ghost" href="/nosotros/">Conoce nuestra empresa →</a></div>
@@ -136,8 +137,8 @@ eyebrow: "Ecocruceros · La Punta, Callao"
 <section class="section section--sky">
   <div class="container reveal">
     <p class="eyebrow">Lo que dicen nuestros pasajeros</p>
-    <h2>4.6★ en TripAdvisor · 193 reseñas</h2>
-    <p class="lead">N.º 10 de 97 atracciones en Lima. Opiniones reales de quienes ya navegaron con nosotros.</p>
+    <h2>4.9★ en GetYourGuide, Tripadvisor y reseñas de Google</h2>
+    <p class="lead">Opiniones reales de quienes ya navegaron con nosotros.</p>
     {% if reviews and reviews.length %}
     <div class="review-carousel" data-carousel>
       <div class="review-track" data-carousel-track>
@@ -162,15 +163,42 @@ eyebrow: "Ecocruceros · La Punta, Callao"
   </div>
 </section>
 
-<!-- H9 PRICING TEASER -->
+<!-- H9 PRICING (visual cards, client 2026-07: mejor distribución, imágenes e íconos) -->
 <section class="section section--sea cta-band">
-  <div class="container center reveal">
-    <p class="eyebrow">Precios</p>
-    <h2>{{ t.from }} S/. 179 (residentes) · {{ t.from }} US$69 (extranjeros)</h2>
-    <p class="lead" style="margin-inline:auto;color:#dff1f8">Tarifa SERNANP no incluida. Coordinamos todo por WhatsApp.</p>
+  <div class="container reveal">
+    <p class="eyebrow" style="color:var(--c-mustard-300)">Precios</p>
+    <h2>Tarifas del tour</h2>
+    <p class="lead" style="color:#dff1f8">Todo incluido en tu pasaje. Coordinamos disponibilidad y pago por WhatsApp.</p>
+    <div class="grid cols-2 price-cards" style="margin-top:var(--space-8)">
+      <article class="offer-card">
+        <div class="offer-card__media"><img src="/assets/img/galeria/g21.jpg" alt="Familia disfrutando la travesía a las Islas Palomino" loading="lazy"></div>
+        <div class="offer-body">
+          <span class="icon-chip">{{ icon("users") }}</span>
+          <h3>{{ site.pricing.residents_title_es }}</h3>
+          <ul class="price-lines">
+            {% for row in site.pricing.residents %}
+            <li><span>{{ row.who_es }}</span><b class="tnum">{{ row.price }}</b></li>
+            {% endfor %}
+          </ul>
+        </div>
+      </article>
+      <article class="offer-card">
+        <div class="offer-card__media"><img src="/assets/img/galeria/g5.jpg" alt="Dos pasajeros felices durante la travesía a las Islas Palomino" loading="lazy"></div>
+        <div class="offer-body">
+          <span class="icon-chip">{{ icon("ticket") }}</span>
+          <h3>{{ site.pricing.foreigners_title_es }}</h3>
+          <ul class="price-lines">
+            {% for row in site.pricing.foreigners %}
+            <li><span>{{ row.who_es }}</span><b class="tnum">{{ row.price }}</b></li>
+            {% endfor %}
+          </ul>
+        </div>
+      </article>
+    </div>
+    <p class="price-note" style="margin-top:var(--space-6);color:#dff1f8">{{ site.pricing.extra_es }}</p>
     <div class="btn-row" style="justify-content:center;margin-top:var(--space-6)">
       <a class="btn btn--gold" data-wa-source="home-pricing" href="{{ t.wa.pricing | wa }}">Reservar por WhatsApp</a>
-      <a class="btn btn--ghost" href="/tour/precios/">{{ t.seePricing }} →</a>
+      <a class="btn btn--ghost" href="/tour/precios/" style="color:#fff;border-color:rgba(255,255,255,.6)">{{ t.seePricing }} →</a>
     </div>
   </div>
 </section>
