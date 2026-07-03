@@ -1,7 +1,7 @@
 ---
 permalink: /tour/recorrido/
 title: "Recorrido e itinerario del tour"
-description: "El recorrido del tour a las Islas Palomino: La Punta, El Camotal, San Lorenzo, El Frontón, Cavinzas y Palomino. Historia y fauna en cada parada."
+description: "El recorrido del tour a las Islas Palomino desde La Punta: El Camotal, San Lorenzo, El Frontón, Cavinzas y Palomino. Historia y fauna en cada punto del recorrido."
 ---
 {% set t = i18n[lang] %}
 {% from "partials/icons.njk" import icon %}
@@ -9,15 +9,10 @@ description: "El recorrido del tour a las Islas Palomino: La Punta, El Camotal, 
 <section class="section section--warm">
   <div class="container">
     <nav class="breadcrumbs" aria-label="breadcrumb"><a href="/">Inicio</a><span>›</span><a href="/tour/">El Tour</a><span>›</span> Recorrido</nav>
-    <div class="media-split" style="margin-top:var(--space-4)">
-      <div class="media-split__media">
-        <img src="/assets/img/galeria/g24.jpg" alt="Pareja joven disfrutando la travesía a las Islas Palomino" loading="lazy">
-      </div>
-      <div>
-        <p class="eyebrow">Recorrido</p>
-        <h1>Seis paradas, una travesía inolvidable</h1>
-        <p class="lead">Cada salida recorre la bahía del Callao, con su historia y su fauna, hasta llegar a las Islas Palomino.</p>
-      </div>
+    <div style="margin-top:var(--space-4);max-width:var(--measure)">
+      <p class="eyebrow">Recorrido</p>
+      <h1>Cinco puntos del recorrido, una travesía inolvidable</h1>
+      <p class="lead">Cada salida recorre la bahía del Callao, con su historia y su fauna, hasta llegar a las Islas Palomino.</p>
     </div>
     <div class="video-wrap" style="margin-top:var(--space-6)">
       <div class="embed">
@@ -26,21 +21,40 @@ description: "El recorrido del tour a las Islas Palomino: La Punta, El Camotal, 
           Tu navegador no admite video HTML5. <a href="/assets/video/recorrido-islas-palomino.mp4">Descarga el video</a>.
         </video>
       </div>
-      <p class="embed-caption"><strong>Nuestro Recorrido</strong> — un vistazo a la travesía completa, desde el muelle privado de La Punta hasta la colonia de lobos marinos de las Islas Palomino. Más abajo, cada parada en detalle.</p>
+      <p class="embed-caption"><strong>Nuestro Recorrido</strong> — un vistazo a la travesía completa, desde el punto de embarque en La Punta hasta la colonia de lobos marinos de las Islas Palomino. Más abajo, cada punto del recorrido en detalle.</p>
     </div>
   </div>
 </section>
 
+<!-- La Punta — solo punto de embarque e inicio del recorrido (no es una parada) -->
 <section class="section">
   <div class="container">
-    <div class="grid cols-2">
-      {%- set stopPhotos = [14,15,16,17,13,19] -%}
+    <div class="media-split reveal">
+      <div class="media-split__media">
+        <img src="{{ site.routeStart.img }}" alt="{{ site.routeStart.es }} — {{ site.embarkation.role_es }}" loading="lazy">
+        <span class="media-split__badge">{{ site.embarkation.role_es }}</span>
+      </div>
+      <div>
+        <span class="icon-chip">{{ icon("anchor") }}</span>
+        <p class="eyebrow" style="margin-top:var(--space-3)">Punto de embarque</p>
+        <h2>{{ site.routeStart.es }}</h2>
+        <p class="lead">{{ site.routeStart.desc_es }}</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section--sky">
+  <div class="container">
+    <p class="eyebrow">Puntos del recorrido</p>
+    <h2>Los 5 puntos del recorrido</h2>
+    <div class="grid cols-2" style="margin-top:var(--space-6)">
       {% for stop in site.route %}
       <article class="card card--top reveal">
-        <div class="card__media"><img src="/assets/img/galeria/g{{ stopPhotos[loop.index0] }}.jpg" alt="{{ stop.es }} — travesía a las Islas Palomino" loading="lazy"></div>
+        <div class="card__media"><img src="{{ stop.img }}" alt="{{ stop.es }} — travesía a las Islas Palomino" loading="lazy"></div>
         <div class="card__body">
         <span class="icon-chip">{{ icon("pin") }}</span>
-        <p class="eyebrow">Parada {{ loop.index }}</p>
+        <p class="eyebrow">Punto {{ loop.index }}</p>
         <h3>{{ stop.es }}</h3>
         <p>{{ stop.desc_es }}</p>
       </div></article>
@@ -49,7 +63,7 @@ description: "El recorrido del tour a las Islas Palomino: La Punta, El Camotal, 
     <div style="margin-top:var(--space-8)">
       <h3>Duración y logística</h3>
       <p>Duración aproximada: <strong>3 horas y media</strong>. <strong>Salidas diarias previa reserva</strong> (lunes a viernes 11:30 a. m.; sábados, domingos y feriados 10:00 a. m.).</p>
-      <p style="margin-top:var(--space-3)"><strong>Punto de encuentro:</strong> {{ site.embarkation.name }} — {{ site.embarkation.address }}. {{ site.embarkation.directions_es }} <a href="{{ site.embarkation.mapsLink }}" target="_blank" rel="noopener">Ver en Google Maps →</a></p>
+      <p style="margin-top:var(--space-3)"><strong>Punto de encuentro:</strong> {{ site.embarkation.name }} ({{ site.embarkation.role_es | lower }}) — {{ site.embarkation.address }}. {{ site.embarkation.directions_es }} <a href="{{ site.embarkation.mapsLink }}" target="_blank" rel="noopener">Ver en Google Maps →</a></p>
       <div class="grid cols-2" style="margin-top:var(--space-6);align-items:start">
         <table class="schedule">
           <caption>Horarios de embarque</caption>
@@ -60,7 +74,7 @@ description: "El recorrido del tour a las Islas Palomino: La Punta, El Camotal, 
           </tbody>
         </table>
         <div class="embed embed--map">
-          <iframe src="{{ site.embarkation.mapsEmbed }}" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Mapa del punto de encuentro — Muelle Club Canottieri, La Punta, Callao"></iframe>
+          <iframe src="{{ site.embarkation.mapsEmbed }}" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Mapa — Ecocruceros – La Punta (Punto de embarque)"></iframe>
         </div>
       </div>
     </div>

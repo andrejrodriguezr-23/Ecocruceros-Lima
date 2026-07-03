@@ -34,6 +34,12 @@
 .site-header__inner{display:flex;align-items:center;gap:var(--space-3);min-height:72px;padding-inline-end:var(--space-2)}
 .brand{display:flex;align-items:center;gap:var(--space-3);font-family:var(--font-display);font-weight:600;color:var(--text);font-size:1.25rem}
 .brand:hover{text-decoration:none}
+/* ECOCRUCEROS wordmark — striking logo-blue gradient with a gold keel line (client 2026-07) */
+.brand__name{display:block;font-weight:700;letter-spacing:.04em;line-height:1.1;
+  background:var(--grad-brand);-webkit-background-clip:text;background-clip:text;color:transparent;
+  -webkit-text-fill-color:transparent}
+.brand__txt{position:relative;padding-bottom:2px}
+.brand__txt::after{content:"";position:absolute;left:0;bottom:-2px;width:56px;height:3px;border-radius:2px;background:var(--grad-gold)}
 .brand__logo{width:48px;height:48px;border-radius:10px;background:var(--c-navy-800);color:#fff;display:grid;place-items:center;font-size:.52rem;font-weight:700;letter-spacing:.01em;text-align:center;line-height:1.05}
 .brand__sub{display:block;white-space:nowrap;font-family:var(--font-body);font-size:.7rem;font-weight:500;color:var(--text-secondary);letter-spacing:.02em}
 .brand__img{height:44px;width:auto;display:block}
@@ -103,6 +109,8 @@
 .hero h1{color:#fff;font-size:var(--fs-display);max-width:16ch;text-shadow:0 2px 18px rgba(6,34,47,.45)}
 .hero .lead{color:#eaf4f8;max-width:48ch;margin-top:var(--space-4)}
 .hero .btn-row{margin-top:var(--space-6)}
+/* Hero brand eyebrow — bright logo gold, extra presence (client 2026-07) */
+.eyebrow--brand{color:var(--c-mustard-400);font-weight:800;letter-spacing:.14em;font-size:.9rem}
 .hero__trust{margin-top:var(--space-6);display:flex;flex-wrap:wrap;gap:var(--space-4);align-items:center;font-weight:600;font-size:.9rem}
 .hero__trust span{display:inline-flex;align-items:center;gap:6px}
 
@@ -283,6 +291,17 @@
 .ribbon{position:absolute;top:14px;right:-34px;transform:rotate(45deg);background:var(--grad-gold);color:var(--c-navy-900);
   font-weight:700;font-size:.72rem;letter-spacing:.04em;padding:5px 44px;box-shadow:var(--shadow-1)}
 .price-big{font-family:var(--font-display);font-size:2rem;color:var(--c-cyan-700);line-height:1}
+/* Visual pricing cards (home) — photo + icon + price lines.
+   The cards sit on the dark .section--sea band, so re-assert dark-on-light text. */
+.price-cards .offer-card{display:flex;flex-direction:column;color:var(--text);text-align:left}
+.section--sea .price-cards h3,.price-cards .offer-card h3{color:var(--text)}
+.section--sea .price-cards .offer-body p{color:var(--text-secondary);margin:0}
+.offer-card__media{aspect-ratio:16/7;overflow:hidden;background:var(--c-cyan-100)}
+.offer-card__media img{width:100%;height:100%;object-fit:cover;display:block}
+.price-lines{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:var(--space-2)}
+.price-lines li{display:flex;justify-content:space-between;align-items:baseline;gap:var(--space-4);border-bottom:1px dashed var(--border);padding-bottom:var(--space-2)}
+.price-lines li:last-child{border-bottom:0;padding-bottom:0}
+.price-lines b{font-family:var(--font-display);font-size:1.35rem;color:var(--c-cyan-700);white-space:nowrap}
 .price-big small{font-size:.9rem;color:var(--text-secondary);font-family:var(--font-body)}
 
 /* Service tiles (private charters) */

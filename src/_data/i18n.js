@@ -13,14 +13,13 @@ module.exports = {
     nav: {
       home: "Inicio", tour: "Tour", about: "Nosotros", sustain: "Sostenibilidad",
       gallery: "Galería", faq: "Preguntas Frecuentes", blog: "Blog", contact: "Contacto",
-      route: "Recorrido", pricing: "Precios", safety: "Seguridad", certs: "Certificaciones",
-      offers: "Ofertas"
+      route: "Recorrido", pricing: "Precios", safety: "Seguridad", certs: "Certificaciones"
     },
     footer: {
       nav: "Navegación", tourCol: "El Tour", contactCol: "Contacto",
       rights: "Todos los derechos reservados", privacy: "Privacidad", terms: "Términos"
     },
-    trust: { years: "Casi 30 años", reviews: "reseñas", pioneer: "Pioneros del ecoturismo marino en el Perú" },
+    trust: { years: "30 años de experiencia", reviews: "reseñas", pioneer: "Pioneros del ecoturismo marino en el Perú" },
     langLabel: "Idioma",
     // pre-filled WhatsApp messages by context
     wa: {
@@ -44,14 +43,13 @@ module.exports = {
     nav: {
       home: "Home", tour: "Tour", about: "About", sustain: "Sustainability",
       gallery: "Gallery", faq: "FAQ", blog: "Blog", contact: "Contact",
-      route: "Route", pricing: "Pricing", safety: "Safety", certs: "Certifications",
-      offers: "Offers"
+      route: "Route", pricing: "Pricing", safety: "Safety", certs: "Certifications"
     },
     footer: {
       nav: "Navigation", tourCol: "The Tour", contactCol: "Contact",
       rights: "All rights reserved", privacy: "Privacy", terms: "Terms"
     },
-    trust: { years: "Nearly 30 years", reviews: "reviews", pioneer: "Pioneers of marine ecotourism in Peru" },
+    trust: { years: "30 years of experience", reviews: "reviews", pioneer: "Pioneers of marine ecotourism in Peru" },
     langLabel: "Language",
     wa: {
       general: "Hi Ecocruceros! 👋 I saw your website and I'd like more information about the Palomino Islands tour.",

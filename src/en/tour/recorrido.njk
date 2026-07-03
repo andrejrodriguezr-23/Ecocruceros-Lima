@@ -1,7 +1,7 @@
 ---
 permalink: /en/tour/recorrido/
 title: "Route & itinerary"
-description: "The Palomino Islands tour route: La Punta, El Camotal, San Lorenzo, El Frontón, Cavinzas and Palomino. History and wildlife at every stop."
+description: "The Palomino Islands tour route from La Punta: El Camotal, San Lorenzo, El Frontón, Cavinzas and Palomino. History and wildlife at every point of the route."
 ---
 {% set t = i18n[lang] %}
 {% from "partials/icons.njk" import icon %}
@@ -9,15 +9,10 @@ description: "The Palomino Islands tour route: La Punta, El Camotal, San Lorenzo
 <section class="section section--warm">
   <div class="container">
     <nav class="breadcrumbs" aria-label="breadcrumb"><a href="/en/">Home</a><span>›</span><a href="/en/tour/">The Tour</a><span>›</span> Route</nav>
-    <div class="media-split" style="margin-top:var(--space-4)">
-      <div class="media-split__media">
-        <img src="/assets/img/galeria/g24.jpg" alt="A young couple enjoying the Palomino Islands voyage" loading="lazy">
-      </div>
-      <div>
-        <p class="eyebrow">Route</p>
-        <h1>Six stops, one unforgettable voyage</h1>
-        <p class="lead">Each departure crosses Callao bay — its history and its wildlife — all the way to the Palomino Islands.</p>
-      </div>
+    <div style="margin-top:var(--space-4);max-width:var(--measure)">
+      <p class="eyebrow">Route</p>
+      <h1>Five points of the route, one unforgettable voyage</h1>
+      <p class="lead">Each departure crosses Callao bay — its history and its wildlife — all the way to the Palomino Islands.</p>
     </div>
     <div class="video-wrap" style="margin-top:var(--space-6)">
       <div class="embed">
@@ -26,21 +21,40 @@ description: "The Palomino Islands tour route: La Punta, El Camotal, San Lorenzo
           Your browser does not support HTML5 video. <a href="/assets/video/recorrido-islas-palomino.mp4">Download the video</a>.
         </video>
       </div>
-      <p class="embed-caption"><strong>Our Route</strong> — a look at the full voyage, from our private pier in La Punta to the sea-lion colony of the Palomino Islands. Each stop is detailed below.</p>
+      <p class="embed-caption"><strong>Our Route</strong> — a look at the full voyage, from the boarding point in La Punta to the sea-lion colony of the Palomino Islands. Each point of the route is detailed below.</p>
     </div>
   </div>
 </section>
 
+<!-- La Punta — boarding point and start of the route only (not a stop) -->
 <section class="section">
   <div class="container">
-    <div class="grid cols-2">
-      {%- set stopPhotos = [14,15,16,17,13,19] -%}
+    <div class="media-split reveal">
+      <div class="media-split__media">
+        <img src="{{ site.routeStart.img }}" alt="{{ site.routeStart.en }} — {{ site.embarkation.role_en }}" loading="lazy">
+        <span class="media-split__badge">{{ site.embarkation.role_en }}</span>
+      </div>
+      <div>
+        <span class="icon-chip">{{ icon("anchor") }}</span>
+        <p class="eyebrow" style="margin-top:var(--space-3)">Boarding point</p>
+        <h2>{{ site.routeStart.en }}</h2>
+        <p class="lead">{{ site.routeStart.desc_en }}</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section--sky">
+  <div class="container">
+    <p class="eyebrow">Points of the route</p>
+    <h2>The 5 points of the route</h2>
+    <div class="grid cols-2" style="margin-top:var(--space-6)">
       {% for stop in site.route %}
       <article class="card card--top reveal">
-        <div class="card__media"><img src="/assets/img/galeria/g{{ stopPhotos[loop.index0] }}.jpg" alt="{{ stop.en }} — Palomino Islands voyage" loading="lazy"></div>
+        <div class="card__media"><img src="{{ stop.img }}" alt="{{ stop.en }} — Palomino Islands voyage" loading="lazy"></div>
         <div class="card__body">
         <span class="icon-chip">{{ icon("pin") }}</span>
-        <p class="eyebrow">Stop {{ loop.index }}</p>
+        <p class="eyebrow">Point {{ loop.index }}</p>
         <h3>{{ stop.en }}</h3>
         <p>{{ stop.desc_en }}</p>
       </div></article>
@@ -49,7 +63,7 @@ description: "The Palomino Islands tour route: La Punta, El Camotal, San Lorenzo
     <div style="margin-top:var(--space-8)">
       <h3>Duration &amp; logistics</h3>
       <p>Approximate duration: <strong>3.5 hours</strong>. <strong>Daily departures by reservation</strong> (Mon–Fri 11:30 a. m.; Sat, Sun &amp; holidays 10:00 a. m.).</p>
-      <p style="margin-top:var(--space-3)"><strong>Meeting point:</strong> {{ site.embarkation.name }} — {{ site.embarkation.address }}. {{ site.embarkation.directions_en }} <a href="{{ site.embarkation.mapsLink }}" target="_blank" rel="noopener">Open in Google Maps →</a></p>
+      <p style="margin-top:var(--space-3)"><strong>Meeting point:</strong> {{ site.embarkation.name }} ({{ site.embarkation.role_en | lower }}) — {{ site.embarkation.address }}. {{ site.embarkation.directions_en }} <a href="{{ site.embarkation.mapsLink }}" target="_blank" rel="noopener">Open in Google Maps →</a></p>
       <div class="grid cols-2" style="margin-top:var(--space-6);align-items:start">
         <table class="schedule">
           <caption>Boarding times</caption>
@@ -60,7 +74,7 @@ description: "The Palomino Islands tour route: La Punta, El Camotal, San Lorenzo
           </tbody>
         </table>
         <div class="embed embed--map">
-          <iframe src="{{ site.embarkation.mapsEmbed }}" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Meeting point map — Muelle Club Canottieri, La Punta, Callao"></iframe>
+          <iframe src="{{ site.embarkation.mapsEmbed }}" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Map — Ecocruceros – La Punta (Boarding point)"></iframe>
         </div>
       </div>
     </div>

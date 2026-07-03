@@ -2,7 +2,7 @@
 permalink: /en/
 title: "Palomino Islands Tour — Swim with sea lions in Lima"
 description: "Sail with the pioneers of marine ecotourism in Peru. Palomino Islands tour from La Punta, Callao: swim with 5,000+ sea lions. Book on WhatsApp."
-eyebrow: "Ecocruceros · La Punta, Callao"
+eyebrow: "ECOCRUCEROS · La Punta, Callao"
 ---
 {% set t = i18n[lang] %}
 {% from "partials/icons.njk" import icon %}
@@ -10,20 +10,21 @@ eyebrow: "Ecocruceros · La Punta, Callao"
 <section class="hero">
   <div class="hero__media"><img src="/assets/img/hero-swim-lobos.jpg" alt="Guests swimming with sea lions at the Palomino Islands, Callao"></div>
   <div class="container hero__inner reveal">
-    <p class="eyebrow" style="color:var(--c-mustard-300)">{{ eyebrow }}</p>
+    <p class="eyebrow eyebrow--brand">{{ eyebrow }}</p>
     <h1>Swim with the sea lions of the Palomino Islands</h1>
     <div class="hero__rotator" data-rotator data-interval="4200" aria-hidden="true">
       <span class="rot rot--lg is-on">Visit the Palomino Islands</span>
+      <span class="rot">Only 30 minutes from Miraflores</span>
       <span class="rot">On comfortable, safe two-deck yachts</span>
       <span class="rot">Swim with sea lions</span>
       <span class="rot">Daily departures · by reservation</span>
     </div>
-    <p class="lead">Sail the open Pacific with the <strong>pioneers of marine ecotourism in Peru</strong>. A yacht experience from La Punta, Callao, to a colony of 5,000+ sea lions.</p>
+    <p class="lead">Sail the open Pacific with the <strong>pioneers of marine ecotourism in Peru</strong>. A yacht experience from La Punta, Callao — <strong>only 30 minutes from Miraflores</strong> — to a colony of 5,000+ sea lions.</p>
     <div class="btn-row">
       <a class="btn btn--ghost btn--lg" href="/en/tour/" style="color:#fff;border-color:rgba(255,255,255,.6)">{{ t.seeTour }}</a>
     </div>
     <div class="hero__trust">
-      <a href="{{ site.tripadvisor.url }}" target="_blank" rel="noopener" style="color:#fff;text-decoration:underline">★ 4.6 · 193 {{ t.trust.reviews }} (TripAdvisor)</a><span>· {{ t.trust.years }}</span><span>· SERNANP · Green Destinations certified</span>
+      <span>★ {{ site.rating.value }} · {% if site.rating.getyourguideUrl %}<a href="{{ site.rating.getyourguideUrl }}" target="_blank" rel="noopener" style="color:#fff;text-decoration:underline">GetYourGuide</a>{% else %}GetYourGuide{% endif %} · <a href="{{ site.tripadvisor.url }}" target="_blank" rel="noopener" style="color:#fff;text-decoration:underline">Tripadvisor</a> · <a href="{{ site.rating.googleUrl }}" target="_blank" rel="noopener" style="color:#fff;text-decoration:underline">Google reviews</a></span><span>· {{ t.trust.years }}</span><span>· SERNANP · Green Destinations certified</span>
     </div>
   </div>
 </section>
@@ -32,9 +33,9 @@ eyebrow: "Ecocruceros · La Punta, Callao"
   <div class="container reveal">
     <div class="trust-strip">
       <div class="item"><span class="num tnum count" data-count="30">30</span> years of experience</div>
-      <div class="item"><span class="num tnum">4.6★</span> · 193 reviews</div>
+      <div class="item"><span class="num tnum">4.9★</span> GetYourGuide · Tripadvisor · Google</div>
       <div class="item"><span class="num tnum count" data-count="5000" data-suffix="+">5,000+</span> sea lions</div>
-      <div class="item"><span class="num tnum">30 min</span> from central Lima</div>
+      <div class="item"><span class="num tnum">30 min</span> from Miraflores</div>
     </div>
   </div>
 </section>
@@ -68,7 +69,7 @@ eyebrow: "Ecocruceros · La Punta, Callao"
         <li>{{ icon("guide") }}<span><strong>Bilingual</strong> tourism guide on board.</span></li>
         <li>{{ icon("vest") }}<span>Life vest throughout the entire voyage.</span></li>
         <li>{{ icon("wetsuit") }}<span>Wetsuits for swimming in the colder season.</span></li>
-        <li>{{ icon("drinks") }}<span>Cold and hot drinks and snacks — <strong>unlimited</strong>.</span></li>
+        <li>{{ icon("drinks") }}<span>Hot drinks (tea, chamomile and anise), cold non-alcoholic drinks and fruit — <strong>unlimited</strong>.</span></li>
         <li>{{ icon("pill") }}<span>Seasickness tablets.</span></li>
         <li>{{ icon("anchor") }}<span>Boarding at our <strong>private pier</strong>.</span></li>
         <li>{{ icon("boat") }}<span>Two-deck yacht: 2 cabins, 2 restrooms, lounge and galley.</span></li>
@@ -84,7 +85,7 @@ eyebrow: "Ecocruceros · La Punta, Callao"
   <div class="container reveal">
     <div class="factbar">
       <div><b>3½ hours</b><span>of unforgettable sailing</span></div>
-      <div><b>30 min</b><span>from central Lima</span></div>
+      <div><b>30 min</b><span>from Miraflores</span></div>
       <div><b>Daily departures</b><span>by reservation</span></div>
       <div><b>Private pier</b><span>in La Punta, Callao</span></div>
     </div>
@@ -96,14 +97,14 @@ eyebrow: "Ecocruceros · La Punta, Callao"
     <div class="media-split media-split--reverse">
       <div class="media-split__media">
         <img src="/assets/img/galeria/g7.jpg" alt="Group of guests enjoying the Palomino Islands tour">
-        <span class="media-split__badge">Nearly 30 years of experience</span>
+        <span class="media-split__badge">30 years of experience</span>
       </div>
       <div>
         <p class="eyebrow">Why Ecocruceros</p>
         <h2>The pioneers of marine ecotourism in Peru</h2>
         <ul class="feature-list" style="margin-top:var(--space-4)">
-          <li>{{ icon("clock") }}<span><strong>Nearly 30 years</strong> of experience, devoted to your comfort and peace of mind.</span></li>
-          <li>{{ icon("anchor") }}<span><strong>Private pier</strong>: we depart from La Punta, 30 minutes from central Lima.</span></li>
+          <li>{{ icon("clock") }}<span><strong>30 years of experience</strong>, devoted to your comfort and peace of mind.</span></li>
+          <li>{{ icon("anchor") }}<span><strong>Private pier</strong>: we depart from La Punta, only 30 minutes from Miraflores.</span></li>
           <li>{{ icon("boat") }}<span><strong>Two-deck yacht</strong>, with a lounge, restrooms and galley on board.</span></li>
         </ul>
         <div class="btn-row" style="margin-top:var(--space-6)"><a class="btn btn--ghost" href="/en/nosotros/">About our company →</a></div>
@@ -124,8 +125,8 @@ eyebrow: "Ecocruceros · La Punta, Callao"
 <section class="section section--sky">
   <div class="container reveal">
     <p class="eyebrow">What our guests say</p>
-    <h2>4.6★ on TripAdvisor · 193 reviews</h2>
-    <p class="lead">#10 of 97 attractions in Lima. Real reviews from guests who've already sailed with us.</p>
+    <h2>4.9★ on GetYourGuide, Tripadvisor and Google reviews</h2>
+    <p class="lead">Real reviews from guests who've already sailed with us.</p>
     {% if reviews and reviews.length %}
     <div class="review-carousel" data-carousel>
       <div class="review-track" data-carousel-track>
@@ -150,14 +151,42 @@ eyebrow: "Ecocruceros · La Punta, Callao"
   </div>
 </section>
 
+<!-- PRICING (visual cards, client 2026-07: better layout, images and icons) -->
 <section class="section section--sea cta-band">
-  <div class="container center reveal">
-    <p class="eyebrow">Pricing</p>
-    <h2>{{ t.from }} S/. 179 (residents) · {{ t.from }} US$69 (visitors)</h2>
-    <p class="lead" style="margin-inline:auto;color:#dff1f8">SERNANP fee not included. We arrange everything by WhatsApp.</p>
+  <div class="container reveal">
+    <p class="eyebrow" style="color:var(--c-mustard-300)">Pricing</p>
+    <h2>Tour rates</h2>
+    <p class="lead" style="color:#dff1f8">Everything included in your ticket. We arrange availability and payment by WhatsApp.</p>
+    <div class="grid cols-2 price-cards" style="margin-top:var(--space-8)">
+      <article class="offer-card">
+        <div class="offer-card__media"><img src="/assets/img/galeria/g21.jpg" alt="Family enjoying the Palomino Islands voyage" loading="lazy"></div>
+        <div class="offer-body">
+          <span class="icon-chip">{{ icon("users") }}</span>
+          <h3>{{ site.pricing.residents_title_en }}</h3>
+          <ul class="price-lines">
+            {% for row in site.pricing.residents %}
+            <li><span>{{ row.who_en }}</span><b class="tnum">{{ row.price }}</b></li>
+            {% endfor %}
+          </ul>
+        </div>
+      </article>
+      <article class="offer-card">
+        <div class="offer-card__media"><img src="/assets/img/galeria/g5.jpg" alt="Two happy guests during the Palomino Islands voyage" loading="lazy"></div>
+        <div class="offer-body">
+          <span class="icon-chip">{{ icon("ticket") }}</span>
+          <h3>{{ site.pricing.foreigners_title_en }}</h3>
+          <ul class="price-lines">
+            {% for row in site.pricing.foreigners %}
+            <li><span>{{ row.who_en }}</span><b class="tnum">{{ row.price }}</b></li>
+            {% endfor %}
+          </ul>
+        </div>
+      </article>
+    </div>
+    <p class="price-note" style="margin-top:var(--space-6);color:#dff1f8">{{ site.pricing.extra_en }}</p>
     <div class="btn-row" style="justify-content:center;margin-top:var(--space-6)">
       <a class="btn btn--gold" data-wa-source="home-pricing" href="{{ t.wa.pricing | wa }}">Book on WhatsApp</a>
-      <a class="btn btn--ghost" href="/en/tour/precios/">{{ t.seePricing }} →</a>
+      <a class="btn btn--ghost" href="/en/tour/precios/" style="color:#fff;border-color:rgba(255,255,255,.6)">{{ t.seePricing }} →</a>
     </div>
   </div>
 </section>

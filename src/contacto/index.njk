@@ -1,7 +1,7 @@
 ---
 permalink: /contacto/
 title: "Contacto y reservas"
-description: "Reserva tu tour a las Islas Palomino por WhatsApp (+51 986 671 093) o al (01) 226-8530. Oficina en Av. Arequipa 4964, Miraflores. La Punta, Callao, Perú."
+description: "Reserva tu tour a las Islas Palomino por WhatsApp (+51 986 671 093) o al correo informes@ecocruceros.com. Punto de embarque en La Punta, Callao, Perú."
 ---
 {% set t = i18n[lang] %}
 {% from "partials/icons.njk" import icon %}
@@ -20,38 +20,36 @@ description: "Reserva tu tour a las Islas Palomino por WhatsApp (+51 986 671 093
     <div class="grid cols-2" style="align-items:start">
       <div class="card card--top"><div class="card__body stack">
         <span class="icon-chip">{{ icon("phone") }}</span>
-        <h3>WhatsApp y teléfono</h3>
+        <h3>WhatsApp y correo</h3>
         <p style="font-size:1.25rem;font-weight:600;color:var(--text)">{{ site.whatsappDisplay }}</p>
-        <p>Oficina: <strong>{{ site.phone }}</strong></p>
         <p style="color:var(--text-secondary)">🕐 {{ t.hours }}.</p>
         <p>Correo: <a href="mailto:{{ site.email }}">{{ site.email }}</a></p>
         <p>Redes:
           <a href="{{ site.social.facebook }}" rel="noopener" target="_blank">Facebook</a> ·
           <a href="{{ site.social.instagram }}" rel="noopener" target="_blank">Instagram</a> ·
-          <a href="{{ site.social.youtube }}" rel="noopener" target="_blank">YouTube</a>
+          <a href="{{ site.social.youtube }}" rel="noopener" target="_blank">YouTube</a>{% if site.social.tiktok %} ·
+          <a href="{{ site.social.tiktok }}" rel="noopener" target="_blank">TikTok</a>{% endif %}
         </p>
       </div></div>
       <div class="card card--top-gold"><div class="card__body stack">
         <span class="icon-chip icon-chip--gold">{{ icon("anchor") }}</span>
-        <h3>Embarque y oficina</h3>
-        <p><strong>Embarque:</strong> muelle privado en La Punta, Callao. La dirección exacta se comparte al confirmar la reserva.</p>
-        <p><strong>Oficina:</strong> {{ site.office.address }}</p>
+        <h3>Punto de embarque</h3>
+        <p><strong>{{ site.embarkation.name }}</strong> — {{ site.embarkation.role_es | lower }}.</p>
+        <p>{{ site.embarkation.address }}. {{ site.embarkation.directions_es }}</p>
         <p><strong>Formas de pago</strong> (siempre con pago previo):</p>
         <ul class="checklist">
-          <li>En nuestra oficina de Miraflores.</li>
           <li>Transferencia o depósito bancario (te compartimos los números de cuenta al reservar).</li>
-          <li>Puntos de venta de <strong>Tu Entrada</strong> en Plaza Vea o Vivanda, con previa reserva.</li>
         </ul>
       </div></div>
     </div>
 
     <div style="margin-top:var(--space-8)">
-      <h2>Cómo llegar a nuestra oficina</h2>
-      <p style="margin-top:var(--space-2);color:var(--text-secondary)">{{ site.office.address }}</p>
+      <h2>{{ site.embarkation.name }} ({{ site.embarkation.role_es | lower }})</h2>
+      <p style="margin-top:var(--space-2);color:var(--text-secondary)">{{ site.embarkation.address }}</p>
       <div class="embed embed--map" style="margin-top:var(--space-4)">
-        <iframe src="{{ site.office.mapsEmbed }}" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Mapa — oficina Ecocruceros, Av. Arequipa 4964, Miraflores"></iframe>
+        <iframe src="{{ site.embarkation.mapsEmbed }}" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Mapa — Ecocruceros – La Punta (Punto de embarque)"></iframe>
       </div>
-      <p class="embed-caption"><a href="{{ site.office.mapsLink }}" rel="noopener" target="_blank">Abrir en Google Maps →</a></p>
+      <p class="embed-caption"><a href="{{ site.embarkation.mapsLink }}" rel="noopener" target="_blank">Abrir en Google Maps →</a></p>
     </div>
   </div>
 </section>

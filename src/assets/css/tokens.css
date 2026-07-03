@@ -1,16 +1,19 @@
 /* ============================================================
-   Ecocruceros — Design Tokens (Phase 5)
-   Concept: "El Pacífico de La Punta" — brand palette
-   Marine blue · mustard · blue · light blue · white
+   Ecocruceros — Design Tokens (Phase 6)
+   Concept: "El Pacífico de La Punta" — palette tuned to the logo
+   (client 2026-07: "colores más llamativos, guiate de los tonos del Logo")
+   Logo tones: golden-orange sun · royal blue · vivid cyan · white
    ============================================================ */
 :root {
   /* --- Primitive colors --- */
   --c-navy-900:#06222F; --c-navy-800:#0B2A3A; --c-navy-700:#103B50; --c-navy-600:#16506B;
-  --c-cyan-700:#0E6B8A; --c-cyan-600:#0C7FB0; --c-cyan-500:#19A7DE; --c-cyan-300:#7CCBE9;
-  --c-cyan-200:#BFE6F5; --c-cyan-100:#E2F4FB;
-  /* Brand mustard / gold (replaces the old orange "sun" as the warm accent) */
-  --c-mustard-700:#A9790A; --c-mustard-600:#C8920F; --c-mustard-500:#E0A82E;
-  --c-mustard-400:#EDC04F; --c-mustard-300:#F3D582; --c-mustard-100:#FBEFCB;
+  /* Royal blue — the logo's deep blue (wordmark band / boat) */
+  --c-royal-700:#1D3FA8; --c-royal-600:#2A4FC4;
+  --c-cyan-700:#086F9E; --c-cyan-600:#0779B8; --c-cyan-500:#21AFE8; --c-cyan-300:#82D3F5;
+  --c-cyan-200:#C5EBFA; --c-cyan-100:#E4F6FD;
+  /* Brand gold — the logo's golden-orange sun (brighter than the old mustard) */
+  --c-mustard-700:#A96A00; --c-mustard-600:#DE8F07; --c-mustard-500:#F9A825;
+  --c-mustard-400:#FFBB3D; --c-mustard-300:#FFD073; --c-mustard-100:#FFF3D6;
   /* Warning amber — kept distinct from the brand accent for "PENDING" dev flags */
   --c-sun-600:#D8641A;  --c-sun-500:#F08A24;  --c-sun-100:#FDEBD6;
   --c-foam-50:#F4FAFC;  --c-sand-50:#FBF6EC;
@@ -26,9 +29,10 @@
   --accent:var(--c-mustard-500); --accent-strong:var(--c-mustard-700); --accent-soft:var(--c-mustard-100);
   --border:var(--c-line-200);
   /* Signature gradients — used to add colour and depth across the site */
-  --grad-sea:linear-gradient(135deg,var(--c-navy-800) 0%,var(--c-cyan-600) 60%,var(--c-cyan-500) 100%);
+  --grad-sea:linear-gradient(135deg,var(--c-navy-800) 0%,var(--c-royal-700) 35%,var(--c-cyan-600) 70%,var(--c-cyan-500) 100%);
   --grad-sky:linear-gradient(180deg,#FFFFFF 0%,var(--c-cyan-100) 100%);
   --grad-gold:linear-gradient(135deg,var(--c-mustard-500),var(--c-mustard-400));
+  --grad-brand:linear-gradient(100deg,var(--c-royal-700) 0%,var(--c-cyan-600) 100%);
   --wa-bg:var(--c-wa-green-d); --wa-bg-hover:#0C8E4C; --wa-text:var(--c-white); --wa-glow:var(--c-wa-green);
   --focus-ring:var(--c-mustard-600);
 

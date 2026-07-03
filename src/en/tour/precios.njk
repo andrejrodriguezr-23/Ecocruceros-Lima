@@ -25,8 +25,8 @@ description: "Palomino Islands tour pricing for residents (from S/. 179) and vis
 <section class="section">
   <div class="container" data-price-tabs>
     <div class="price-tabs" role="tablist" aria-label="Rate type">
-      <button role="tab" id="tab-res" aria-controls="panel-res" aria-selected="true">Residents (S/)</button>
-      <button role="tab" id="tab-ext" aria-controls="panel-ext" aria-selected="false">Visitors (US$)</button>
+      <button role="tab" id="tab-res" aria-controls="panel-res" aria-selected="true">{{ site.pricing.residents_title_en }} (S/)</button>
+      <button role="tab" id="tab-ext" aria-controls="panel-ext" aria-selected="false">{{ site.pricing.foreigners_title_en }} (US$)</button>
     </div>
     <div role="tabpanel" id="panel-res" aria-labelledby="tab-res">
       <table class="price-table tnum"><tbody>
@@ -75,11 +75,10 @@ description: "Palomino Islands tour pricing for residents (from S/. 179) and vis
         <span class="icon-chip">{{ icon("reservas") }}</span>
         <h3>Bookings</h3>
         <ul style="padding-left:var(--space-6);margin:0">
-          <li>Send your request via WhatsApp or to <a href="mailto:reservas@ecocruceros.com">reservas@ecocruceros.com</a>.</li>
+          <li>Send your request via WhatsApp or to <a href="mailto:{{ site.email }}">{{ site.email }}</a>.</li>
           <li>Include each passenger's name, age, ID number and nationality.</li>
           <li>We recommend checking availability before booking.</li>
           <li>Private services are best booked in advance.</li>
-          <li><strong>Groups:</strong> one free passenger from 15 passengers onward.</li>
         </ul>
       </div></div>
       <div class="card card--top"><div class="card__body">
