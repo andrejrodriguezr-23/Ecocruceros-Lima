@@ -48,8 +48,10 @@ module.exports = {
     address: "Malecón Figueredo 800, La Punta, Callao",
     directions_es: "A la altura de la cuadra 8 de la Av. Bolognesi. Ingresa al malecón por las calles Elías Aguirre o Diego Ferré.",
     directions_en: "By block 8 of Av. Bolognesi. Enter the boardwalk via Elías Aguirre or Diego Ferré streets.",
-    mapsLink: "https://www.google.com/maps/search/?api=1&query=Malec%C3%B3n+Figueredo+800%2C+La+Punta%2C+Callao",
-    mapsEmbed: "https://maps.google.com/maps?q=Malec%C3%B3n+Figueredo+800,+La+Punta,+Callao&z=16&output=embed"
+    // Google Business listing (ftid) — shows the "Ecocruceros" card pinned at
+    // La Punta. Client-verified on the live embed test 2026-07-03.
+    mapsLink: "https://maps.google.com/maps?q=Ecocruceros&ftid=0x9105c73d6e51f705:0x543091e542cbcad0",
+    mapsEmbed: "https://maps.google.com/maps?q=Ecocruceros&ftid=0x9105c73d6e51f705:0x543091e542cbcad0&output=embed"
   },
   // VERIFIED pricing — official 2026 flyers (residents in S/, foreigners in US$).
   // Client (MODIFICACIONES 2026-07): title "Peruanos y Residentes"; Infantes info removed.
