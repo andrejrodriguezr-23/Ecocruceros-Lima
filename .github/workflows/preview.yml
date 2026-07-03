@@ -18,7 +18,7 @@ name: Preview deploy (staging on github.io)
 
 on:
   push:
-    branches: [claude/website-client-adjustments-6pok4m]
+    branches: [main, claude/website-client-adjustments-6pok4m]
   workflow_dispatch:
 
 permissions:

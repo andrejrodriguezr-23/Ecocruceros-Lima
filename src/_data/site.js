@@ -26,14 +26,14 @@ module.exports = {
     facebook: "https://www.facebook.com/ECOCRUCEROS",
     instagram: "https://www.instagram.com/ecocruceros_oficial/",
     youtube: "https://www.youtube.com/@ecocruceros8644",
-    tiktok: "" // PENDING client URL — icon/link renders only when non-empty
+    tiktok: "https://www.tiktok.com/@ecocruceros"
   },
   // Rating shown site-wide (client, MODIFICACIONES 2026-07): 4.9 referencing
   // GetYourGuide, Tripadvisor and Google reviews. Only URLs provided by the
   // client are linked; an empty url renders as plain text.
   rating: {
     value: "4.9",
-    getyourguideUrl: "", // PENDING client URL
+    getyourguideUrl: "https://www.getyourguide.com/ecocruceros-islas-palomino-s131207/",
     googleUrl: "https://www.google.com/search?sca_esv=24bf5a2419cba2ed&rlz=1C5CHFA_enPE1144PE1144&sxsrf=APpeQnvehaB6BQcDwel7Syj5Y0Y1kVkLhw:1783087883323&si=APenkKm7iecQ4G6P-TsbSMFKIQtv3EFIqRAFw-i8uEbk55Z-_-T97MLa6dt9xY0jJhf6nLTWVux96ZUFjDjyIdQdeYcRmmRyvehUoQ7IZMuDQ2D4sb3DYt0XfQDP56jFIrgF-KqRwQ42XacEZuo4Sea2nvUeVc_0Cg%3D%3D&q=Ecocruceros+%28Islas+Palomino%29+Opiniones&sa=X&ved=2ahUKEwjU343_17aVAxVVp5UCHcYFLhkQ0bkNegQIOBAH&biw=1600&bih=902&dpr=0.9#lrd=0x9105c73d6e51f705:0x543091e542cbcad0,1,,,,"
   },
   tripadvisor: {
@@ -73,8 +73,8 @@ module.exports = {
   // VERIFIED route. Client (MODIFICACIONES 2026-07): La Punta is NOT a stop —
   // it is only the boarding point; the route has 5 "puntos del recorrido"
   // (never "paradas"), each with a photo and a brief description.
-  // Island photos for San Lorenzo / El Frontón / Cavinzas / El Camotal are
-  // PENDING from the client — `img` values below are temporary stand-ins.
+  // Island photos provided by the client 2026-07-03, except El Frontón
+  // (awaiting a rights-cleared photo — its `img` is a temporary stand-in).
   routeStart: {
     es: "La Punta", en: "La Punta",
     desc_es: "Balneario, Cantolao, clubes náuticos y Escuela Naval. Aquí embarcas e inicia el recorrido.",
@@ -86,25 +86,25 @@ module.exports = {
       es: "El Camotal", en: "El Camotal",
       desc_es: "Navegamos sobre el Callao colonial sumergido, mientras dejamos atrás la bahía.",
       desc_en: "We sail over the submerged colonial Callao as we leave the bay behind.",
-      img: "/assets/img/galeria/g12.jpg" // PENDING: foto propia de El Camotal
+      img: "/assets/img/islas/el-camotal.webp"
     },
     {
       es: "Isla San Lorenzo", en: "San Lorenzo Island",
       desc_es: "La isla más grande del Perú, con la playa presidencial y una base naval.",
       desc_en: "Peru's largest island, home to the presidential beach and a naval base.",
-      img: "/assets/img/galeria/g24.jpg" // PENDING: foto de la Isla San Lorenzo
+      img: "/assets/img/islas/isla-san-lorenzo.jpg"
     },
     {
       es: "Isla El Frontón", en: "El Frontón Island",
       desc_es: "Conserva las ruinas de la antigua prisión, hoy rodeadas de fauna marina.",
       desc_en: "It keeps the ruins of the old prison, today surrounded by marine wildlife.",
-      img: "/assets/img/galeria/g18.jpg" // PENDING: foto de la Isla El Frontón
+      img: "/assets/img/galeria/g18.jpg" // PENDING: rights-cleared photo of Isla El Frontón
     },
     {
       es: "Islas Cavinzas", en: "Cavinzas Islands",
       desc_es: "Hogar de aves guaneras y de pingüinos de Humboldt.",
       desc_en: "Home to guano birds and Humboldt penguins.",
-      img: "/assets/img/galeria/01-pinguino-humboldt.jpg" // PENDING: foto de las Islas Cavinzas
+      img: "/assets/img/islas/islas-cavinzas.webp"
     },
     {
       es: "Islas Palomino", en: "Palomino Islands",
