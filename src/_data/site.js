@@ -73,8 +73,7 @@ module.exports = {
   // VERIFIED route. Client (MODIFICACIONES 2026-07): La Punta is NOT a stop —
   // it is only the boarding point; the route has 5 "puntos del recorrido"
   // (never "paradas"), each with a photo and a brief description.
-  // Island photos provided by the client 2026-07-03, except El Frontón
-  // (awaiting a rights-cleared photo — its `img` is a temporary stand-in).
+  // Island photos provided by the client 2026-07-03.
   routeStart: {
     es: "La Punta", en: "La Punta",
     desc_es: "Balneario, Cantolao, clubes náuticos y Escuela Naval. Aquí embarcas e inicia el recorrido.",
@@ -98,7 +97,7 @@ module.exports = {
       es: "Isla El Frontón", en: "El Frontón Island",
       desc_es: "Conserva las ruinas de la antigua prisión, hoy rodeadas de fauna marina.",
       desc_en: "It keeps the ruins of the old prison, today surrounded by marine wildlife.",
-      img: "/assets/img/galeria/g18.jpg" // PENDING: rights-cleared photo of Isla El Frontón
+      img: "/assets/img/islas/isla-el-fronton.jpg"
     },
     {
       es: "Islas Cavinzas", en: "Cavinzas Islands",
