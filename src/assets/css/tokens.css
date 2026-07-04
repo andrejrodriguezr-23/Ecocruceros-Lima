@@ -17,12 +17,15 @@
   /* Warning amber — kept distinct from the brand accent for "PENDING" dev flags */
   --c-sun-600:#D8641A;  --c-sun-500:#F08A24;  --c-sun-100:#FDEBD6;
   --c-foam-50:#F4FAFC;  --c-sand-50:#FBF6EC;
+  /* Vivid light-blue page background + light-cream card surface (client 2026-07:
+     "fondo azul vivo, identidad Ecocruceros; tarjetas en crema claro, no blanco") */
+  --c-sky-vivid:#A9DEF5; --c-sky-vivid-hi:#C2E9F9; --c-cream-50:#FBF4E6;
   --c-ink-600:#41525B;  --c-line-200:#D2E1E9; --c-white:#FFFFFF;
   --c-wa-green:#25D366; --c-wa-green-d:#0A7C42;
 
   /* --- Semantic --- */
-  --bg:var(--c-foam-50); --bg-warm:var(--c-sand-50); --bg-sky:var(--c-cyan-100); --bg-dark:var(--c-navy-900);
-  --surface:var(--c-white); --surface-info:var(--c-cyan-100);
+  --bg:var(--c-sky-vivid); --bg-warm:var(--c-sand-50); --bg-sky:var(--c-sky-vivid); --bg-dark:var(--c-navy-900);
+  --surface:var(--c-cream-50); --surface-info:var(--c-cyan-100);
   --text:var(--c-navy-800); --text-secondary:var(--c-ink-600);
   --text-on-dark:#EAF4F8; --text-on-dark-soft:#B8CDD6;
   --primary:var(--c-cyan-600); --primary-strong:var(--c-navy-800);
@@ -30,7 +33,7 @@
   --border:var(--c-line-200);
   /* Signature gradients — used to add colour and depth across the site */
   --grad-sea:linear-gradient(135deg,var(--c-navy-800) 0%,var(--c-royal-700) 35%,var(--c-cyan-600) 70%,var(--c-cyan-500) 100%);
-  --grad-sky:linear-gradient(180deg,#FFFFFF 0%,var(--c-cyan-100) 100%);
+  --grad-sky:linear-gradient(180deg,var(--c-sky-vivid-hi) 0%,var(--c-sky-vivid) 100%);
   --grad-gold:linear-gradient(135deg,var(--c-mustard-500),var(--c-mustard-400));
   --grad-brand:linear-gradient(100deg,var(--c-royal-700) 0%,var(--c-cyan-600) 100%);
   --wa-bg:var(--c-wa-green-d); --wa-bg-hover:#0C8E4C; --wa-text:var(--c-white); --wa-glow:var(--c-wa-green);
