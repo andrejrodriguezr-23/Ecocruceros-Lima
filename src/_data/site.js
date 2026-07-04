@@ -80,7 +80,7 @@ module.exports = {
     es: "La Punta", en: "La Punta",
     desc_es: "Balneario, Cantolao, clubes náuticos y Escuela Naval. Aquí embarcas e inicia el recorrido.",
     desc_en: "Seaside district, Cantolao, yacht clubs and the Naval School. This is where you board and the route begins.",
-    img: "/assets/img/plaza-lapunta-callao.jpg"
+    img: "/assets/img/malecon-figueredo-playa-cantolao-lapunta-1.jpg"
   },
   route: [
     {
@@ -111,7 +111,7 @@ module.exports = {
       es: "Islas Palomino", en: "Palomino Islands",
       desc_es: "Colonia de más de 5,000 lobos marinos y la experiencia opcional de nadar con ellos en su hábitat.",
       desc_en: "A colony of 5,000+ sea lions and the optional experience of swimming with them in their habitat.",
-      img: "/assets/img/galeria/g16.jpg"
+      img: "/assets/img/islas/islas-palomino.jpg"
     }
   ],
   // VERIFIED certifications. Logo files downloaded from ecocruceros.com (published). Captions/validity PENDING C1.
