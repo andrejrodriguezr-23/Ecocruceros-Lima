@@ -41,6 +41,13 @@ strong{font-weight:600}
 .section--dark{background:linear-gradient(160deg,var(--c-navy-900),var(--c-navy-800) 55%,var(--c-navy-700));color:var(--text-on-dark)}
 .section--dark h1,.section--dark h2,.section--dark h3{color:#fff}
 .section--dark p{color:var(--text-on-dark-soft)}
+/* Photo-backed band: image set inline via --sec-img, dark scrim keeps text legible */
+.section--photo{position:relative;isolation:isolate;color:var(--text-on-dark);background:var(--c-navy-800)}
+.section--photo::before{content:"";position:absolute;inset:0;z-index:-1;
+  background:linear-gradient(180deg,rgba(6,34,47,.5),rgba(6,34,47,.72)),var(--sec-img) center/cover no-repeat}
+.section--photo h1,.section--photo h2,.section--photo h3{color:#fff}
+.section--photo p,.section--photo .lead{color:var(--text-on-dark-soft)}
+.section--photo .eyebrow{color:var(--c-mustard-300)}
 
 .eyebrow{font-family:var(--font-body);font-weight:700;font-size:var(--fs-eyebrow);letter-spacing:.08em;text-transform:uppercase;color:var(--primary);margin-bottom:var(--space-3)}
 /* Decorative gold tick before eyebrows adds brand colour without hurting contrast */
