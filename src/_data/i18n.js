@@ -19,7 +19,7 @@ module.exports = {
       nav: "Navegación", tourCol: "El Tour", contactCol: "Contacto",
       rights: "Todos los derechos reservados", privacy: "Privacidad", terms: "Términos"
     },
-    trust: { years: "30 años de experiencia", reviews: "reseñas", pioneer: "Pioneros del ecoturismo marino en el Perú" },
+    trust: { years: "Desde 1996", reviews: "reseñas", pioneer: "Pioneros del ecoturismo marino en el Perú" },
     langLabel: "Idioma",
     // pre-filled WhatsApp messages by context
     wa: {
@@ -49,7 +49,7 @@ module.exports = {
       nav: "Navigation", tourCol: "The Tour", contactCol: "Contact",
       rights: "All rights reserved", privacy: "Privacy", terms: "Terms"
     },
-    trust: { years: "30 years of experience", reviews: "reviews", pioneer: "Pioneers of marine ecotourism in Peru" },
+    trust: { years: "Since 1996", reviews: "reviews", pioneer: "Pioneers of marine ecotourism in Peru" },
     langLabel: "Language",
     wa: {
       general: "Hi Ecocruceros! 👋 I saw your website and I'd like more information about the Palomino Islands tour.",
