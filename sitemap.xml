@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ecocruceros</title>
+  <meta name="description" content="">
+  <link rel="canonical" href="https://ecocruceros.com/sitemap.xml">
+  <link rel="alternate" hreflang="es" href="https://ecocruceros.com/sitemap.xml">
+  <link rel="alternate" hreflang="en" href="https://ecocruceros.com/en/sitemap.xml">
+  <link rel="alternate" hreflang="x-default" href="https://ecocruceros.com/sitemap.xml">
+  <meta property="og:title" content=" · Ecocruceros">
+  <meta property="og:description" content="">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="es_PE">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&amp;family=Hanken+Grotesk:wght@400;500;600;700&amp;display=swap" onload="this.onload=null;this.rel='stylesheet'">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&amp;family=Hanken+Grotesk:wght@400;500;600;700&amp;display=swap" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&amp;family=Hanken+Grotesk:wght@400;500;600;700&amp;display=swap"></noscript>
+  <link rel="stylesheet" href="/assets/css/tokens.css">
+  <link rel="stylesheet" href="/assets/css/base.css">
+  <link rel="stylesheet" href="/assets/css/components.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Saltar al contenido</a>
+  
+
+
+<header class="site-header">
+  <div class="container site-header__inner">
+    <a class="brand" href="/">
+      <img class="brand__img" src="/assets/img/logo_ecocruceros.jpeg" alt="Ecocruceros — Islas Palomino">
+      <span class="brand__txt"><span class="brand__name">ECOCRUCEROS</span><small class="brand__sub">Islas Palomino · La Punta, Callao</small></span>
+    </a>
+
+    <nav class="primary-nav" aria-label="Inicio">
+      <a href="/" >Inicio</a>
+
+      <div class="nav-group" data-open="false">
+        <button aria-haspopup="true" aria-expanded="false">Tour ▾</button>
+        <div class="nav-group__menu">
+          <a href="/tour/">Tour</a>
+          <a href="/tour/recorrido/">Recorrido</a>
+          <a href="/tour/precios/">Precios</a>
+          <a href="/tour/seguridad/">Seguridad</a>
+        </div>
+      </div>
+
+      <a href="/nosotros/">Nosotros</a>
+
+      <div class="nav-group" data-open="false">
+        <button aria-haspopup="true" aria-expanded="false">Sostenibilidad ▾</button>
+        <div class="nav-group__menu">
+          <a href="/sostenibilidad/">Sostenibilidad</a>
+          <a href="/sostenibilidad/certificaciones/">Certificaciones</a>
+        </div>
+      </div>
+
+      <a href="/galeria/">Galería</a>
+      <a href="/faq/">Preguntas Frecuentes</a>
+      <a href="/contacto/">Contacto</a>
+    </nav>
+
+    <div class="header-actions">
+      <div class="lang-switch" role="group" aria-label="Idioma">
+        <a href="/sitemap.xml" aria-current="true" lang="es" aria-label="Español" title="Español">
+          <svg class="flag" viewBox="0 0 36 36" width="24" height="24" aria-hidden="true" focusable="false"><defs><clipPath id="flag-pe"><circle cx="18" cy="18" r="18"/></clipPath></defs><g clip-path="url(#flag-pe)"><rect x="0" width="12" height="36" fill="#D91023"/><rect x="12" width="12" height="36" fill="#fff"/><rect x="24" width="12" height="36" fill="#D91023"/></g></svg>
+        </a>
+        <a href="/en/sitemap.xml" aria-current="false" lang="en" aria-label="English" title="English">
+          <svg class="flag" viewBox="0 0 36 36" width="24" height="24" aria-hidden="true" focusable="false"><defs><clipPath id="flag-us"><circle cx="18" cy="18" r="18"/></clipPath></defs><g clip-path="url(#flag-us)"><rect width="36" height="36" fill="#fff"/><g fill="#B22234"><rect y="0" width="36" height="2.77"/><rect y="5.54" width="36" height="2.77"/><rect y="11.08" width="36" height="2.77"/><rect y="16.62" width="36" height="2.77"/><rect y="22.15" width="36" height="2.77"/><rect y="27.69" width="36" height="2.77"/><rect y="33.23" width="36" height="2.77"/></g><rect width="16" height="15" fill="#3C3B6E"/><g fill="#fff"><circle cx="3" cy="3" r="1"/><circle cx="8" cy="3" r="1"/><circle cx="13" cy="3" r="1"/><circle cx="5.5" cy="6.7" r="1"/><circle cx="10.5" cy="6.7" r="1"/><circle cx="3" cy="10.4" r="1"/><circle cx="8" cy="10.4" r="1"/><circle cx="13" cy="10.4" r="1"/></g></g></svg>
+        </a>
+      </div>
+      <button class="icon-btn nav-toggle" data-nav-toggle aria-expanded="false" aria-controls="drawer" aria-label="Inicio">
+        <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<aside class="drawer" id="drawer" data-drawer data-open="false" aria-label="Inicio">
+  <div class="drawer__top">
+    <span style="font-family:var(--font-display);font-size:1.2rem">Ecocruceros</span>
+    <button class="icon-btn" data-drawer-close aria-label="Cerrar / Close" style="background:transparent;border-color:rgba(255,255,255,.3);color:#fff">
+      <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 6l12 12M18 6L6 18"/></svg>
+    </button>
+  </div>
+  <a href="/">Inicio</a>
+  <details><summary>Tour</summary>
+    <a href="/tour/">Tour</a>
+    <a href="/tour/recorrido/">Recorrido</a>
+    <a href="/tour/precios/">Precios</a>
+    <a href="/tour/seguridad/">Seguridad</a>
+  </details>
+  <a href="/nosotros/">Nosotros</a>
+  <details><summary>Sostenibilidad</summary>
+    <a href="/sostenibilidad/">Sostenibilidad</a>
+    <a href="/sostenibilidad/certificaciones/">Certificaciones</a>
+  </details>
+  <a href="/galeria/">Galería</a>
+  <a href="/faq/">Preguntas Frecuentes</a>
+  <a href="/blog/">Blog</a>
+  <a href="/contacto/">Contacto</a>
+</aside>
+
+  <main id="main">
+    <?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://ecocruceros.com/blog/</loc></url>
+  <url><loc>https://ecocruceros.com/blog/premio-turismo-sostenible/</loc></url>
+  <url><loc>https://ecocruceros.com/blog/promperu-islas-palomino/</loc></url>
+  <url><loc>https://ecocruceros.com/blog/temporada-de-ballenas/</loc></url>
+  <url><loc>https://ecocruceros.com/contacto/</loc></url>
+  <url><loc>https://ecocruceros.com/en/blog/</loc></url>
+  <url><loc>https://ecocruceros.com/en/blog/premio-turismo-sostenible/</loc></url>
+  <url><loc>https://ecocruceros.com/en/blog/promperu-islas-palomino/</loc></url>
+  <url><loc>https://ecocruceros.com/en/blog/temporada-de-ballenas/</loc></url>
+  <url><loc>https://ecocruceros.com/en/contacto/</loc></url>
+  <url><loc>https://ecocruceros.com/en/faq/</loc></url>
+  <url><loc>https://ecocruceros.com/en/galeria/</loc></url>
+  <url><loc>https://ecocruceros.com/en/</loc></url>
+  <url><loc>https://ecocruceros.com/en/nosotros/</loc></url>
+  <url><loc>https://ecocruceros.com/en/privacidad/</loc></url>
+  <url><loc>https://ecocruceros.com/en/sostenibilidad/certificaciones/</loc></url>
+  <url><loc>https://ecocruceros.com/en/sostenibilidad/</loc></url>
+  <url><loc>https://ecocruceros.com/en/terminos/</loc></url>
+  <url><loc>https://ecocruceros.com/en/tour/</loc></url>
+  <url><loc>https://ecocruceros.com/en/tour/precios/</loc></url>
+  <url><loc>https://ecocruceros.com/en/tour/recorrido/</loc></url>
+  <url><loc>https://ecocruceros.com/en/tour/seguridad/</loc></url>
+  <url><loc>https://ecocruceros.com/faq/</loc></url>
+  <url><loc>https://ecocruceros.com/galeria/</loc></url>
+  <url><loc>https://ecocruceros.com/</loc></url>
+  <url><loc>https://ecocruceros.com/nosotros/</loc></url>
+  <url><loc>https://ecocruceros.com/privacidad/</loc></url>
+  <url><loc>https://ecocruceros.com/sostenibilidad/certificaciones/</loc></url>
+  <url><loc>https://ecocruceros.com/sostenibilidad/</loc></url>
+  <url><loc>https://ecocruceros.com/terminos/</loc></url>
+  <url><loc>https://ecocruceros.com/tour/</loc></url>
+  <url><loc>https://ecocruceros.com/tour/precios/</loc></url>
+  <url><loc>https://ecocruceros.com/tour/recorrido/</loc></url>
+  <url><loc>https://ecocruceros.com/tour/seguridad/</loc></url>
+</urlset>
+
+  </main>
+  
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="brand" style="margin-bottom:var(--space-3)">
+          <img class="brand__img brand__img--footer" src="/assets/img/logo_ecocruceros.jpeg" alt="Ecocruceros — Islas Palomino">
+        </div>
+        <p style="color:var(--text-on-dark-soft)">Pioneros del ecoturismo marino en el Perú.</p>
+      </div>
+      <div>
+        <h4>Navegación</h4>
+        <ul>
+          <li><a href="/">Inicio</a></li>
+          <li><a href="/nosotros/">Nosotros</a></li>
+          <li><a href="/sostenibilidad/">Sostenibilidad</a></li>
+          <li><a href="/galeria/">Galería</a></li>
+          <li><a href="/blog/">Blog</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>El Tour</h4>
+        <ul>
+          <li><a href="/tour/recorrido/">Recorrido</a></li>
+          <li><a href="/tour/precios/">Precios</a></li>
+          <li><a href="/tour/seguridad/">Seguridad</a></li>
+          <li><a href="/faq/">Preguntas Frecuentes</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contacto</h4>
+        <ul>
+          <li><a data-wa-source="footer" href="https://wa.me/51986671093?text=%C2%A1Hola%20Ecocruceros!%20%F0%9F%91%8B%20Vi%20su%20web%20y%20quiero%20m%C3%A1s%20informaci%C3%B3n%20sobre%20el%20tour%20a%20las%20Islas%20Palomino.">+51 986 671 093</a></li>
+          <li><a href="mailto:informes@ecocruceros.com">informes@ecocruceros.com</a></li>
+          <li>La Punta, Callao, Lima, Perú</li>
+        </ul>
+        <div class="social-row" style="margin-top:var(--space-3)">
+          <a href="https://www.facebook.com/ECOCRUCEROS" aria-label="Facebook" rel="noopener" target="_blank"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M22 12a10 10 0 10-11.5 9.9v-7H8v-2.9h2.5V9.8c0-2.5 1.5-3.9 3.8-3.9 1.1 0 2.2.2 2.2.2v2.5h-1.3c-1.2 0-1.6.8-1.6 1.6v1.8h2.8l-.4 2.9h-2.4v7A10 10 0 0022 12z"/></svg></a>
+          <a href="https://www.instagram.com/ecocruceros_oficial/" aria-label="Instagram" rel="noopener" target="_blank"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a>
+          <a href="https://www.youtube.com/@ecocruceros8644" aria-label="YouTube" rel="noopener" target="_blank"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M23 12s0-3.2-.4-4.7a2.5 2.5 0 00-1.8-1.8C19.3 5 12 5 12 5s-7.3 0-8.8.5A2.5 2.5 0 001.4 7.3C1 8.8 1 12 1 12s0 3.2.4 4.7a2.5 2.5 0 001.8 1.8C4.7 19 12 19 12 19s7.3 0 8.8-.5a2.5 2.5 0 001.8-1.8C23 15.2 23 12 23 12zm-13 3V9l5 3z"/></svg></a>
+          <a href="https://www.tiktok.com/@ecocruceros" aria-label="TikTok" rel="noopener" target="_blank"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M16.6 3c.4 2.1 1.8 3.7 3.9 4v3c-1.5 0-2.9-.5-3.9-1.2v6.7c0 3.4-2.7 6-6.1 6-3.3 0-6-2.6-6-6 0-3.3 2.6-6 5.9-6 .3 0 .7 0 1 .1v3.1a3 3 0 0 0-1-.2 2.9 2.9 0 0 0-2.9 3c0 1.6 1.3 2.9 2.9 2.9s3-1.3 3-2.9V3h3.2z"/></svg></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-certs" aria-label="Certificaciones">
+      <span>Green Destinations — Top 100 Stories 2023</span><span>Marca Perú</span><span>Sello CALTUR — Calidad y Compromiso</span><span>SERNANP</span><span>Por la Conservación</span><span>Gobierno Regional del Callao</span><span>Protégeme — ESNNA, Turismo Responsable</span>
+    </div>
+
+    <div class="footer-bottom">
+      <span>© 2026 Ecocruceros. Todos los derechos reservados.</span>
+      <span>
+        <a href="/privacidad/">Privacidad</a> ·
+        <a href="/terminos/">Términos</a>
+      </span>
+    </div>
+
+    <div class="footer-credit" style="text-align:center;margin-top:var(--space-2);margin-bottom:calc(-1 * var(--space-3))">
+      <small style="color:var(--text-on-dark-soft);font-size:.68rem;opacity:.75">Developed by Locale Americas</small>
+    </div>
+  </div>
+</footer>
+
+  
+<a class="wa-float" data-wa-source="float" href="https://wa.me/51986671093?text=%C2%A1Hola%20Ecocruceros!%20%F0%9F%91%8B%20Vi%20su%20web%20y%20quiero%20m%C3%A1s%20informaci%C3%B3n%20sobre%20el%20tour%20a%20las%20Islas%20Palomino." aria-label="Reservar por WhatsApp" title="Reservar por WhatsApp" target="_blank" rel="noopener">
+  <svg viewBox="0 0 448 512" width="20" height="20" fill="currentColor" aria-hidden="true" focusable="false" style="display:inline-block;vertical-align:middle"><path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27.1 106.1 27.1h.1c122.3 0 222.1-99.6 222.1-222 0-59.3-23.1-115-65.1-157zM223.9 438.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.7-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/></svg>
+
+</a>
+
+  <script src="/assets/js/main.js" defer></script>
+</body>
+</html>
